@@ -3,7 +3,7 @@
 ########################################################################
 # Extension Manager/Repository config file for ext "doc_tut_ts45_de".
 #
-# Auto generated 31-08-2008 10:05
+# Auto generated 11-02-2010 10:05
 #
 # Manual updates:
 # Only the data in the array - everything else is removed by next
@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => 'Lerne die TypoScript Grundlagen in nur 45 Minuten.',
 	'category' => 'doc',
 	'shy' => 0,
-	'version' => '0.5.1',
+	'version' => '0.5.2',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
