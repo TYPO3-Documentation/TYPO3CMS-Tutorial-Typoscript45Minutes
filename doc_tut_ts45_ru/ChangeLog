@@ -1,0 +1,24 @@
+2011-02-06  Susanne Moog  <typo3@susannemoog.de>
+
+	* Fixed bug #12489: "SysFolder" is called "Folder" now
+	* Fixed bug #12817: Merged Changes From The Wiki
+
+2010-12-14  Susanne Moog  <typo3@susannemoog.de>
+
+	* Changed author from "Official Documentation" to "Documentation Team"
+	* Feature #11380: Add version number to cover page
+	* Bug #11258: Add missing sections in the introduction
+
+2010-11-06  Susanne Moog  <typo3@susannemoog.de>
+
+	* Task #10658: Merge changes from the wiki
+	* Task #10661: Move to new documentation template
+
+2010-05-02  Susanne Moog  <typo3@susannemoog.de>
+
+	* Task #7790: Spell Check / Correcting Typos
+
+2010-05-02  Susanne Moog  <typo3@susannemoog.de>
+
+	* Task #7437: Format OpenOffice document
+	* Task #7436: Add screenshots from wiki
