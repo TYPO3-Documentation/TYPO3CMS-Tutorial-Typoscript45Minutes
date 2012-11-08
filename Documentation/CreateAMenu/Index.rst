@@ -1,18 +1,9 @@
-﻿
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../Includes.txt
 
 
 Create a menu
@@ -25,9 +16,7 @@ TYPO3 offers a special menu object `HMENU
 <http://wiki.typo3.org/TSref/HMENU>`_ (H stands for hierarchical) to
 easily build different kinds of menus.
 
-The menu should be built like a nested list:
-
-::
+The menu should be built like a nested list::
 
    <ul>
       <li>first level</li>
@@ -46,26 +35,24 @@ apart and safe keep them for future projects. The extension template
 can be added with the use of "include basis template".
 
 Normally, these objects are defined as sub-objects of "lib". We could
-use any term that hasn't been assigned, yet.
-
-::
+use any term that hasn't been assigned, yet. ::
 
     lib.textmenu = HMENU
     lib.textmenu {
-   
+
       # we define the first level as text menu
       1 = TMENU
-   
+
       # We define the ''NO''rmal state
       1.NO.allWrap = <li>|</li>
-   
+
       # We define the ''ACT''ive state
       1.ACT = 1
       1.ACT.wrapItemAndSub = <li>|</li>
-   
-      # Wrap the whole menu 
+
+      # Wrap the whole menu
       1.wrap = <ul class="level1">|</ul>
-   
+
       # The second level should be configured exactly the same.
       # In-between the curly brackets objects can be copied.
       # With the dot "." we define that the object can be found in the brackets
@@ -92,9 +79,7 @@ page"). In doing so, pay special attention to the fact that aside the
 normal state ("NO"), every state has to be activated first (i.e. ACT =
 1).
 
-Henceforth, we can use the menu and implement it at our page.
-
-::
+Henceforth, we can use the menu and implement it at our page. ::
 
    page.5 < lib.textmenu
 

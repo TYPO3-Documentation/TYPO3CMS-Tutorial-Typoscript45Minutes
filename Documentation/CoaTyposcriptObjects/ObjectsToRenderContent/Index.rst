@@ -1,18 +1,9 @@
-﻿
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
 
 
 Objects to render content
@@ -20,9 +11,7 @@ Objects to render content
 
 - `IMAGE <http://typo3.org/documentation/document-
   library/references/doc_core_tsref/4.3.1/view/1/7/#id2518630>`_ the
-  rendering of an image
-
-::
+  rendering of an image ::
 
    lib.logo = IMAGE
    lib.logo {
@@ -42,16 +31,14 @@ Objects to render content
   difference: the HTML-object implements the `stdWrap
   <http://typo3.org/documentation/document-
   library/references/doc_core_tsref/4.3.1/view/1/5/#id2359953>`_
-  functionality on .value
-
-::
+  functionality on .value ::
 
    lib.test1 = TEXT
    lib.test1.field = uid
-   
+
    lib.test2 = HTML
    lib.test2.value.field = uid
-   
+
 
 - `FILE <http://typo3.org/documentation/document-
   library/references/doc_core_tsref/4.3.1/view/1/7/#id2518497>`_ imports
@@ -59,9 +46,7 @@ Objects to render content
 
 - `TEMPLATE <http://typo3.org/documentation/document-
   library/references/doc_core_tsref/4.3.1/view/1/7/#id2526304>`_
-  replaces a marker with content in a template
-
-::
+  replaces a marker with content in a template ::
 
    page.10 = TEMPLATE
    page.10 {

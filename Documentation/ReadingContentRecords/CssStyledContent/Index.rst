@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 css\_styled\_content
@@ -25,9 +17,7 @@ comes with "css\_styled\_content". It has a meaningful definition for
 every existing content element.
 
 The usage is comparably easy. The definitions are available as
-tt\_content objects.
-
-::
+tt\_content objects. ::
 
    10.renderObj < tt_content
 
@@ -44,14 +34,12 @@ way. If a content element has to be configured completely different,
 then it should be clear that this can be done with
 tt\_content.internal identifier of the content element. Here follows
 an example of how the standard properties of the header can be
-overwritten:
+overwritten::
 
-::
-
-    # Because TYPO3 saves everything in one big array the properties that are not overwritten 
+    # Because TYPO3 saves everything in one big array the properties that are not overwritten
     # are preserved and could result in strange behavior. That's why the old properties should be deleted.
     tt_content.header >
-   
+
     # Every header will be rendered with H1, independent of the properties in the content element.
     tt_content.header = TEXT
     tt_content.header.wrap = <h1>|</h1>

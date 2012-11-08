@@ -1,18 +1,9 @@
-﻿
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
 
 
 Heed the order
@@ -25,16 +16,14 @@ An important limitation should be highlighted:
 documentation/doc_core_tsref/current/>`_  **.**
 
 If we don't pay attention to this fact the results might look
-different from what we expected.
-
-::
+different from what we expected. ::
 
     10 = TEXT
     10.value = Hello World
     10.case = upper
     10.field = header # assuming the header contains “typo3” (small case characters)
     10.stdWrap.wrap = <strong>|</strong>
-   
+
     # results in the following:
     <STRONG>TYPO3</STRONG>
 

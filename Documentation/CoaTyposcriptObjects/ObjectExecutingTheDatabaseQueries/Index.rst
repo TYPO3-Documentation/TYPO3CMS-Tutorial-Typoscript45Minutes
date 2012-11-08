@@ -1,18 +1,9 @@
-﻿
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
 
 
 Object, executing the database queries
@@ -29,11 +20,9 @@ Object, executing the database queries
   shown. Thus, an editor can edit the content without the need to copy
   the element numerous times. The object is also being used if the
   content element "insert record" is used.
-  
-  In the following example, the email address of the address record is
-  rendered and linked as e-mail at the same time.
 
-::
+  In the following example, the email address of the address record is
+  rendered and linked as e-mail at the same time. ::
 
      page.80 = RECORDS
      page.80 {

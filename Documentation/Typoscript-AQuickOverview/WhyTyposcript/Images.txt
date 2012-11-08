@@ -1,6 +1,6 @@
 ﻿.. |img-2|      image:: ../../Images/manual_html_31a0e4db.png
-   :height: 93
-   :width: 163
+.. :height: 93
+.. :width: 163
 .. :align: left
 .. :border: 0
 .. :name: Grafik1

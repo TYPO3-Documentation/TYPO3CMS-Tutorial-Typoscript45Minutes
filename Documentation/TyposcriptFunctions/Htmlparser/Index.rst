@@ -1,18 +1,9 @@
-﻿
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
 
 
 HTMLparser
@@ -21,17 +12,15 @@ HTMLparser
 The HTML parser defines how content is processed. Normally, it's used
 as a subfunction of parseFunc. For example, we could define that all
 links will be set with an absolute value (for example, for a
-newsletter):
-
-::
+newsletter)::
 
    page.stdWrap.HTMLparser = 1
    page.stdWrap.HTMLparser {
          keepNonMatchedTags=1
-   
+
            # Here we define the domain which will be placed in front of the relative path
          tags.a.fixAttrib.href.prefixRelPathWith=http://www.example.com/
-   
+
            # All links without a target will receive a target = _blank
          tags.a.fixAttrib.target.default=_blank
    }
@@ -48,9 +37,7 @@ definition from "css\_styled\_content" will be altered. The function
 htmlSpecialChars will be deactivated, so the <u> remains untouched.
 Thereafter, the parseFunc function is used, and defined that aside the
 tag "u", no other tags will be allowed. Thus, all tags apart from the
-<u> will be removed.
-
-::
+<u> will be removed. ::
 
    # In the headline the <u> tag shall be allowed
    # Apart from that all elements have to be parsed as usual

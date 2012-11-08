@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 The term template
@@ -34,9 +26,7 @@ can be found which has the root level flag enabled in the page tree.
 |img-4| "The page is not configured": This warning appears if the root level
 flag is enabled, but no PAGE Object can be found.
 
-The following code suffices to circumvent this warning:
-
-::
+The following code suffices to circumvent this warning::
 
    page = PAGE
    page.10 = TEXT

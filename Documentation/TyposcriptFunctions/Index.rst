@@ -1,18 +1,9 @@
-﻿
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../Includes.txt
 
 
 TypoScript functions
@@ -30,13 +21,13 @@ function, or not, is shown in TSRef, column data type..
 
    Property
          Property
-   
+
    Data type
          Data type
-   
+
    Description
          Description
-   
+
    Default
          Default
 
@@ -45,13 +36,13 @@ function, or not, is shown in TSRef, column data type..
 
    Property
          file
-   
+
    Data type
          imgResource
-   
+
    Description
-   
-   
+
+
    Default
 
 
@@ -59,13 +50,13 @@ function, or not, is shown in TSRef, column data type..
 
    Property
          imageLinkWrap
-   
+
    Data type
          ->imageLinkWrap
-   
+
    Description
          [...]
-   
+
    Default
 
 
@@ -73,13 +64,13 @@ function, or not, is shown in TSRef, column data type..
 
    Property
          if
-   
+
    Data type
          ->if
-   
+
    Description
          [...]
-   
+
    Default
 
 
@@ -87,13 +78,13 @@ function, or not, is shown in TSRef, column data type..
 
    Property
          altTexttitleText
-   
+
    Data type
          String/stdWrap
-   
+
    Description
          [...]
-   
+
    Default
 
 

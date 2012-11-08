@@ -1,18 +1,9 @@
-﻿
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../Includes.txt
 
 
 using `stdWrap <http://typo3.org/documentation/document-library/references/doc_core_tsref/4.3.1/view/1/5/#id2359953>`_ correctly
@@ -35,9 +26,7 @@ library/references/doc_core_tsref/4.3.1/view/1/5/#id2359953>`_
 library/references/doc_core_tsref/4.3.1/view/1/5/#id2359953>`_ is
 presented or a property offers for example "string/ `stdWrap
 <http://typo3.org/documentation/document-
-library/references/doc_core_tsref/4.3.1/view/1/5/#id2359953>`_ ".
-
-::
+library/references/doc_core_tsref/4.3.1/view/1/5/#id2359953>`_ ". ::
 
     10 = IMAGE
     10.stdWrap.typolink...
@@ -46,9 +35,7 @@ The object has a property `stdWrap <http://typo3.org/documentation
 /document-
 library/references/doc_core_tsref/4.3.1/view/1/5/#id2359953>`_ of type
 `stdWrap <http://typo3.org/documentation/document-
-library/references/doc_core_tsref/4.3.1/view/1/5/#id2359953>`_ .
-
-::
+library/references/doc_core_tsref/4.3.1/view/1/5/#id2359953>`_ . ::
 
     10 = HTML
     10.value = Hello World

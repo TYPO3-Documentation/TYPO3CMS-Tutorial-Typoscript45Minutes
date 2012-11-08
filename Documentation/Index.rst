@@ -1,18 +1,11 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: Includes.txt
+.. include:: Images.txt
+
 
 ========================
 TypoScript in 45 minutes
@@ -45,6 +38,9 @@ TypoScript in 45 minutes
 :License:
       Open Content License available from `www.opencontent.org/opl.shtml
       <http://www.opencontent.org/opl.shtml>`_
+
+:Rendered:
+      |today|
 
 The content of this document is related to TYPO3,
 
@@ -90,4 +86,4 @@ future reference.
    TyposcriptFunctions/Index
    UsingStdwrapCorrectly/Index
    Outlook/Index
-
+   Targets

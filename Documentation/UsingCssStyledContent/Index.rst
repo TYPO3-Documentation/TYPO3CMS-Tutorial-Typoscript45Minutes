@@ -1,18 +1,9 @@
-﻿
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../Includes.txt
 
 
 Using css\_styled\_content
@@ -38,9 +29,7 @@ then the setup TypoScript.
 The extension css\_styled\_content will add many classes in HTML
 elements. This has the advantage that it's not necessary to enter all
 classes by hand. It suffices to find out which HTML element has which
-class, and to add CSS styles to it.
-
-::
+class, and to add CSS styles to it. ::
 
    Example:
    <div class="csc-textpic-imagewrap">...

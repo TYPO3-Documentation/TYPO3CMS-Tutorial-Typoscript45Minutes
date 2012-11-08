@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../Includes.txt
+.. include:: Images.txt
 
 
 Reading content records
@@ -39,44 +31,42 @@ the current page.
 First, we create the `PAGE <http://wiki.typo3.org/TSref/PAGE>`_ object
 so there will be some rendering at all. In this object PAGE we will
 create the object `CONTENT <http://wiki.typo3.org/TSref/CONTENT>`_ ,
-which can be controlled with various TypoScript parameters.
-
-::
+which can be controlled with various TypoScript parameters. ::
 
     page = PAGE
     page.typeNum = 0
-   
+
     # The content-object executes a database query and loads the content
     page.10 = CONTENT
     page.10.table = tt_content
     page.10.select {
-   
-         # "sorting" is a column from the tt_content table and 
+
+         # "sorting" is a column from the tt_content table and
            # keeps track of the sorting order which is given in the backend
          orderBy = sorting
-   
+
          # normal column
          where = colPos = 0
     }
-   
-    # For every result-line from the database query the renderObj is executed 
+
+    # For every result-line from the database query the renderObj is executed
     # and the internal data array is filled with the content. This ensures that we
-    # can call the .field property and we get the according value 
+    # can call the .field property and we get the according value
     page.10.renderObj = COA
     page.10.renderObj {
-   
+
       10 = TEXT
-   
+
       # The field tt_content.header normally holds the headline.
       10.field = header
-   
+
       10.wrap = <h1>|</h1>
-   
+
       20 = TEXT
-   
+
       # The field tt_content.bodytext holds the content text
       20.field = bodytext
-   
+
       20.wrap = <p>|</p>
     }
 

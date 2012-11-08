@@ -1,18 +1,9 @@
-﻿
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
 
 
 tags
@@ -20,27 +11,25 @@ tags
 
 The function "tags" is used in combination with parseFunc to get
 custom tags. For example, in the extension "css\_styled\_content", a
-custom tag <LINK> is defined to create simple links.
-
-::
+custom tag <LINK> is defined to create simple links. ::
 
    tags {
            # Here the name of the new tag is defined
            link = TEXT
-   
+
            # here how the tag is processed/parsed
            link {
                    current = 1
                    typolink {
-   
+
                            parameter.data = parameters:allParams
-   
+
                            extTarget = {$styles.content.links.extTarget}
-   
+
                            target = {$styles.content.links.target}
-   
+
                    }
-   
+
                    parseFunc.constants=1
            }
    }
