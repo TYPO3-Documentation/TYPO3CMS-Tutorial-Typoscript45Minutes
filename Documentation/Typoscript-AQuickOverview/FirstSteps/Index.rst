@@ -106,9 +106,9 @@ With the "=" sign, we saw the basic assignment: a value is assigned. ::
     # The change has no effect on mypage.10
     test.value = Hello world
 
-    # <= means that the object is referenced (the object is linked)
+    # =< means that the object is referenced (the object is linked)
     test.value = Holla
-    mypage.10 <= test
+    mypage.10 =< test
    .
     # - Object which is referenced changes
     # - changes HAVE an effect on mypage.10
@@ -126,7 +126,7 @@ referenced and can be set accordingly with values. ::
    mypage.10.wrap = <h1>|</h1>
 
 Which objects, parameters, and functions exist can be referenced in
-the `TypoScript Reference (TSRef) <http://typo3.org/documentation
+the `TypoScript Reference (TSref) <http://typo3.org/documentation
 /document-library/core-documentation/doc_core_tsref/current/>`_ .
 
 If some objects are wrapped in each other, and many parameters are
