@@ -23,22 +23,15 @@ Objects to render content
 - lib.logo holds the logo with a width of 200 pixel and is being linked
   with the page with PID 1.
 
-- `HTML <http://typo3.org/documentation/document-
-  library/references/doc_core_tsref/4.3.1/view/1/7/#id2518067>`_ / `TEXT
-  <http://typo3.org/documentation/document-
+- `TEXT <http://typo3.org/documentation/document-
   library/references/doc_core_tsref/4.3.1/view/1/7/#id2518196>`_ for the
-  rendering of standard text or the content of fields. Fundamental
-  difference: the HTML-object implements the `stdWrap
-  <http://typo3.org/documentation/document-
+  rendering of standard text or the content of fields. The TEXT-object
+  implements the `stdWrap <http://typo3.org/documentation/document-
   library/references/doc_core_tsref/4.3.1/view/1/5/#id2359953>`_
-  functionality on .value ::
+  functionality on the very rootlevel of the object. This is non-standard! ::
 
    lib.test1 = TEXT
    lib.test1.field = uid
-
-   lib.test2 = HTML
-   lib.test2.value.field = uid
-
 
 - `FILE <http://typo3.org/documentation/document-
   library/references/doc_core_tsref/4.3.1/view/1/7/#id2518497>`_ imports

@@ -11,11 +11,13 @@ The term template
 ^^^^^^^^^^^^^^^^^
 
 The term template has a duplicate meaning in TYPO3. On the one hand,
-there is the HTML template which serves as the skeletal structure in
-which the content will be rendered. On the other hand, there is the
-TypoScript template which can be created in the pages.
+there is the HTML template file, which serves as the skeletal
+structure in which the content, which will be provided in TYPO3,
+will be rendered. On the other hand, there is the TypoScript
+template, which can be created in the template module in the TYPO3
+Backend. A TypoScript template can be saved on any page.
 
-Common mistakes which can be made with TypoScript templates can look
+Common mistakes, which can be made with TypoScript templates, can look
 like this:
 
 |img-3|

@@ -143,9 +143,9 @@ assigned, it can get complicated. ::
     mypage.10.typolink.ATagParams = class="externalwebsite"
     mypage.10.typolink.extTarget = _blank
     mypage.10.typolink.title = The website of TYPO3
-    mypage.10.postCObject = HTML
+    mypage.10.postCObject = TEXT
     mypage.10.postCObject.value = This Text also appears in the link text
-    mypage.10.postCObject.value.wrap = |, because the postCobject is executed before the typolink function
+    mypage.10.postCObject.wrap = |, because the postCobject is executed before the typolink function
 
 To keep it simple, the curly brackets {} are allowed to define object
 levels. Parenthesis () are for writing text on more than one line. The
@@ -172,15 +172,13 @@ above example can be rewritten like the following example::
             title = The website of TYPO3
          }
 
-         postCObject = HTML
+         postCObject = TEXT
          postCObject {
 
             value = This Text also appears in the link text
-            value {
-               wrap (
-                |, because the postCObject is executed before the typolink function
-                )
-             }
+            wrap (
+             |, because the postCObject is executed before the typolink function
+             )
           }
        }
     }
