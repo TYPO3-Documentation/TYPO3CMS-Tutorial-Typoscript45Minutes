@@ -187,3 +187,7 @@ The danger of typographic errors is reduced, and the script is easier
 to read. In addition, if we would like to rename mypage, we would only
 have to change the first two lines, instead of the entire script.
 
+**Please note** that the opening curly bracket always must be **on the same
+line** as the property, after which it is noted! Adding a line break in
+between (so that the opening bracket would be located in a new line) is not
+allowed.
