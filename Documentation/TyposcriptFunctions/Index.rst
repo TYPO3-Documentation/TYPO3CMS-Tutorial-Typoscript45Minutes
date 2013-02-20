@@ -20,30 +20,12 @@ function, or not, is shown in TSRef, column data type..
 .. container:: table-row
 
    Property
-         Property
-
-   Data type
-         Data type
-
-   Description
-         Description
-
-   Default
-         Default
-
-
-.. container:: table-row
-
-   Property
          file
 
    Data type
          imgResource
 
    Description
-
-
-   Default
 
 
 .. container:: table-row
@@ -57,9 +39,6 @@ function, or not, is shown in TSRef, column data type..
    Description
          [...]
 
-   Default
-
-
 .. container:: table-row
 
    Property
@@ -71,9 +50,6 @@ function, or not, is shown in TSRef, column data type..
    Description
          [...]
 
-   Default
-
-
 .. container:: table-row
 
    Property
@@ -84,9 +60,6 @@ function, or not, is shown in TSRef, column data type..
 
    Description
          [...]
-
-   Default
-
 
 .. ###### END~OF~TABLE ######
 
