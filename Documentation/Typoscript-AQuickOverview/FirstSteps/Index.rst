@@ -4,7 +4,6 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 First steps
@@ -73,7 +72,10 @@ the views can be copied and changed just a little bit in the new
 object. (For example, normal page content can be copied into the print
 view but not the menu.)
 
-|img-5| **Note**
+.. figure:: ../../Images/icon_note.png
+   :alt: Note
+
+**Note**
 
 *The output of these examples where both normal text. Especially with
 output formats like WML the HTTP header should be changed etc. This is

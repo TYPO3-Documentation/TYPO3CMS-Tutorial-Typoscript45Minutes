@@ -4,7 +4,6 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 Why TypoScript?
@@ -33,10 +32,13 @@ With TypoScript we define how the individual content elements will be
 rendered in the frontend, if, for example, a DIV container wraps the
 element, or if the header <h1> will be integrated.
 
-The TypoScript which defines how the pages is being rendered is
+The TypoScript which defines how the pages are being rendered is
 located in the "main" template. In this the root level flag is set.
 
-|img-2| If the frontend has to render a page, TYPO3 searches along the page
+.. figure:: ../../Images/RootlevelFlag.png
+   :alt: The rootlevel flag in a template record.
+
+If the frontend has to render a page, TYPO3 searches along the page
 tree to find a "main" template. Normally, there are some more
 templates aside the "main" template. How these play together can be
 seen nicely in the template analyzer. For now, we assume that we only

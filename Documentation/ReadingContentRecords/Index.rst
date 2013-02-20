@@ -4,13 +4,15 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../Includes.txt
-.. include:: Images.txt
 
 
 Reading content records
 -----------------------
 
-|img-5| **Note**
+.. figure:: ../../Images/icon_note.png
+   :alt: Note
+
+**Note**
 
 *The following paragraphs serve as an example and for a better
 understanding of the background and relationships. The following

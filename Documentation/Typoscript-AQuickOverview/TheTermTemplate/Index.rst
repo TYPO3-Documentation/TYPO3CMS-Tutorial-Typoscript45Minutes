@@ -4,7 +4,6 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 The term template
@@ -20,12 +19,16 @@ Backend. A TypoScript template can be saved on any page.
 Common mistakes, which can be made with TypoScript templates, can look
 like this:
 
-|img-3|
+.. figure:: ../../Images/NoTypoScriptTemplateFound.png
+   :alt: Error message "No TypoScript template found!"
 
 "No TypoScript template found": This warning appears if no template
 can be found which has the root level flag enabled in the page tree.
 
-|img-4| "The page is not configured": This warning appears if the root level
+.. figure:: ../../Images/ThePageIsNotConfigured.png
+   :alt: Error message "The page is not configured"
+
+"The page is not configured": This warning appears if the root level
 flag is enabled, but no PAGE Object can be found.
 
 The following code suffices to circumvent this warning::

@@ -4,7 +4,6 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 css\_styled\_content
@@ -29,7 +28,10 @@ So for every content element in TYPO3, there is a corresponding
 definition in css\_styles\_content. In the object browser, it would
 look like this:
 
-|img-6| So it is comprehensible which content element is configured in what
+.. figure:: ../../Images/ObjectBrowserSetupRoot.png
+   :alt: Definitions in the Object Browser.
+
+So it is comprehensible which content element is configured in what
 way. If a content element has to be configured completely different,
 then it should be clear that this can be done with
 tt\_content.internal identifier of the content element. Here follows
