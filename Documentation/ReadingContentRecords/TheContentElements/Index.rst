@@ -6,6 +6,9 @@
 .. include:: ../../Includes.txt
 
 
+.. _content-objects:
+.. _the-various-content-objects:
+
 The various content elements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

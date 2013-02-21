@@ -6,6 +6,9 @@
 .. include:: ../../Includes.txt
 
 
+.. _BE-configuration:
+.. _backend-configuration:
+
 Backend Configuration
 ^^^^^^^^^^^^^^^^^^^^^
 

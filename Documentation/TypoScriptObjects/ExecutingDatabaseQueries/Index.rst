@@ -6,6 +6,8 @@
 .. include:: ../../Includes.txt
 
 
+.. _cobjects-database-queries:
+
 Objects executing database queries
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

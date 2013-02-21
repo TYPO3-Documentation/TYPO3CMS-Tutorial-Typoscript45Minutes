@@ -6,6 +6,9 @@
 .. include:: ../../Includes.txt
 
 
+.. _function-numrows:
+.. _numrows:
+
 numRows
 ^^^^^^^
 

@@ -6,6 +6,8 @@
 .. include:: ../../Includes.txt
 
 
+.. _typoscript-array:
+
 TypoScript is just an array
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

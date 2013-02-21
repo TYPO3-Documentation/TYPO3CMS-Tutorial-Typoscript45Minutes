@@ -6,8 +6,12 @@
 .. include:: ../Includes.txt
 
 
+.. _introduction:
+
 Introduction
 ------------
+
+.. _about:
 
 About this document
 ^^^^^^^^^^^^^^^^^^^
@@ -16,6 +20,8 @@ This document is meant to give a short introduction to how TypoScript
 works and what TypoScript really is. It helps to really understand the
 code instead of just copying and pasting.
 
+
+.. _what-s-new:
 
 What's new
 ^^^^^^^^^^
@@ -26,6 +32,8 @@ examples should work with the latest stable release branch, TYPO3
 version 4.4.
 
 
+.. _credits:
+
 Credits
 ^^^^^^^
 
@@ -34,6 +42,8 @@ community in the wiki on wiki.typo3.org and then translated and
 corrected by more community members, so thank you TYPO3 community
 members ;-) for all your efforts.
 
+
+.. _feedback:
 
 Feedback
 ^^^^^^^^

@@ -6,6 +6,9 @@
 .. include:: ../../Includes.txt
 
 
+.. _function-filelink:
+.. _filelink:
+
 filelink
 ^^^^^^^^
 

@@ -6,6 +6,8 @@
 .. include:: ../Includes.txt
 
 
+.. _insert-content-in-a-template:
+
 Insert content in a template
 ----------------------------
 

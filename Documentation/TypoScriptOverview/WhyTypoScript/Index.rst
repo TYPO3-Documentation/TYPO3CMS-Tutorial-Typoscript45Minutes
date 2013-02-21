@@ -6,6 +6,8 @@
 .. include:: ../../Includes.txt
 
 
+.. _why-typoscript:
+
 Why TypoScript?
 ^^^^^^^^^^^^^^^
 

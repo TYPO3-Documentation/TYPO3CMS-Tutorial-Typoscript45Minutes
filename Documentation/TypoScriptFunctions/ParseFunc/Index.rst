@@ -6,6 +6,9 @@
 .. include:: ../../Includes.txt
 
 
+.. _function-parsefunc:
+.. _parsefunc:
+
 parseFunc
 ^^^^^^^^^
 

@@ -6,6 +6,9 @@
 .. include:: ../../Includes.txt
 
 
+.. _function-imagelinkwrap:
+.. _imagelinkwrap:
+
 imageLinkWrap
 ^^^^^^^^^^^^^
 

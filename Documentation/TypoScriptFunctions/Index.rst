@@ -6,6 +6,8 @@
 .. include:: ../Includes.txt
 
 
+.. _TS-functions:
+
 TypoScript functions
 --------------------
 

@@ -6,6 +6,9 @@
 .. include:: ../Includes.txt
 
 
+.. _typoscript-objects:
+.. _cobjects:
+
 `TypoScript Objects <http://typo3.org/documentation/document-library/references/doc_core_tsref/4.3.1/view/1/7/#id2518270>`_
 ---------------------------------------------------------------------------------------------------------------------------
 

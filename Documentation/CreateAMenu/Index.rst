@@ -6,6 +6,9 @@
 .. include:: ../Includes.txt
 
 
+.. _menu:
+.. _create-a-menu:
+
 Create a menu
 -------------
 

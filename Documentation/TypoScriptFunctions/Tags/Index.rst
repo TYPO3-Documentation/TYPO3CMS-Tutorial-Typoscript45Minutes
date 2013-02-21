@@ -6,6 +6,9 @@
 .. include:: ../../Includes.txt
 
 
+.. _function-tags:
+.. _tags:
+
 tags
 ^^^^
 

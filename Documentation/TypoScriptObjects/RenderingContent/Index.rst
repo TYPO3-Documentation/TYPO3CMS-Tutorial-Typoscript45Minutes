@@ -6,6 +6,8 @@
 .. include:: ../../Includes.txt
 
 
+.. _cobjects-rendering-content:
+
 Objects rendering content
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 

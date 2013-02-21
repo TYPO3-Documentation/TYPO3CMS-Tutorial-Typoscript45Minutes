@@ -6,6 +6,9 @@
 .. include:: ../../Includes.txt
 
 
+.. _template:
+.. _the-term-template:
+
 The term template
 ^^^^^^^^^^^^^^^^^
 

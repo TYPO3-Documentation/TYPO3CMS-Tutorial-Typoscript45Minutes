@@ -6,6 +6,8 @@
 .. include:: ../../Includes.txt
 
 
+.. _stdwrap-recursively:
+
 Use stdWrap recursively
 ^^^^^^^^^^^^^^^^^^^^^^^
 

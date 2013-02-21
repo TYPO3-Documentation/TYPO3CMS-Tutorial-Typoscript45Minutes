@@ -6,13 +6,13 @@
 .. include:: ../../Includes.txt
 
 
+.. _stdwrap-cobject:
+
 cObject
 ^^^^^^^
 
-The stdWrap parameter cObject can be used to replace the content with
-a TypoScript object. This can be a `COA <http://typo3.org/documentation
-/document-
-library/references/doc_core_tsref/4.3.1/view/1/7/#id2518270>`_ , a
+The stdWrap parameter "cObject" can be used to replace the content with
+a TypoScript object. This can be a :ref:`COA <t3tsref:cobj-coa>`, a
 plugin or a text like in this example::
 
     10.typolink.title.cObject = TEXT

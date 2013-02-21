@@ -6,6 +6,9 @@
 .. include:: ../../Includes.txt
 
 
+.. _data-type:
+.. _data-types:
+
 The data type
 ^^^^^^^^^^^^^
 

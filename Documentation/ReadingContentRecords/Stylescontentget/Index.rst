@@ -6,6 +6,8 @@
 .. include:: ../../Includes.txt
 
 
+.. _styles-content-get:
+
 styles.content.get
 ^^^^^^^^^^^^^^^^^^
 

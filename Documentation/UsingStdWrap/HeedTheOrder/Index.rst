@@ -6,6 +6,8 @@
 .. include:: ../../Includes.txt
 
 
+.. _stdwrap-order:
+
 Heed the order
 ^^^^^^^^^^^^^^
 
