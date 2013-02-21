@@ -11,7 +11,7 @@
 Use stdWrap recursively
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Because the `stdWrap function <http://typo3.org/documentation/document-library/references/doc_core_tsref/4.3.1/view/1/5/#id2359953>`_ 
+Because the :ref:`stdWrap function <t3tsref:stdwrap>`
 can be called recursively, it is possible to change the execution
 order.
 

@@ -15,8 +15,8 @@ Create a menu
 Until now, we learned how the page content is rendered; however, the
 page navigation is missing.
 
-TYPO3 offers a special menu object `HMENU
-<http://wiki.typo3.org/TSref/HMENU>`_ (H stands for hierarchical) to
+TYPO3 offers a special menu object :ref:`HMENU
+<t3tsref:cobj-hmenu>` (H stands for hierarchical) to
 easily build different kinds of menus.
 
 The menu should be built like a nested list::

@@ -13,8 +13,8 @@ Heed the order
 
 An important limitation should be highlighted:
 
-**The single functions are executed in the order specified by the** `
-**reference**  <http://typo3.org/documentation/document-library/core-documentation/doc_core_tsref/current/>`_  **.**
+**The single functions are executed in the order specified by the `
+reference <t3tsref:start>`.**
 
 If we don't pay attention to this fact the results might look
 different from what we expected. ::

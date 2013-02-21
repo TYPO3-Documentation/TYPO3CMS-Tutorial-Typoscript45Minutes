@@ -27,17 +27,17 @@ will be converted to the following PHP array ::
    $data['page.']['10.']['wrap'] = '<h2>|</h2>';
 
 
-On evaluation, the object " `PAGE <http://wiki.typo3.org/TSref/PAGE>`_
+On evaluation, the object " :ref:`PAGE <t3tsref:page>`
 " will be created first, and the parameter $data['page.'] will be
-assigned. The object " `PAGE <http://wiki.typo3.org/TSref/PAGE>`_ "
+assigned. The object " :ref:`PAGE <t3tsref:page>`"
 will then search for all properties which define it. In this case, it
 will just find a numeric entry "10" which has to be evaluated. A new
-object " `TEXT <http://wiki.typo3.org/TSref/TEXT>`_ " with the
-parameter $data['page.']['10.'] will be created. The object " `TEXT
-<http://wiki.typo3.org/TSref/TEXT>`_ " only knows the parameter
+object " :ref:`TEXT <t3tsref:cobj-text>`" with the
+parameter $data['page.']['10.'] will be created. The object ":ref:`TEXT
+<t3tsref:cobj-text>`" only knows the parameter
 "value", so it will set its content accordingly. All further
-parameters will be passed to the function stdWrap. (That's how " `TEXT
-<http://wiki.typo3.org/TSref/TEXT>`_ " is implemented. We will
+parameters will be passed to the function stdWrap. (That's how ":ref:`TEXT
+<t3tsref:cobj-text>`" is implemented. We will
 elaborate on stdWrap later). There the property 'wrap' is known, and
 the text "Hello world" will be inserted at the pipe (\|) position and
 returned.
@@ -52,7 +52,7 @@ the entry will be taken into the PHP array::
 
    $data['page.']['10.']['myFunction'] = 'Magic!';
 
-However, neither the object `TEXT <http://wiki.typo3.org/TSref/TEXT>`_
+However, neither the object :ref:`TEXT <t3tsref:cobj-text>`
 nor the function stdWrap knows the property "myFunction".
 Consequently, the entry will have no effect.
 

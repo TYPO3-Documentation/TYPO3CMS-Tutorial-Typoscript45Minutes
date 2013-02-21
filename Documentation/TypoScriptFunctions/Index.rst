@@ -86,8 +86,7 @@ generate the content with stdWrap, only.
 Some important and frequently used functions are presented in the
 following subsections. This chapter is about introducing those
 functions, and where they can be used. All details to them, however,
-can be found at `TSref <http://typo3.org/documentation/document-
-library/core-documentation/doc_core_tsref/current/>`_ , and not here.
+can be found at :ref:`TSref <t3tsref:start>`, and not here.
 
 
 .. toctree::

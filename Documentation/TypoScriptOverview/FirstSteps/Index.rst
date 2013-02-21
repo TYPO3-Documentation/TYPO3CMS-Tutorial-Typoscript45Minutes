@@ -96,7 +96,8 @@ Empty spaces at the start and end will be removed by TYPO3 (trim()).
 
 With the "=" sign, we saw the basic assignment: a value is assigned. ::
 
-    # = Value is set
+    # The object test is an object of type TEXT.
+    # "=" means "set value".
     test = TEXT
     test.value = Holla
 
@@ -128,8 +129,7 @@ referenced and can be set accordingly with values. ::
    mypage.10.wrap = <h1>|</h1>
 
 Which objects, parameters, and functions exist can be referenced in
-the `TypoScript Reference (TSref) <http://typo3.org/documentation
-/document-library/core-documentation/doc_core_tsref/current/>`_ .
+the :ref:`TypoScript Reference (TSref) <t3tsref:start>`.
 
 If some objects are wrapped in each other, and many parameters are
 assigned, it can get complicated. ::
@@ -139,7 +139,7 @@ assigned, it can get complicated. ::
     mypage.10 = TEXT
     mypage.10.value = Hello world
     mypage.10.typolink.parameter = http://www.typo3.org/
-    mypage.10.typolink.additionalParams = &nothing=nothing
+    mypage.10.typolink.additionalParams = &parameter=value
 
     # ATagParams unfortunately does not use the standardized "camelCase"
     mypage.10.typolink.ATagParams = class="externalwebsite"
@@ -165,7 +165,7 @@ above example can be rewritten like the following example::
          typolink {
 
             parameter = http://www.typo3.org/
-            additionalParams = &nothing=nothing
+            additionalParams = &parameter=value
 
             # ATagParams unfortunately does not use the standardized "camelCase"
             ATagParams = class="externalwebsite"

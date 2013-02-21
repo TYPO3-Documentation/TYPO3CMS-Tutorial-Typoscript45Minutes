@@ -39,8 +39,8 @@ place. ::
 
      subparts {
        MENU < lib.textmenu
-       INHALT < styles.content.get
-       SPALTERECHTS < styles.content.getRight
+       CONTENT < styles.content.get
+       COLUMNRIGHT < styles.content.getRight
      }
 
      # Marks are single marker. i.e. there is no start and end marker,

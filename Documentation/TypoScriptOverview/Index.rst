@@ -21,6 +21,7 @@ TypoScript - A quick overview
    BackendConfiguration/Index
    Prerequisites/Index
    WhyTypoScript/Index
+   MainTemplate/Index
    TheTermTemplate/Index
    TypoScriptAnArray/Index
    FirstSteps/Index

@@ -9,10 +9,10 @@
 .. _typoscript-objects:
 .. _cobjects:
 
-`TypoScript Objects <http://typo3.org/documentation/document-library/references/doc_core_tsref/4.3.1/view/1/7/#id2518270>`_
----------------------------------------------------------------------------------------------------------------------------
+TypoScript Objects
+------------------
 
-The TypoScript objects are implemented in TYPO3 by corresponding
+The :ref:`TypoScript objects <t3tsref:cobjects>` are implemented in TYPO3 by corresponding
 classes. For the various requirements while rendering a web page,
 there are various objects. These objects have a number of properties.
 For example, the object IMAGE has a method wrap and a method

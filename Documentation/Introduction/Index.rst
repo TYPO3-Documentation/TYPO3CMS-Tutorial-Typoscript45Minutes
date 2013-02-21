@@ -17,8 +17,9 @@ About this document
 ^^^^^^^^^^^^^^^^^^^
 
 This document is meant to give a short introduction to how TypoScript
-works and what TypoScript really is. It helps to really understand the
-code instead of just copying and pasting.
+works and what TypoScript really is. It shall help to give a profound
+understanding of the code, instead of just supplying snippets for
+copying and pasting.
 
 
 .. _what-s-new:

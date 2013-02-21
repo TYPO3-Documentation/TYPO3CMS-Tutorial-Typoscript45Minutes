@@ -31,6 +31,6 @@ In the following example, every occurrence of "COMP" is replaced by
 
 The various possibilities to change the default behavior are easily
 found, by using the TypoScript object browser. All possibilities for
-how parseFunc can alter the rendering can be found here: `parseFunc
-<http://wiki.typo3.org/TSref/parseFunc>`_ .
+how parseFunc can alter the rendering can be found here: :ref:`parseFunc
+<t3tsref:parsefunc>`.
 

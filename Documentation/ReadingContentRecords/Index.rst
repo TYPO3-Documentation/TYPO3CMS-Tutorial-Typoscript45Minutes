@@ -26,15 +26,15 @@ it will be necessary to understand the relationships.*
 We do not want to enter all content with TypoScript - that would be
 tiresome, and we can't expect an editor to do that.
 
-So, we create a content element with the type " `TEXT
-<http://wiki.typo3.org/TSref/TEXT>`_ ", and create a TypoScript which
+So, we create a content element with the type ":ref:`TEXT
+<t3tsref:cobj-text>`", and create a TypoScript which
 will gather the content automatically. This example will create a page
 with a headline and the text from all content elements which are on
 the current page.
 
-First, we create the `PAGE <http://wiki.typo3.org/TSref/PAGE>`_ object
+First, we create the :ref:`PAGE <t3tsref:page>` object
 so there will be some rendering at all. In this object PAGE we will
-create the object `CONTENT <http://wiki.typo3.org/TSref/CONTENT>`_ ,
+create the object :ref:`CONTENT <t3tsref:cobj-content>`,
 which can be controlled with various TypoScript parameters. ::
 
     page = PAGE

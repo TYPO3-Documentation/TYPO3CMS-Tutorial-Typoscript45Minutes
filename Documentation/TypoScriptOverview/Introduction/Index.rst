@@ -11,15 +11,19 @@
 Introduction
 ^^^^^^^^^^^^
 
-The goal of this introduction is not the thought, "Finally it's
-working!", but, "Finally I grasped it!". In other words, this
-introduction is to give you a comprehension of how TypoScript works.
-Normally, one adds some arbitrary properties to objects; but, for
-someone who knows TypoScript, it is clear that such a practice won´t
-work like that. It saves time to know what goes on. That way,
-troubleshooting becomes easier and time is economized as one learns
-TypoScript. Everything else is just luck.
+The goal of this introduction is not to leave you  with the thought,
+"Finally, it's working!", but with the thought of "Finally, I get it!".
+In other words, this introduction is designed to give you a
+comprehensive understanding of how TypoScript works.
+
+A common TYPO3 workflow used by beginners is to try arbitrary
+properties to objects until things somehow begin to work. Understanding
+TypoScript allows you to work more quickly and effectively, and working
+with TYPO3 becomes more productive and less of a strain. Troubleshooting
+is easier and time is saved by learning TypoScript. Otherwise you are
+dependent on luck and accident.
 
 The goal of this introduction is not to have a running TYPO3
-installation at the end, but to offer an explanation why it works.
+installation at the end, but to offer an explanation of *why* and *how*
+TypoScript works.
 
