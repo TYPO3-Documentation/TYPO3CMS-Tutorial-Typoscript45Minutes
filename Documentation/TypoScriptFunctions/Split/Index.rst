@@ -37,7 +37,7 @@ which can be used to show the same content on more than one page)::
        # Here the option split property is used.
        # Alternating the number 1 and 2 are being used for rendering.
        # In this example the classes "odd" and "even" are used so we can style a table in zebra style.
-       cObjNum = 1 || 2
+       cObjNum = |*|1||2|*|
 
        # The first element is being defined (which is referenced by cObjNum)
        # The content is imported using stdWrap->current
