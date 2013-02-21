@@ -28,7 +28,7 @@ TypoScript in 45 minutes
       forAdmins, forBeginners, forIntermediates
 
 :Copyright:
-      2000-2011
+      2000-2013
 
 :Author:
       Documentation Team
@@ -78,13 +78,13 @@ future reference.
    :glob:
 
    Introduction/Index
-   Typoscript-AQuickOverview/Index
+   TypoScriptOverview/Index
    ReadingContentRecords/Index
    CreateAMenu/Index
    InsertContentInATemplate/Index
    UsingCssStyledContent/Index
-   CoaTyposcriptObjects/Index
-   TyposcriptFunctions/Index
-   UsingStdwrapCorrectly/Index
+   TypoScriptObjects/Index
+   TypoScriptFunctions/Index
+   UsingStdWrap/Index
    Outlook/Index
    Targets

@@ -9,7 +9,7 @@
 Reading content records
 -----------------------
 
-.. figure:: ../../Images/icon_note.png
+.. figure:: ../Images/icon_note.png
    :alt: Note
 
 **Note**
@@ -100,7 +100,7 @@ index, etc.)
    :titlesonly:
    :glob:
 
-   TheVariousContentElements/Index
+   TheContentElements/Index
    CssStyledContent/Index
    Stylescontentget/Index
 
