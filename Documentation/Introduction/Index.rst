@@ -29,7 +29,9 @@ What's new
 
 This document is the "published" version of the wiki page
 `http://wiki.typo3.org/Ts45min <http://wiki.typo3.org/Ts45min>`_ .
-The examples have been reworked for compatibility with TYPO3 CMS 6.0.
+For TYPO3 6.0 the whole text has been copyedited. Old examples were
+adjusted, some paths, which have changed, were updated and the
+screenshots refreshed.
 
 
 .. _credits:

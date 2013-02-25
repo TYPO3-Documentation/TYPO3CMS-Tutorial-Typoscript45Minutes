@@ -56,9 +56,9 @@ With **orderedStdWrap** you can do the same, but more conveniently. ::
            30.prioriCalc = 1
     }
 
-Using :ref:`orderedStdWrap <stdwrap-orderedstdwrap>` we can execute
-multiple stdWrap functions in a freely selectable order without having
-to nest them inside other stdWrap calls. The execution order inside
-orderedStdWrap is just defined by the numbers you provide. The result
-will again be "120".
+Using :ref:`orderedStdWrap <t3tsref:stdwrap-orderedstdwrap>` we can
+execute multiple stdWrap functions in a freely selectable order without
+having to nest them inside other stdWrap calls. The execution order
+inside orderedStdWrap is just defined by the numbers you provide. The
+result will again be "120".
 

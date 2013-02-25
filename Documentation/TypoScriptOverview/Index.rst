@@ -38,7 +38,6 @@ TypoScript works.
    :titlesonly:
    :glob:
 
-   Introduction/Index
    BackendConfiguration/Index
    Prerequisites/Index
    WhyTypoScript/Index
