@@ -13,27 +13,31 @@ Heed the order
 
 An important limitation should be highlighted:
 
-**The single functions are executed in the order specified by the `
-reference <t3tsref:start>`.**
+**Note:** The single functions are executed in the order specified by
+the :ref:`TypoScript reference <t3tsref:start>`!
 
-If we don't pay attention to this fact the results might look
-different from what we expected. ::
+If we did not pay attention to this fact, the results might easily
+look different from what we expected. ::
 
     10 = TEXT
-    10.value = Hello World
-    10.case = upper
     10.field = header # assuming the header contains "typo3" (small case characters)
-    10.stdWrap.wrap = <strong>|</strong>
+    10.wrap = <strong>|</strong>
+    10.case = upper
 
-    # results in the following:
-    <STRONG>TYPO3</STRONG>
+This results in the following::
+
+    <strong>TYPO3</strong>
 
 The following happens in this example: First, the value of the TEXT
-object is set to "Hello world". We know that the TypoScript
-configuration is stored in an array. The sorting in this array is not
-like the sorting in TypoScript. The sorting in the array is
-constrained by definitions of the ordering of stdWrap. This order is
-mirrored by the reference. After a short look into the TSref it should
-be clear that, first, "field" is processed, thereafter stdWrap (and
-with it "stdWrap.wrap"), and in the end, "case".
+object is imported from the field "header". We know that the TypoScript
+configuration is `stored in an array <typoscript-array>`. The sorting
+in this array is not necessarily the same as the sorting in our
+TypoScript. Instead, the sorting in the array is constrained by
+definitions of the ordering of stdWrap. This order is mirrored by the
+TypoScript reference.
+
+After a short :ref:`look into the TSref <t3tsref:stdwrap>` it should be
+clear that, first, "field" is processed, thereafter "case", and in the
+end, "wrap". This order is the reason, why the words of the tag "strong"
+themselves are *not* uppercased.
 

@@ -31,6 +31,6 @@ how it will be rendered.
 - The "how" is controlled by TypoScript.
 
 With TypoScript we define how the individual content elements are
-rendered in the frontend. For example, we use TypoScript to add a DIV
+rendered in the frontend. For example, we use TypoScript to add a <div>
 tag to an element, or the <h1> tag to a headline.
 

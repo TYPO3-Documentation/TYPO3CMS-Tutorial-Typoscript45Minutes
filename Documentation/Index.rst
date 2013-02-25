@@ -28,7 +28,7 @@ TypoScript in 45 minutes
       forAdmins, forBeginners, forIntermediates
 
 :Copyright:
-      2000-2013
+      2008-2013
 
 :Author:
       Documentation Team

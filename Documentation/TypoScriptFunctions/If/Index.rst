@@ -12,40 +12,41 @@
 if
 ^^
 
-The perhaps most difficult TYPO3 function is the "if" function,
-because every programmer who is familiar with it instinctively misuses
-it. Therefore, we have some examples to show how it works.
+The perhaps most difficult TYPO3 function is the "if" function, because
+every programmer, who is familiar with if functions from somewhere
+else, instinctively misuses it. Therefore, we have some examples to
+show, how it works correctly.
 
-Generally, the if function returns "true" if all conditions are
-fulfilled. This resembles a Boolean AND combination. If "false" should
-be returned, we can use the "negate" option to negate the result
-(!(true)). ::
+Generally, the if function returns "true", if **all** conditions are
+fulfilled. This resembles a boolean AND combination. If "false" should
+be returned in that case, we can use the "negate" option to negate the
+result (like a !(true)). ::
 
    10 = TEXT
    10 {
 
-       # Content of the text-element
-       value = The L parameter is passed as GET var
+       # Content of the TEXT object.
+       value = The L parameter is passed as GET variable.
 
-       # Results in "true" and leads to rendering the upper value if the
-       # GET/POST parameter is passed with a value which is not 0
+       # Results in "true" and leads to rendering the upper value, if the
+       # GET/POST parameter is passed with a value, which is not 0.
        if.isTrue.data = GP:L
    }
 
-With the use of "if" it is also possible to compare values. Therefore
-we use the parameter if.value. ::
+With the use of "if" it is also possible to compare values. For this
+purpose we use the parameter "if.value". ::
 
    10 = TEXT
    10 {
 
-       # WARNING: this value resembles the value of the text element not that of the "if"
-       value = 3 is bigger than 2
+       # WARNING: This value resembles the value of the TEXT object, not that of the "if"!
+       value = 3 is bigger than 2.
 
-       # compare parameter of the "if"-funtion
+       # Compare parameter of the "if" function.
        if.value = 2
 
-       # please note: the sorting order is backwards, this example
-       # returns the sentence "3 isGreaterThan 2"
+       # Please note: The sorting order is "backwards",
+       # returning the sentence "3 isGreaterThan 2".
        if.isGreaterThan = 3
    }
 
@@ -54,13 +55,13 @@ functions, all kinds of variables can be compared. ::
 
    10 = TEXT
    10 {
-       # value of the text element
-       value = The record can be shown because the starting date has passed.
+       # Value of the TEXT object.
+       value = The record can be shown, because the starting date has passed.
 
-       # condition of the if-clause
+       # Condition of the if clause (number of seconds since January 1st, 1970).
        if.value.data = date:U
 
-       # condition backwards again: start time isLessThan date:U
+       # Condition backwards again: Start time isLessThan date:U.
        if.isLessThan.field = starttime
    }
 

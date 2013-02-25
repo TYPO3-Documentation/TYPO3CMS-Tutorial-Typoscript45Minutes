@@ -11,9 +11,9 @@
 Multilanguage functionality
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-:ref:`stdWrap <t3tsref:stdwrap>` offers a property "lang" with which
-it is possible to translate simple texts which are implemented via
-TypoScript on a page. ::
+stdWrap offers a property ":ref:`lang <t3tsref:stdwrap-lang>`" with
+which it is possible to translate simple texts which are implemented
+on a page via TypoScript. ::
 
     10 = TEXT
     10.value = Imprint
@@ -37,6 +37,6 @@ TypoScript. ::
     10.lang.de = {$text.de.imprint}
     10.typolink.parameter = 10
 
-This way the translation is not depending on the TS configuration of
-the item.
+This way, the place of the translation is not depending on the
+TypoScript configuration of the item.
 

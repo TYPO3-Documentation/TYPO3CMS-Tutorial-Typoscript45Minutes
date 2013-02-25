@@ -12,49 +12,50 @@
 numRows
 ^^^^^^^
 
-In TypoScript, there are not only big mighty functions, but also small
-mighty ones. An example is the function numRows, which sole purpose is
-to return the number of lines from a select query. Just like the
-object CONTENT, numRows uses the select function. The query is
-generated similarly in both cases. The difference is only whether the
-number of lines is returned, or the actual content of those lines.
+In TypoScript, there are not only *big* mighty functions, but also
+*small* mighty functions. An example is the function numRows, which has
+the sole purpose to return the number of lines of a SELECT query. Just
+like the object CONTENT, numRows uses the :ref:`select` function. The
+query is generated similarly in both cases. The difference is only
+whether the number of lines or the actual content of those lines is
+returned.
 
-In cooperation with the "if" function, it is possible to generate some
-nice stuff. An example is a stylesheet for the content of the right
-column in the backend, which is only used if there actually is any
-content in the right column. ::
+In cooperation with the ":ref:`if`" function, it is possible to
+generate some nice stuff. An example is a stylesheet for the content of
+the right column in the backend, which is only used if there actually
+also is some content in the column. ::
 
    temp.headerdata = TEXT
    temp.headerdata {
-           value = <link rel="stylesheet" type="text/css" href="fileadmin/templates/rechteSpalte.css">
+           value = <link rel="stylesheet" type="text/css" href="fileadmin/templates/rightColumn.css">
 
-           # if the select returns at least 1 line insert the stylesheet
+           # If the select returns at least one line, insert the stylesheet.
            if.isTrue.numRows {
 
-                   # check if this page
+                   # Check if this page
                    pidInList = this
 
-                   # has content in table tt_content
+                   # has content in table tt_content,
                    table = tt_content
 
-                   # SQL: WHERE colPos = 2
+                   # which belongs in the right column (the column with "colPos=2").
                    select.where = colPos=2
-     }
+           }
    }
 
-   # copy temp.headerdata in page.headerData.66 (and overwrite page.headerData.66)
+   # Copy temp.headerdata in page.headerData.66 (and overwrite page.headerData.66).
    page.headerData.66 < temp.headerdata
 
-Or, use another template if there is content in the right column::
+Or, use another template, if there is content in the right column::
 
-   #a COA (Content Object Array) allows to merge many objects
+   # A COA (content object array) allows us to merge many objects.
    temp.maintemplate= COA
    temp.maintemplate {
 
-           # 10 will only be embedded, if the if-Statement returns „true"
+           # 10 will only be embedded, if the "if" Statement returns "true".
            10 = COA
            10 {
-                   # we use a copy of the select from css_styled_content
+                   # We use a copy of the select from css_styled_content.
                    if.isTrue.numRows < styles.content.getRight
 
                    10 = TEMPLATE
@@ -64,7 +65,7 @@ Or, use another template if there is content in the right column::
                    }
            }
 
-           # 20 will only be embedded, if the if-Statement returns „true"
+           # 20 will only be embedded, if the "if" Statement returns "true".
            20 = COA
            20 {
                    if.isFalse.numRows < styles.content.getRight

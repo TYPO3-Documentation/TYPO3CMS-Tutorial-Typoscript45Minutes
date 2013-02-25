@@ -11,20 +11,22 @@
 Objects executing database queries
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- CONTENT offers the functionality to access arbitrary tables of TYPO3
-  internals. This doesn't just include tt\_content, but also tables of
-  extensions, and so on, can be referenced. The function select allows
-  us to generate complex SQL queries.
+- :ref:`CONTENT <t3tsref:cobj-content>` offers the functionality to
+  access arbitrary tables of TYPO3 internals. This does not just
+  include tt\_content, but also tables of extensions, and so on, can be
+  referenced. The function "select" allows us to generate complex SQL
+  queries.
 
-- RECORDS offers the functionality to reference specific data records.
-  This is very helpful, if the same text has to be on all pages. By
-  using RECORDS, a single content element can be defined which will be
-  shown. Thus, an editor can edit the content without the need to copy
-  the element numerous times. The object is also being used if the
-  content element "insert record" is used.
+- :ref:`RECORDS <t3tsref:cobj-records>` offers the functionality to
+  reference specific data records. This is very helpful, if the same
+  text has to be present on all pages. By using RECORDS, a single
+  content element can be defined, which will be shown. Thus, an editor
+  can edit the content without the need to copy the element numerous
+  times. This object is also used, if the content element "insert
+  record" is used.
 
-  In the following example, the email address of the address record is
-  rendered and linked as e-mail at the same time. ::
+  In the following example, the email address from an address record is
+  rendered and linked as email at the same time. ::
 
      page.80 = RECORDS
      page.80 {
@@ -38,12 +40,13 @@ Objects executing database queries
            }
      }
 
-- HMENU imports the page tree and offers comfortable ways to generate a
-  page menu. Aside the menu which renders the page tree, there are some
-  special menus which allow various ways of usage. This object imports
-  the internal structure for the menu. How this menu will be rendered
-  depends on menu objects like TMENU (text-menu) or GMENU (graphical
-  menu). For every menu level, the object can be changed. Within a menu
-  level, there various menu items. For every item, we can define the
-  differing states (NO = normal, ACT = active, etc.).
+- :ref:`HMENU <t3tsref:cobj-hmenu>` imports the page tree and offers
+  comfortable ways to generate a menu of pages. Aside the menu which
+  renders the page tree, there are some special menus, which allow
+  various ways of usage. This object imports the internal structure for
+  these menus. How a menu will be rendered depends on menu objects like
+  TMENU (text menu) or GMENU (graphical menu). For every menu level,
+  the object can be changed. Within a menu level, there are various
+  menu items. For every item, we can define the differing states (NO =
+  normal, ACT = active, etc.).
 
