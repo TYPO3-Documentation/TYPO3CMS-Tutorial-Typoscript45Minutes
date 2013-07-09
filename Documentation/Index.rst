@@ -9,7 +9,7 @@
 .. _start:
 
 ========================
-TypoScript in 45 minutes
+TypoScript in 45 Minutes
 ========================
 
 :Previous Key:

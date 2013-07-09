@@ -1,7 +1,7 @@
 # Settings.yml
 ---
 conf.py:
-  project: TypoScript in 45 minutes
+  project: TypoScript in 45 Minutes
   copyright: 2008-2013
   version: 1.2.0
   release: 1.2.0
