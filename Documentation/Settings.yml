@@ -3,6 +3,6 @@
 conf.py:
   project: TypoScript in 45 Minutes
   copyright: 2008-2013
-  version: 6.0
-  release: 6.0
+  version: 6.1
+  release: 6.1
 ...

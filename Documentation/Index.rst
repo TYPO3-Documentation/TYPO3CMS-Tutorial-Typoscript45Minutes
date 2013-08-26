@@ -16,7 +16,7 @@ TypoScript in 45 Minutes
       doc_tut_ts45
 
 :Version:
-      6.0
+      6.1
 
 :Language:
       en
