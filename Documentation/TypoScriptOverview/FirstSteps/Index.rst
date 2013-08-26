@@ -80,14 +80,11 @@ the views can be copied and changed just a little bit in the new
 object. (For example, we can copy the normal page content into the
 print view, but leave away the menu.)
 
-.. figure:: ../../Images/icon_note.png
-   :alt: Note
+.. note::
 
-**Note**
-
-*The output of these examples where both normal text. Especially with
-output formats like WML the HTTP header should be changed etc. This is
-not covered here.*
+   *The output of these examples were both normal text. Especially with
+   output formats like WML the HTTP header should be changed etc. This is
+   not covered here.*
 
 The previous example would look like this PHP array::
 

@@ -11,17 +11,14 @@
 Reading content records
 -----------------------
 
-.. figure:: ../Images/icon_note.png
-   :alt: Note
+.. note::
 
-**Note**
-
-*The following chapter serves as an example and for a better
-understanding of the background and relationships. The following
-scripts are from css\_styled\_content, and it's not necessary to write
-them by hand. If a content element has to be rendered totally
-differently, or you programmed an extension with new content elements,
-it will be necessary to understand the relationships.*
+   *The following chapter serves as an example and for a better
+   understanding of the background and relationships. The following
+   scripts are from css\_styled\_content, and it's **not** necessary to
+   write them by hand. If a content element has to be rendered totally
+   differently, or you programmed an extension with new content elements,
+   it will be necessary to understand the relationships.*
 
 We do not want to enter all content written in TypoScript - that would
 be tiresome, and we can't expect an editor to do that.
