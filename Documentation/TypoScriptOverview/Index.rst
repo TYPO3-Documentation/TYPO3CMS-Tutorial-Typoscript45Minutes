@@ -26,7 +26,7 @@ properties to objects until things somehow begin to work. Actually
 understanding TypoScript however allows you to work more quickly and
 effectively, and working with TYPO3 becomes more productive and less of
 a strain. Troubleshooting is easier and time is saved by learning
-TypoScript. Otherwise you are dependent on luck and accident.
+TypoScript properly. Otherwise you are dependent on luck and accident.
 
 The goal of this introduction is not to have a running TYPO3
 installation at the end, but to offer an explanation of *why* and *how*
