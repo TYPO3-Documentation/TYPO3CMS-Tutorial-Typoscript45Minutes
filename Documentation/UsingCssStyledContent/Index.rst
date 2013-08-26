@@ -41,7 +41,7 @@ which class, and to add CSS styles for that class. ::
 
    <div class="csc-textpic-imagewrap">...
 
-The descriptions of the classes are simple and - ones you got familiar
+The descriptions of the classes are simple and - once you got familiar
 with the TYPO3 internals - intuitive. All classes start with "csc";
 this stands for "css\_styled\_content". In the example, this is
 followed by "textpic", which stands for the TypoScript element
