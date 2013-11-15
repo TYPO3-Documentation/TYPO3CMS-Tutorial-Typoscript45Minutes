@@ -16,7 +16,7 @@ Until now we only have rendering definitions for content elements
 containing text. But there are different kinds of content elements. If
 we want to render an image instead of a text, we have to choose
 different fields from tt\_content, and also render them differently
-compared to standard text. The same applies to "text with image",
+compared to standard text. The same applies to "text & images",
 "headline", etc.
 
 The type of a content element is stored in the column

@@ -55,8 +55,8 @@ Objects rendering content
   objects.
 
 - :ref:`IMGTEXT <t3tsref:cobj-imgtext>` allows us to generate images
-  inline with text. It is used for the content element "text with
-  image".
+  inline with text. It is used for the content element "text &
+  images".
 
 - :ref:`FORM <t3tsref:cobj-form>` generates an HTML-form.
 
