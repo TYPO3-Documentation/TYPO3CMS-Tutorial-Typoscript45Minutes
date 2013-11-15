@@ -46,7 +46,7 @@ with the TYPO3 internals - intuitive. All classes start with "csc";
 this stands for "css\_styled\_content". In the example, this is
 followed by "textpic", which stands for the TypoScript element
 "textpic" (which is used to render content elements of the type "text
-with image"). "imagewrap" suggests that the DIV container wraps around
+& images"). "imagewrap" suggests that the DIV container wraps around
 an image.
 
 What is happening in detail can be understood by making an empty page
