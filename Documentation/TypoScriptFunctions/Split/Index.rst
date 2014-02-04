@@ -24,8 +24,8 @@ which can be used to show the same content on more than one page)::
      20 = TEXT
 
      # The content of the field "bodytext" is imported (from $cObj->data-array).
-     20.field = bodytext
-     20.split {
+     20.stdWrap.field = bodytext
+     20.stdWrap.split {
 
        # The separation character is defined (char = 10 is the newline character).
        token.char = 10
@@ -51,5 +51,5 @@ which can be used to show the same content on more than one page)::
      }
 
      # A general wrap to create valid table markup.
-     20.wrap = <TABLE width="368"> | </TABLE>
+     20.stdWrap.wrap = <TABLE width="368"> | </TABLE>
 

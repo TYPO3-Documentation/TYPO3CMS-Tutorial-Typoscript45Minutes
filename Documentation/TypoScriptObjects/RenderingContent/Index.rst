@@ -24,12 +24,11 @@ Objects rendering content
   the page with PID 1.
 
 - :ref:`TEXT <t3tsref:cobj-text>` is for the rendering of standard text
-  or the content of fields. The TEXT object implements the :ref:`stdWrap
-  <t3tsref:stdwrap>` functionality on the very rootlevel of the object.
-  This is non-standard! ::
+  or the content of fields. The TEXT object also offers :ref:`stdWrap
+  <t3tsref:stdwrap>` functionality with the property "stdWrap" ::
 
    lib.test1 = TEXT
-   lib.test1.field = uid
+   lib.test1.stdWrap.field = uid
 
 - :ref:`FILE <t3tsref:cobj-file>` imports the content of a file, directly.
 

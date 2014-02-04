@@ -18,5 +18,5 @@ example::
 
     10.typolink.title.cObject = TEXT
     10.typolink.title.cObject.value = Imprint
-    10.typolink.title.cObject.lang.de = Impressum
+    10.typolink.title.cObject.stdWrap.lang.de = Impressum
 

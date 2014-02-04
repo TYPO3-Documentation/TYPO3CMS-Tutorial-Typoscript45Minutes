@@ -20,9 +20,9 @@ If we did not pay attention to this fact, the results might easily
 look different from what we expected. ::
 
     10 = TEXT
-    10.field = header # assuming the header contains "typo3" (small case characters)
-    10.wrap = <strong>|</strong>
-    10.case = upper
+    10.stdWrap.field = header # assuming the header contains "typo3" (small case characters)
+    10.stdWrap.wrap = <strong>|</strong>
+    10.stdWrap.case = upper
 
 This results in the following::
 

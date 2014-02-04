@@ -63,16 +63,16 @@ we do the rendering of each content element using objects of the type
       10 = TEXT
 
       # The field tt_content.header normally holds the headline.
-      10.field = header
+      10.stdWrap.field = header
 
-      10.wrap = <h1>|</h1>
+      10.stdWrap.wrap = <h1>|</h1>
 
       20 = TEXT
 
       # The field tt_content.bodytext holds the content text.
-      20.field = bodytext
+      20.stdWrap.field = bodytext
 
-      20.wrap = <p>|</p>
+      20.stdWrap.wrap = <p>|</p>
     }
 
 The object CONTENT executes an SQL query on the database. The query is

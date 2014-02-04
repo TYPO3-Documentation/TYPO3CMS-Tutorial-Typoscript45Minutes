@@ -22,7 +22,7 @@ links. ::
            link = TEXT
 
            # Here is how the tag is processed and parsed.
-           link {
+           link.stdWrap {
                    current = 1
                    typolink {
 

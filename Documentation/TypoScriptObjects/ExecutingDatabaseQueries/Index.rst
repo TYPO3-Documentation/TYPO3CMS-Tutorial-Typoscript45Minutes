@@ -35,8 +35,8 @@ Objects executing database queries
            conf.tt_address = COA
            conf.tt_address {
                    20 = TEXT
-                   20.field = email
-                   20.typolink.parameter.field = email
+                   20.stdWrap.field = email
+                   20.stdWrap.typolink.parameter.field = email
            }
      }
 

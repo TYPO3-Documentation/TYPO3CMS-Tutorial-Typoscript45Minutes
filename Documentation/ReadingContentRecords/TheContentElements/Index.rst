@@ -33,8 +33,8 @@ individual content elements will get rendered. ::
 
       # The content type "headline" is stored internally as "header".
       header = TEXT
-      header.field = header
-      header.wrap = <h1>|</h1>
+      header.stdWrap.field = header
+      header.stdWrap.wrap = <h1>|</h1>
 
       # Text is used for the text content element.
       text = COA
@@ -42,13 +42,13 @@ individual content elements will get rendered. ::
 
         10 = TEXT
         # The field tt_content.header normally holds the headline.
-        10.field = header
-        10.wrap = <h1>|</h1>
+        10.stdWrap.field = header
+        10.stdWrap.wrap = <h1>|</h1>
 
         20 = TEXT
         # The field tt_content.bodytext holds the content text.
-        20.field = bodytext
-        20.wrap = <p>|</p>
+        20.stdWrap.field = bodytext
+        20.stdWrap.wrap = <p>|</p>
 
       }
 
