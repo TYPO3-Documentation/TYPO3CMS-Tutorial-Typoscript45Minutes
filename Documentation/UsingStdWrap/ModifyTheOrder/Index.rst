@@ -26,9 +26,9 @@ done from left to right (no mathematical precedence like "\*" before
 "width" gets 20 added to it. ::
 
     10 = TEXT
-    10.field = width   # Assumption: "width" is 100
-    10.wrap = |+20
-    10.prioriCalc = 1
+    10.stdWrap.field = width   # Assumption: "width" is 100
+    10.stdWrap.wrap = |+20
+    10.stdWrap.prioriCalc = 1
 
 But this is not the case! The result which will be rendered is:
 "100+20". The function "prioriCalc" is executed *before* the function
@@ -38,14 +38,14 @@ that "field" *and "wrap"* are executed before "prioriCalc". This can be
 achieved by using the following expression::
 
     10 = TEXT
-    10.field = width   # Assumption: "width" is 100
-    10.stdWrap.wrap = |+20
-    10.prioriCalc = 1
+    10.stdWrap.field = width   # Assumption: "width" is 100
+    10.stdWrap.stdWrap.wrap = |+20
+    10.stdWrap.prioriCalc = 1
 
-We do not use "wrap" directly, but use it nested inside stdWrap. The
-stdWrap function is executed after "field", but before "prioriCalc",
-thus "100+20" is wrapped, and *after that* the function "prioriCalc"
-is executed, resulting in the value "120".
+We do not use "wrap" directly, but use it nested inside another
+stdWrap. The stdWrap function is executed after "field", but before
+"prioriCalc", thus "100+20" is wrapped, and *after that* the function
+"prioriCalc" is executed, resulting in the value "120".
 
 With **orderedStdWrap** you can do the same, but more conveniently. ::
 

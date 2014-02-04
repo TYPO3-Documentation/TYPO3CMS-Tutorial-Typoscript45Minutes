@@ -30,7 +30,7 @@ also is some content in the column. ::
            value = <link rel="stylesheet" type="text/css" href="fileadmin/templates/rightColumn.css">
 
            # If the select returns at least one line, insert the stylesheet.
-           if.isTrue.numRows {
+           stdWrap.if.isTrue.numRows {
 
                    # Check if this page
                    pidInList = this

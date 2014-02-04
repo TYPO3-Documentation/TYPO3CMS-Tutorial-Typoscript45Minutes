@@ -29,7 +29,7 @@ the specified text according to the defined parameters. One example::
         value = Example link
 
         # Here comes the typolink function.
-        typolink {
+        stdWrap.typolink {
 
             # This is the destination of the link,
             parameter = http://www.example.com/
@@ -64,7 +64,7 @@ example will generate exactly the same HTML code. ::
 
         # The parameter with the summary of the parameters of the first
         # example (explanation follows below).
-        typolink.parameter = www.example.com _blank linkclass
+        stdWrap.typolink.parameter = www.example.com _blank linkclass
     }
 
 The "parameter" part from the typolink function analyzes the entry on
@@ -93,7 +93,7 @@ the target part anyway, because the class has to be at the third place.
 To do that we can use the minus sign "-" instead of a target. The line
 would then be the following::
 
-   typolink.parameter = www.example.com - linkclass
+   stdWrap.typolink.parameter = www.example.com - linkclass
 
 With the usage of the typolink function and the target attribute, it is
 also possible to open links in JavaScript popups. ::
@@ -104,7 +104,7 @@ also possible to open links in JavaScript popups. ::
         # The link text.
         value = Open a popup window.
 
-        typolink {
+        stdWrap.typolink {
              # First parameter is the page ID of the target page,
              # second parameter is the size of the popup window.
              parameter = 10 500x400
@@ -124,7 +124,7 @@ out of the database. ::
 
    lib.stdheader >
    lib.stdheader = TEXT
-   lib.stdheader {
+   lib.stdheader.stdWrap {
       field = header
       typolink.parameter.field = header_link
       wrap = <h2>|</h2>

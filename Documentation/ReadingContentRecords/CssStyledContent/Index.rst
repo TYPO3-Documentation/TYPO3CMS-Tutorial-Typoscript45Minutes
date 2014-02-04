@@ -45,8 +45,8 @@ of the header can be overwritten::
 
     # Every header will be rendered with h1 tags, independently from the properties in the content element.
     tt_content.header = TEXT
-    tt_content.header.wrap = <h1>|</h1>
-    tt_content.header.field = header
+    tt_content.header.stdWrap.wrap = <h1>|</h1>
+    tt_content.header.stdWrap.field = header
 
 But, not only doesn't "renderObj" have to be recreated; the CONTENT
 object itself is also already defined in css\_styled\_content.

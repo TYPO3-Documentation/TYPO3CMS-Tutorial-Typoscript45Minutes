@@ -30,7 +30,7 @@ result (like a !(true)). ::
 
        # Results in "true" and leads to rendering the upper value, if the
        # GET/POST parameter is passed with a value, which is not 0.
-       if.isTrue.data = GP:L
+       stdWrap.if.isTrue.data = GP:L
    }
 
 With the use of "if" it is also possible to compare values. For this
@@ -43,11 +43,11 @@ purpose we use the parameter "if.value". ::
        value = 3 is bigger than 2.
 
        # Compare parameter of the "if" function.
-       if.value = 2
+       stdWrap.if.value = 2
 
        # Please note: The sorting order is "backwards",
        # returning the sentence "3 isGreaterThan 2".
-       if.isGreaterThan = 3
+       stdWrap.if.isGreaterThan = 3
    }
 
 Because the properties of the "if" function implement stdWrap
@@ -59,9 +59,9 @@ functions, all kinds of variables can be compared. ::
        value = The record can be shown, because the starting date has passed.
 
        # Condition of the if clause (number of seconds since January 1st, 1970).
-       if.value.data = date:U
+       stdWrap.if.value.data = date:U
 
        # Condition backwards again: Start time isLessThan date:U.
-       if.isLessThan.field = starttime
+       stdWrap.if.isLessThan.field = starttime
    }
 

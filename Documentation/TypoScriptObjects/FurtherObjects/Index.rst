@@ -51,8 +51,8 @@ Further objects
   more. The GIFBUILDER object itself again offers some objects, like
   TEXT or IMAGE, which are **not** related to the standard TEXT or
   IMAGE objects, respectively. While working with the GIFBUILDER, we
-  have to watch out that we do not confuse the objects, even though they
-  have the same name.
+  have to watch out that we do not confuse the objects with one
+  another.
 
 We did not introduce all objects which exist in TypoScript, but we
 have named the most important ones.
