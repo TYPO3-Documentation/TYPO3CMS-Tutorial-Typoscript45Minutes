@@ -35,7 +35,7 @@ property offers stdWrap, for example "string / :ref:`stdWrap
     20.stdWrap.typolink...
 
 These objects have a property :ref:`stdWrap <t3tsref:stdwrap>` of type
-"stdWrap". ::
+"stdWrap".
 
 
 .. toctree::
