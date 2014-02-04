@@ -137,7 +137,7 @@ exceptions to this.
 With the "." as a separator parameter, functions and child objects are
 referenced and can be assigned values accordingly. ::
 
-   mypage.10.wrap = <h1>|</h1>
+   mypage.10.stdWrap.wrap = <h1>|</h1>
 
 **Which objects, parameters, and functions exist, can be referenced in
 the :ref:`TypoScript Reference (TSref) <t3tsref:start>`.**
@@ -149,17 +149,17 @@ assigned, things can get more complicated. ::
     mypage.typeNum = 0
     mypage.10 = TEXT
     mypage.10.value = Hello world
-    mypage.10.typolink.parameter = http://www.typo3.org/
-    mypage.10.typolink.additionalParams = &parameter=value
+    mypage.10.stdWrap.typolink.parameter = http://www.typo3.org/
+    mypage.10.stdWrap.typolink.additionalParams = &parameter=value
 
     # The function name "ATagParams" does not use the standardized
     # "camelCase".
-    mypage.10.typolink.ATagParams = class="externalwebsite"
-    mypage.10.typolink.extTarget = _blank
-    mypage.10.typolink.title = The website of TYPO3
-    mypage.10.postCObject = TEXT
-    mypage.10.postCObject.value = This text also appears in the link text
-    mypage.10.postCObject.wrap = |, because the postCObject is executed before the typolink function.
+    mypage.10.stdWrap.typolink.ATagParams = class="externalwebsite"
+    mypage.10.stdWrap.typolink.extTarget = _blank
+    mypage.10.stdWrap.typolink.title = The website of TYPO3
+    mypage.10.stdWrap.postCObject = TEXT
+    mypage.10.stdWrap.postCObject.value = This text also appears in the link text
+    mypage.10.stdWrap.postCObject.stdWrap.wrap = |, because the postCObject is executed before the typolink function.
 
 To keep it simple, **curly brackets {}** are allowed to define object
 levels. *Note* that the opening curly bracket always must be *on the
@@ -177,28 +177,30 @@ than one line. The above example can be rewritten as the following::
       10 {
 
          value = Hello world
-         typolink {
+         stdWrap {
+            typolink {
 
-            parameter = http://www.typo3.org/
-            additionalParams = &parameter=value
+               parameter = http://www.typo3.org/
+               additionalParams = &parameter=value
 
-            # The function name "ATagParams" does not use the standardized
-            # "camelCase".
-            ATagParams = class="externalwebsite"
+               # The function name "ATagParams" does not use the standardized
+               # "camelCase".
+               ATagParams = class="externalwebsite"
 
-            extTarget = _blank
-            title = The website of TYPO3
+               extTarget = _blank
+               title = The website of TYPO3
+            }
+
+            postCObject = TEXT
+            postCObject {
+
+               value = This text also appears in the link text
+               stdWrap.wrap (
+                |, because the postCObject is executed before the typolink function.
+               )
+            }
          }
-
-         postCObject = TEXT
-         postCObject {
-
-            value = This text also appears in the link text
-            wrap (
-             |, because the postCObject is executed before the typolink function.
-             )
-          }
-       }
+      }
     }
 
 Using this style of notation the danger of typographic errors is

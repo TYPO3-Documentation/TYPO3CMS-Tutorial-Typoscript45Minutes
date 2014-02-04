@@ -18,7 +18,7 @@ highlight a few special functions and properties.
 
 The :ref:`stdWrap <t3tsref:stdwrap>` property can only be used with an
 object, if it is explicitly defined for that object in the
-:ref:`TypoScript reference <t3tsref:start>`. For example most cObjects
+:ref:`TypoScript reference <t3tsref:start>`. For example the cObjects
 have a property "stdWrap", which is of the type "stdWrap" and offers
 stdWrap functionality. If we have a property of another type, e.g. of
 the type "wrap", then this property does **not** have :ref:`stdWrap
@@ -30,18 +30,12 @@ property offers stdWrap, for example "string / :ref:`stdWrap
     10 = IMAGE
     10.stdWrap.typolink...
 
-The object has a property :ref:`stdWrap <t3tsref:stdwrap>` of type
+    20 = TEXT
+    20.value = Hello World
+    20.stdWrap.typolink...
+
+These objects have a property :ref:`stdWrap <t3tsref:stdwrap>` of type
 "stdWrap". ::
-
-    10 = TEXT
-    10.value = Hello World
-    10.typolink...
-
-The object TEXT in contrast does **not** have a property "stdWrap",
-under which the stdWrap functions would be available. Instead, the
-cObject TEXT offers the stdWrap functions on the very rootlevel of the
-object (as shown with the property "typolink" above). This is
-non-standard!
 
 
 .. toctree::

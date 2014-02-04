@@ -17,8 +17,8 @@ on a page via TypoScript. ::
 
     10 = TEXT
     10.value = Imprint
-    10.lang.de = Impressum
-    10.typolink.parameter = 10
+    10.stdWrap.lang.de = Impressum
+    10.stdWrap.typolink.parameter = 10
 
 However, texts like these are hard to translate by external editors.
 Especially with unknown languages, this can become a challenge.
@@ -34,8 +34,8 @@ TypoScript. ::
     # Setup
     10 = TEXT
     10.value = {$text.imprint}
-    10.lang.de = {$text.de.imprint}
-    10.typolink.parameter = 10
+    10.stdWrap.lang.de = {$text.de.imprint}
+    10.stdWrap.typolink.parameter = 10
 
 This way, the place of the translation is not depending on the
 TypoScript configuration of the item.

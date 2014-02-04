@@ -23,7 +23,7 @@ the file size. ::
            # Link description and file name at the same time.
            value = my_image.png
 
-           filelink {
+           stdWrap.filelink {
 
                    # Path to the file.
                    path = fileadmin/images/
