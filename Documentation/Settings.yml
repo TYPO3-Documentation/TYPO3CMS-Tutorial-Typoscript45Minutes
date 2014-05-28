@@ -5,4 +5,7 @@ conf.py:
   copyright: 2008-2013
   version: 6.1
   release: 6.1
+  html_theme_options:
+    github_repository: TYPO3-Documentation/TYPO3CMS-Tutorial-Typoscript45Minutes
+    github_branch: latest
 ...
