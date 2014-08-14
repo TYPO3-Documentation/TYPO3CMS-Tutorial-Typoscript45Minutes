@@ -33,7 +33,7 @@ also is some content in the column. ::
            stdWrap.if.isTrue.numRows {
 
                    # Check if this page
-                   pidInList = this
+                   select.pidInList = this
 
                    # has content in table tt_content,
                    table = tt_content
