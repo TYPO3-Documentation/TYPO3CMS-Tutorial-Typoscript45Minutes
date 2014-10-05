@@ -56,6 +56,6 @@ property "myFunction". Consequently, the entry will have no effect.
 
 No semantic error checking is done. If you define an object or
 properties, which do not exist, you will not see an error message.
-Instead the according lines of TypoScript just do not do anything. This
-should especially be considered whilst troubleshooting.
+Instead, those specific lines of TypoScript simply do nothing. This
+should be considered, especially while troubleshooting.
 
