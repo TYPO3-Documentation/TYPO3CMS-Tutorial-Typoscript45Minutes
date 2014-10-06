@@ -33,9 +33,9 @@ which can be used to show the same content on more than one page)::
        # We define which element will be used.
        # By using optionSplit we can distinguish between elements.
        # Corresponding elements with the numbers must be defined!
-       # For the rendering the numbers 1 and 2 are used in alternation.
-       # In this example the classes "odd" and "even" are used so we
-       # can style a table in zebra style.
+       # For rendering, the numbers 1 and 2 are used in alternation.
+       # In this example, the classes "odd" and "even" are used so we
+       # can zebra style a table.
        cObjNum = |*|1||2|*|
 
        # The first element is defined (which is referenced by cObjNum).
@@ -50,6 +50,6 @@ which can be used to show the same content on more than one page)::
        2.wrap = <TR class="even"><TD> | </TD></TR>
      }
 
-     # A general wrap to create valid table markup.
+     # A general wrap to create a valid table markup.
      20.stdWrap.wrap = <TABLE width="368"> | </TABLE>
 
