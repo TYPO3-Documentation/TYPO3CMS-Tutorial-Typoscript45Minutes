@@ -77,18 +77,18 @@ is of the data type "imgResource". This means that we can use the
 property.
 
 Sometimes functions are - for better recognition - marked with an
-arrow (like ->if).
+arrow (i.e. ->if).
 
-If there are multiple entries separated by a slash, it means that you
-have various possibilities to use that element. In the example above,
-you can for example see this with titleText and altText. Both can be
-either plain string or stdWrap. So, you can enter a plain string and do
-nothing more; or you can adjust and change your string by using stdWrap
-features on it; or you can leave the string empty all together and
+If there are multiple entries separated by a forward slash (/), it means that you
+have various possibilities for using with that element. In the example above,
+you can, for example, see this with titleText and altText. Both can be
+either plain string or stdWrap. Thus, you can enter a plain string and do
+nothing more, you can adjust and change your string by using stdWrap
+features on it, or you can leave the string empty altogether and
 generate the content with stdWrap only.
 
-Some important and frequently used functions are presented in the
-following subsections. This chapter is about introducing those
+Some important and frequently-used functions are presented in the
+subsections ahead. This chapter is about introducing those
 functions, and where they can be used. All details, however, can be
 found in :ref:`TSref <t3tsref:functions>`, and not here.
 
