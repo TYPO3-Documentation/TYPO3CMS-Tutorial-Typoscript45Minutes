@@ -12,14 +12,14 @@
 typolink
 ^^^^^^^^
 
-typolink is the TYPO3 function, which allows us to generate all kinds
-of links. If possible, one should use this function to generate links,
-because these will be "registered" in TYPO3. This is a prerequisite,
-for example, for realURL, which will generate search engine friendly
-paths; or for the anti-spam protection on email addresses. So, if you
-feel the urge to use <a href="..."> - **don't**!
+"typolink" is the TYPO3 function that allows us to generate many kinds
+of links. If possible, one should use this function to generate links for
+they will be "registered" in TYPO3. This is a prerequisite,
+for example, for the realURL extension, which will generate search-engine friendly
+paths or for anti-spam protection on email addresses. So, if you
+feel the urge to use <a href="..."> - **please don't**!
 
-The functionality of typolink is basically very easy. typolink links
+The functionality of typolink is very easy. "typolink" links
 the specified text according to the defined parameters. One example::
 
     temp.link = TEXT
@@ -31,10 +31,10 @@ the specified text according to the defined parameters. One example::
         # Here comes the typolink function.
         stdWrap.typolink {
 
-            # This is the destination of the link,
+            # This is the destination of the link...
             parameter = http://www.example.com/
 
-            # with a target ("_blank" opens a new window),
+            # with a target ("_blank" opens a new window)...
             extTarget = _blank
 
             # and add a class to the link so we can style it.
@@ -46,7 +46,7 @@ The example above will generate this HTML code::
 
    <a class="linkclass" target="\_blank" href="http://www.example.com/">Example link</a>
 
-typolink in some way almost works like a wrap: The content which is
+"typolink", in a way, almost works like a wrap: The content which is
 defined for example by value, will be wrapped by the HTML anchor tag.
 If no content is defined, it will be generated automatically: With a
 link to a page, the page title will be used. With an external URL, the
@@ -69,28 +69,28 @@ example will generate exactly the same HTML code. ::
 
 The "parameter" part from the typolink function analyzes the entry on
 specific characters and converts the respective sections. Initially,
-the parameter entry will be separated at the blank spaces. 
+the parameter entry will be separated by the blank spaces. 
 
-If in the first part then a dot "." is found (if the case may be in
-before a slash "/"), an external link will be generated. If the dot "."
-is found after a slash "/", a file link is generated. If an "@" is
-found, an e mail link will be generated. If an integer is found, like
-"51", an internal link to the page with the ID "51" will be generated.
-If a leading hash "#" is found, a certain content element will be
-linked (for example, for a link to the content element with the ID #234
+If, in the first part, a "." (dot) is found (in the condition that it is
+before a forward slash [/]), an external link will be generated. If the dot (.)
+is found after a forward slash (/), a file link is generated. If an ampersand (@) is
+found, an email link will be generated. If an integer is found (i.e. 51),
+an internal link to the page with the ID "51" will be generated.
+If a leading hash (#) is found, a certain content element will be
+linked (i.e., a link to the content element with the ID #234
 on the current page. In order to link to the page with ID 51 and
 content element #234, one would use 51#234).
 
 The second part of the parameter describes the destination of the link.
-Normally, this would be - like in the first example - defined by
-extTarget (for external links) or target (for internal links); but, it
+Normally, this would be, as in the first example, defined by
+extTarget (for external links) or target (for internal links), but it
 can be overwritten by using a second parameter.
 
 The third part will be converted to a class attribute for the link.
 
 If only a class attribute is needed, but no target, one has to fill
-the target part anyway, because the class has to be at the third place.
-To do that we can use the minus sign "-" instead of a target. The line
+the target part anyway, since the class has to be in the third position.
+To do that, we can use the minus sign (-) instead of a target. The line
 would then be the following::
 
    stdWrap.typolink.parameter = www.example.com - linkclass
@@ -105,7 +105,7 @@ also possible to open links in JavaScript popups. ::
         value = Open a popup window.
 
         stdWrap.typolink {
-             # First parameter is the page ID of the target page,
+             # The first parameter is the page ID of the target page,
              # second parameter is the size of the popup window.
              parameter = 10 500x400
 
@@ -130,8 +130,8 @@ out of the database. ::
       wrap = <h2>|</h2>
    }
 
-Here the first line removes the default settings from
-css\_styled\_content. Then the headline will be displayed, and a link
-will be placed with a destination, which is defined in the field
-"header\_link".
+Here, the first line removes the default settings from
+css\_styled\_content. Then, the headline (which is defined in the field
+"header\_link") will be displayed and a link
+will be placed with a destination.
 
