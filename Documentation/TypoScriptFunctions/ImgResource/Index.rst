@@ -57,7 +57,7 @@ imgResource also provides direct access to a GraphicsMagick function::
 One of the most common and best examples for the use of imgResource is
 the implementation of pictures dynamically from the Media field in the
 page properties. This has the advantage that editors can change the
-pictures without using TypoScript. This allows us to have changing
+pictures without using TypoScript. This allows us the possibility of changing
 header images for different areas of a website with a few lines of
 TypoScript. ::
 
@@ -85,11 +85,11 @@ TypoScript. ::
            }
    }
 
-The path "uploads/media/" is the location of the files, which are
-inserted in the "files" section. You find it inside the page properties
-on the tab "Resources". The TypoScript in the brackets of "import"
-completely consists of stdWrap functions, which are used to define from
-where and which image will be imported. Finally, stdWrap returns the
+The "uploads/media/" path is where the files are located, are then
+inserted in the "files" section. It can be found inside the page properties
+on the "Resources" tab. The TypoScript in the "import" brackets
+completely consists of stdWrap functions which are used to define the location (from
+where) and the file (which image) that will be imported. Finally, stdWrap returns the
 file name of the image, which will then be imported from the import
 path (uploads/media).
 
