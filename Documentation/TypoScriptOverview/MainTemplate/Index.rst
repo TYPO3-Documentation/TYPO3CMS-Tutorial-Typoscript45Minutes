@@ -11,7 +11,7 @@
 The main template
 ^^^^^^^^^^^^^^^^^
 
-The TypoScript code that is used to define how pages are rendered is
+The TypoScript code used to define how pages are rendered is
 located in the "main" template. In this template the rootlevel flag is
 set.
 
@@ -20,12 +20,13 @@ set.
 
 When the frontend renders a page, TYPO3 searches along the page tree up
 to the root page to find a "main" template. Normally, there are
-additional templates besides the "main" template. How these templates
-work together is easy to see in the template analyzer. For now, we will
-assume we are only using the "main" template.
+additional templates besides the "main" template (the template analyzer helps show how they work together).
+For now, we will assume we are only using the "main" template.
 
-TypoScript syntax is very straight-forward. On the left side, objects
+TypoScript syntax is very straightforward. On the left side, objects
 and properties are defined. Properties are assigned values, and both
-objects and properties can contain other objects. Objects properties
-are defined using dot "." notation.
+objects and properties can contain other objects. Object properties
+are defined by using the dot "." notation.
 
+SUGGESTION: give an example for a newbie to understand the concept of dot notation.
+page.10=???
