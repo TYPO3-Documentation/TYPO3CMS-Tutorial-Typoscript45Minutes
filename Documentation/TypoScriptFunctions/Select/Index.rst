@@ -12,9 +12,9 @@
 select
 ^^^^^^
 
-The function "select" generates an SQL SELECT query, which is used to
-read records from the database. The select function automatically
-checks whether the records might be "hidden", or "deleted", or if they
+The "select" function generates an SQL SELECT query, which is used to
+read records from the database. "select" automatically
+checks whether the records might be "hidden", "deleted", or if they
 have a "start and end date". If pidInList is used (meaning a list of
 pages is rendered), the function also checks if the current user is
 allowed to see all records.
@@ -31,7 +31,7 @@ content of a page on all pages. For example::
             # The page with ID = 123 is the source.
             pidInList = 123
 
-            # Sorting is like in the backend.
+            # Sorting is the same as in the backend.
             orderBy = sorting
 
             # Only select the content of the left column.
