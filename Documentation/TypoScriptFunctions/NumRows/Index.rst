@@ -13,17 +13,17 @@ numRows
 ^^^^^^^
 
 In TypoScript, there are not only *big* mighty functions, but also
-*small* mighty functions. An example is the function numRows, which has
-the sole purpose to return the number of lines of a SELECT query. Just
+*small* mighty functions. An example is the numRows function, which has
+the sole purpose of returning the number of lines from a SELECT query. Just
 like the object CONTENT, numRows uses the :ref:`select` function. The
 query is generated similarly in both cases. The difference is only
 whether the number of lines or the actual content of those lines is
 returned.
 
 In cooperation with the ":ref:`if`" function, it is possible to
-generate some nice stuff. An example is a stylesheet for the content of
-the right column in the backend, which is only used if there actually
-also is some content in the column. ::
+generate interesting results. An example is a stylesheet for the content of
+the right column in the backend, which is only used if there actually is
+any content in the column. ::
 
    temp.headerdata = TEXT
    temp.headerdata {
