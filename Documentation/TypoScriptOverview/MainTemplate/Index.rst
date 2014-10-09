@@ -24,9 +24,15 @@ additional templates besides the "main" template (the template analyzer helps sh
 For now, we will assume we are only using the "main" template.
 
 TypoScript syntax is very straightforward. On the left side, objects
-and properties are defined. Properties are assigned values, and both
-objects and properties can contain other objects. Object properties
+and properties are defined. On the right side are the assigned values.
+Both objects and properties can contain other objects. Object properties
 are defined by using the dot "." notation.
 
-SUGGESTION: give an example for a newbie to understand the concept of dot notation.
-page.10=???
+The following is a typical example of TypoScript syntax:
+
+.. code-block:: typoscript
+
+	page = PAGE
+	page.10 = TEXT
+	page.10.value = Hello World
+

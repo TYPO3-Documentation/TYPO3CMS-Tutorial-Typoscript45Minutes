@@ -24,7 +24,7 @@ Common mistakes made with TypoScript templates can cause a message like this:
 .. figure:: ../../Images/NoTypoScriptTemplateFound.png
    :alt: Error message "No TypoScript template found!"
 
-"No TypoScript template found": This warning appears if no template, with the root level flag enabled, 
+"No TypoScript template found": This warning appears if no template, with the root level flag enabled,
 is found in the page tree.
 
 .. figure:: ../../Images/ThePageIsNotConfigured.png
@@ -34,9 +34,11 @@ is found in the page tree.
 flag of a template in the page tree is enabled (so that this template
 is used), but no PAGE Object can be found.
 
-The following code is enough to remove this warning::
+The following code is enough to remove this warning:
 
-   page = PAGE
-   page.10 = TEXT
-   page.10.value = Hello World
+.. code-block:: typoscript
+
+	page = PAGE
+	page.10 = TEXT
+	page.10.value = Hello World
 
