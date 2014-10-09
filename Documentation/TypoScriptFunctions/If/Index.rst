@@ -12,10 +12,10 @@
 if
 ^^
 
-The perhaps most difficult TYPO3 function is the "if" function, because
-every programmer, who is familiar with if functions from somewhere
-else, instinctively misuses it. Therefore, we have some examples to
-show, how it works correctly.
+Perhaps the most difficult TYPO3 function is the "if" function. 
+Every programmer who is familiar with if functions from other areas,
+instinctively misuses this function. Therefore, we have some examples to
+show how it works correctly.
 
 Generally, the if function returns "true", if **all** conditions are
 fulfilled. This resembles a boolean AND combination. If "false" should
@@ -28,7 +28,7 @@ result (like a !(true)). ::
        # Content of the TEXT object.
        value = The L parameter is passed as GET variable.
 
-       # Results in "true" and leads to rendering the upper value, if the
+       # Results in "true" and leads to rendering of the upper value, if the
        # GET/POST parameter is passed with a value, which is not 0.
        stdWrap.if.isTrue.data = GP:L
    }
