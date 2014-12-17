@@ -17,20 +17,23 @@ Introduction
 ^^^^^^^^^^^^
 
 The goal of this introduction is not to leave you with the thought,
-"Finally, it's working!", but with the thought of "Finally, I get it!".
+"It's finally working!", but with the thought of "Finally, I know HOW it works!".
 In other words, this introduction is designed to give you a
 comprehensive understanding of how TypoScript works.
 
-A common TYPO3 workflow used by beginners is to try arbitrary
-properties to objects until things somehow begin to work. Actually
-understanding TypoScript however allows you to work more quickly and
-effectively, and working with TYPO3 becomes more productive and less of
-a strain. Troubleshooting is easier and time is saved by learning
-TypoScript properly. Otherwise you are dependent on luck and accident.
+A common TYPO3 CMS workflow used by beginners is to try arbitrary
+properties to objects until things somehow begin to work.
+Understanding how TypoScript works, however, allows you to work more quickly
+and more efficiently with TYPO3 CMS and become.
+Troubleshooting is easier and time is saved by learning TypoScript properly.
+Otherwise, you risk going through a "hit-or-miss" process.
 
 The goal of this introduction is not to have a running TYPO3
 installation at the end, but to offer an explanation of *why* and *how*
 TypoScript works.
+
+Understanding this tutorial, TypoScript in 45 Minutes, is foundational
+for other tutorials, like :ref:`Templating Tutorial: Basics <t3templating:start>`.
 
 
 .. toctree::
