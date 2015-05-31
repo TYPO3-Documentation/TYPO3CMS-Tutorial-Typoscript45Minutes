@@ -139,8 +139,8 @@ referenced and can be assigned values accordingly. ::
 
    mypage.10.stdWrap.wrap = <h1>|</h1>
 
-**Which objects, parameters, and functions exist, can be referenced in
-the :ref:`TypoScript Reference (TSref) <t3tsref:start>`.**
+Which objects, parameters, and functions exist, can be referenced in
+the :ref:`TypoScript Reference (TSref) <t3tsref:start>`.
 
 If some objects are wrapped in each other, and many parameters are
 assigned, things can get more complicated. ::
