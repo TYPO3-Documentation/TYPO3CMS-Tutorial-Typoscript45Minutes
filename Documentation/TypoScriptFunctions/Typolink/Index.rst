@@ -73,7 +73,7 @@ the parameter entry will be separated by the blank spaces.
 
 If, in the first part, a "." (dot) is found (in the condition that it is
 before a forward slash [/]), an external link will be generated. If the dot (.)
-is found after a forward slash (/), a file link is generated. If an ampersand (@) is
+is found after a forward slash (/), a file link is generated. If an at sign (@) is
 found, an email link will be generated. If an integer is found (i.e. 51),
 an internal link to the page with the ID "51" will be generated.
 If a leading hash (#) is found, a certain content element will be
