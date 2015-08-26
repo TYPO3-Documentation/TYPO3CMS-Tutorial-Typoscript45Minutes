@@ -28,7 +28,7 @@ TypoScript in 45 Minutes
       forAdmins, forBeginners, forIntermediates
 
 :Copyright:
-      2008-2014
+      2008-2015
 
 :Author:
       Documentation Team
@@ -37,8 +37,8 @@ TypoScript in 45 Minutes
       documentation@typo3.org
 
 :License:
-      Open Content License available from `www.opencontent.org/opl.shtml
-      <http://www.opencontent.org/opl.shtml>`_
+      Open Publication License available from `www.opencontent.org/openpub/
+      <http://www.opencontent.org/openpub/>`_
 
 :Rendered:
       |today|
@@ -46,7 +46,7 @@ TypoScript in 45 Minutes
 The content of this document is related to TYPO3,
 
 a GNU/GPL CMS/Framework available from `www.typo3.org
-<http://www.typo3.org/>`_
+<https://typo3.org/>`_
 
 
 **Official documentation**
