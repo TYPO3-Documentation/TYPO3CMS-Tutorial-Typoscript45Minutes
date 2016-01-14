@@ -16,7 +16,7 @@ TypoScript in 45 Minutes
       doc_tut_ts45
 
 :Version:
-      6.1
+      6.2
 
 :Language:
       en
@@ -28,7 +28,7 @@ TypoScript in 45 Minutes
       forAdmins, forBeginners, forIntermediates
 
 :Copyright:
-      2008-2015
+      2008-2016
 
 :Author:
       Documentation Team
