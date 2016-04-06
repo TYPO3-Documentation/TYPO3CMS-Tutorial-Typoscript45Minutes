@@ -1,7 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: Includes.txt
 
@@ -16,7 +12,7 @@ TypoScript in 45 Minutes
       doc_tut_ts45
 
 :Version:
-      6.2
+      7 LTS
 
 :Language:
       en
