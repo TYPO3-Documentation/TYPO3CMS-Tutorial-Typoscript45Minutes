@@ -1,38 +1,30 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../Includes.txt
 
 
+.. _overview:
 .. _TS-overview:
 
 TypoScript - A quick overview
 -----------------------------
 
-.. _TS-introduction:
-
-Introduction
-^^^^^^^^^^^^
-
-The goal of this introduction is not to leave you with the thought,
-"It's finally working!", but with the thought of "Finally, I know HOW it works!".
-In other words, this introduction is designed to give you a
+This introduction is designed to give you a
 comprehensive understanding of how TypoScript works.
+In other words the goal is not to just help you make it work,
+but to make sure that you end up knowing why and how
+it works.
 
-A common TYPO3 CMS workflow used by beginners is to try arbitrary
-properties to objects until things somehow begin to work.
-Understanding how TypoScript works, however, allows you to work more quickly
-and more efficiently with TYPO3 CMS and become.
-Troubleshooting is easier and time is saved by learning TypoScript properly.
-Otherwise, you risk going through a "hit-or-miss" process.
+At the end of this tutorial, you will not have a complete
+TYPO3 CMS-powered web site, but you should feel confident about
+how to get there.
 
-The goal of this introduction is not to have a running TYPO3
-installation at the end, but to offer an explanation of *why* and *how*
-TypoScript works.
+A common workflow used by beginners is to try arbitrary
+properties on objects until things somehow begin to work.
+However understanding how TypoScript really works
+allows you to proceed more efficiently and waste less time
+in painful trial and error.
 
-Understanding this tutorial, TypoScript in 45 Minutes, is foundational
+Going through this tutorial is a requirement
 for other tutorials, like :ref:`Templating Tutorial: Basics <t3templating:start>`.
 
 

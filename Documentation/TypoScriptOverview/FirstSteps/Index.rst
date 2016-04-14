@@ -1,22 +1,22 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
 
 
+.. _first-steps:
+
 First steps
 ^^^^^^^^^^^
 
-In the Setup field of the main template, the basic rendering is
-defined.
+The basic rendering is defined in the "Setup" field of the main template.
 
 TypoScript essentially consists of objects, which have certain
 properties. Some of these properties can accept other objects, others
-stand for certain functions or define the behavior of the object.
+stand for functions or simple values.
 
-For rendering, the object PAGE is responsible. ::
+The :ref:`PAGE <t3tsref:page>` object is responsible for the
+rendering of a web site page in the frontend.
+
+.. code-block:: typoscript
 
     # The object mypage is defined as PAGE object.
     mypage = PAGE
@@ -30,14 +30,15 @@ For rendering, the object PAGE is responsible. ::
     # TEXT objects in turn have a property called "value".
     mypage.10.value = Hello World
 
-The PAGE object on the one hand offers numerous properties "with names"
-(like typeNum). On the other hand it also has an endless number of
+The :ref:`PAGE <t3tsref:page>` object on the one hand offers numerous named properties
+(like "typeNum"). On the other hand it also has an endless number of
 numbered objects (a so-called content array). The names of these
-objects only consist of numbers and the objects will get sorted
-accordingly when they are rendered. First, the object with the smallest
-number will be rendered; at the end, the object with the biggest
-number. The order of the lines in the TypoScript template is
-irrelevant. ::
+objects only consist of numbers and the objects are sorted
+accordingly when they are rendered, from the smallest number to the
+largest. The order of the lines in the TypoScript template is
+irrelevant.
+
+.. code-block:: typoscript
 
     # Create a PAGE object.
     mypage = PAGE
@@ -46,8 +47,8 @@ irrelevant. ::
     mypage.30 = TEXT
     mypage.30.value = This gets rendered last.
 
-    # Rendering would first output object number 10, then 20 and 30.
-    # Object number 25 would logically be output between 20 and 30.
+    # Rendering will first output object number 10, then 20 and 30.
+    # An object with number 25 would logically be output between 20 and 30.
     mypage.20 = TEXT
     mypage.20.value = This is rendered in the middle.
 
@@ -64,29 +65,25 @@ irrelevant. ::
 
 Every entry is stored in a multidimensional PHP array. Every object
 and every property, therefore, is unique. We could define an arbitrary
-number of PAGE objects; however, the typeNum has to be unique. For
-every typeNum, there can be only one PAGE object.
+number of PAGE objects; however, the :code:`typeNum` has to be unique. For
+every :code:`typeNum`, there can be only one :ref:`PAGE <t3tsref:page>` object.
 
-In the example, for the parameter typeNum = 98, a different output
-mode is created. By using typeNum, various output types can be
-defined. If typeNum is not set explicitly, it defaults to "0".
-Typically, typeNum = 0 is used for the HTML output. The request for
-HTML would be index.php?id=1, respectively, and index.php?id=1&type=98
-for the print output. The value of &type defines, which PAGE object 
-(according to its typeNum), is displayed. That is why it is possible to
-have print output, HTML output and even PDF output in one and the same
-TypoScript template. In doing so, configurations which are used in all of
-the views can be copied and changed just a little bit in the new
-object. (For example, we can copy the normal page content into the
-print view, but leave away the menu.)
+In the example, for the parameter :code:`typeNum = 98`, a different output
+mode is created. By using :code:`typeNum`, various output types can be
+defined. If :code:`typeNum` is not set explicitly, it defaults to "0".
+Typically, :code:`typeNum = 0` is used for the HTML output.
 
-.. note::
+When a page is requested with just :code:`index.php?id=1`, :code:`typeNum = 0`
+will be assumed and the output will be HTML. To get the print output, the request
+will have to pass a "type" attribute, i.e. :code:`index.php?id=1&type=98`.
 
-   *The output of these examples were both normal text. Especially with
-   output formats like WML the HTTP header should be changed etc. This is
-   not covered here.*
+It is thus possible to generate mayn different outputs depending on one's
+needs (XML, JSON, PDF, etc.). TypoScript configuration can be copied between
+those various views, changing only what's specific for each of them.
 
-The previous example would look like this PHP array::
+The previous example would look like this as a PHP array:
+
+.. code-block:: php
 
     $TypoScript['mypage'] = 'PAGE';
     $TypoScript['mypage.']['typeNum'] = 0;
@@ -102,10 +99,14 @@ The previous example would look like this PHP array::
     $TypoScript['print.']['10'] = 'TEXT';
     $TypoScript['print.']['10.']['value'] = 'This is the print version.';
 
-Empty spaces at the start and end of values will be removed by TYPO3
-automatically (using the trim() function of PHP).
 
-With the "=" sign, we saw the basic assignment: a value is assigned. ::
+Empty spaces at the start and end of values are removed by TYPO3 CMS
+automatically (using the PHP :code:`trim()` function).
+
+The :code:`=` sign corresponds to a simple assignment. Here is an
+overview of the various operators:
+
+.. code-block:: typoscript
 
     # The object test is an object of type TEXT.
     # "=" means "set value".
@@ -129,21 +130,26 @@ With the "=" sign, we saw the basic assignment: a value is assigned. ::
     # mypage.10 will return "Hello world".
     test.value = Hello world
 
-Object types are always written with capital letters; parameter and
+
+Object types are always written with capital letters; parameters and
 functions typically in camel case (first word lower case, next word
 starts with a capital letter, no space between words). There are some
 exceptions to this.
 
-With the "." as a separator parameter, functions and child objects are
-referenced and can be assigned values accordingly. ::
+With the :code:`.` as a separator parameter, functions and child objects are
+referenced and can be assigned values accordingly.
+
+.. code-block:: typoscript
 
    mypage.10.stdWrap.wrap = <h1>|</h1>
 
-Which objects, parameters, and functions exist, can be referenced in
-the :ref:`TypoScript Reference (TSref) <t3tsref:start>`.
+The :ref:`TypoScript Reference (TSref) <t3tsref:start>` is the ultimate
+resource to find out which objects, functions and properties exist.
 
-If some objects are wrapped in each other, and many parameters are
-assigned, things can get more complicated. ::
+Things can get more complicated when objects are nested inside
+each other and many properties are used.
+
+.. code-block:: typoscript
 
     mypage = PAGE
     mypage.typeNum = 0
@@ -161,12 +167,11 @@ assigned, things can get more complicated. ::
     mypage.10.stdWrap.postCObject.value = This text also appears in the link text
     mypage.10.stdWrap.postCObject.stdWrap.wrap = |, because the postCObject is executed before the typolink function.
 
-To keep it simple, **curly brackets {}** are allowed to define object
-levels. *Note* that the opening curly bracket always must be *on the
-same line* as the property, after which it is noted! Adding a line
-break in between (so that the opening bracket would be located in a new
-line) is not allowed. **Parenthesis ()** are for writing text on more
-than one line. The above example can be rewritten as the following::
+
+To make things clearer, TypoScript code can be structured using curly braces
+(:code:`{}`) at each nesting level.
+
+.. code-block:: typoscript
 
     mypage = PAGE
     mypage {
@@ -203,8 +208,16 @@ than one line. The above example can be rewritten as the following::
       }
     }
 
-Using this style of notation the danger of typographic errors is
-reduced and the script is easier to read. In addition, if we liked to
-rename mypage, we would only have to change the first two lines,
-instead of many more occurrences all over the entire script.
+.. important::
 
+   The opening curly brace must always be on the same line as the property.
+
+Parenthesis (:code:`()`) are used for writing text values on more
+than one line.
+
+Using this style of notation reduces the danger of typographic errors
+and makes the script easier to read. In addition it reduces the repetition
+of variable names making it easier to rename an object.
+
+The full reference for the syntax is found in the
+:ref:`TypoScript Syntax and In-depth Study <t3syntax:start>`.

@@ -1,7 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
 
@@ -12,15 +8,16 @@ The main template
 ^^^^^^^^^^^^^^^^^
 
 The TypoScript code used to define how pages are rendered is
-located in the "main" template. In this template the rootlevel flag is
-set.
+located in the "main" template. In this template a so-called
+"rootlevel flag" is set.
 
 .. figure:: ../../Images/RootlevelFlag.png
    :alt: The rootlevel flag in a template record.
 
-When the frontend renders a page, TYPO3 searches along the page tree up
+
+When the frontend renders a page, TYPO3 CMS searches along the page tree up
 to the root page to find a "main" template. Normally, there are
-additional templates besides the "main" template (the template analyzer helps show how they work together).
+additional templates besides the "main" template.
 For now, we will assume we are only using the "main" template.
 
 TypoScript syntax is very straightforward. On the left side, objects

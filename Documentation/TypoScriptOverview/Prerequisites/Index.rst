@@ -1,7 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
 
@@ -11,21 +7,28 @@
 Prerequisites
 ^^^^^^^^^^^^^
 
-We assume that the reader has a :ref:`TYPO3 system up and running
-<t3install:start>` and that the basic operations are known. The
-difference between pages and content elements will not be elaborated
-on here. We also assume that you know that the content of a page is
-put together by a combination of various content elements. Just to
-make sure, we point out the fact that these content elements are
-stored in the table tt\_content. For each content element, the
-database field "CType" defines which content element type we have.
-Depending on CType an appropriate mask is loaded.
+It is assumed that you have a running TYPO3 CMS system
+(if not, please refer to the :ref:`Installation Guide <t3install:start>`)
+and that you have been through the
+:ref:`Getting Started Tutorial <t3start:start>` in order
+to have a general idea of how the TYPO3 CMS backend operates.
 
-For a better understanding of TYPO3 and TypoScript, it is helpful to
-study the database. The extension phpmyadmin enables easy access to
-the database from inside the TYPO3 backend. In the database, the
-relationships between the database tables "pages", "tt\_content"
-and the TYPO3 backend can be studied. It should be understood that
-PID (Page ID) stands for the ID of a page while UID (Unique ID)
-stands for a unique record.
+You may also want to have been through the
+:ref:`Editors Tutorial <t3editors:start>` in order to be
+familiar with the concepts of pages and content elements.
 
+A few more elements that you need to know before starting:
+
+- all content elements are stored in a database table called `tt_content`
+
+- each content element has a database field called `CType` in which
+  the type of the content element is stored
+
+- the `tt_content` table also has a field called `pid` which refers
+  to the page the content element is on
+
+- in general, each TYPO3 CMS table has a field called `uid` which
+  contains the primary key (unique id for each record)
+
+- you will probably find useful to have a database access to check
+  how information is stored as we proceed along this tutorial

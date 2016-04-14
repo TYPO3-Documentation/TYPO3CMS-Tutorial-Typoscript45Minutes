@@ -1,7 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../Includes.txt
 
@@ -27,7 +23,7 @@ copying and pasting.
 What's new
 ^^^^^^^^^^
 
-This document has been updated for TYPO3 CMS 6.1.
+This document has been updated for TYPO3 CMS 7 LTS.
 
 
 .. _credits:
@@ -35,10 +31,12 @@ This document has been updated for TYPO3 CMS 6.1.
 Credits
 ^^^^^^^
 
-This manual was originally created in German by members of the TYPO3
+This manual was originally created in German by members of the TYPO3 CMS
 community in the wiki on wiki.typo3.org and then translated and
-corrected by more community members, so thank you TYPO3 community
-members ;-) for all your efforts.
+corrected by more community members. Big thanks go the TYPO3 CMS
+community members for their initial efforts.
+
+Since then it is maintained by the Documentation Team.
 
 
 .. _feedback:
