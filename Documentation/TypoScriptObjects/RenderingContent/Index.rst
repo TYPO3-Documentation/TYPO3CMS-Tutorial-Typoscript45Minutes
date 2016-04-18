@@ -1,7 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
 
@@ -11,51 +7,56 @@
 Objects rendering content
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- :ref:`IMAGE <t3tsref:cobj-image>` for the rendering of an image. ::
+- :ref:`IMAGE <t3tsref:cobj-image>` for the rendering of an image.
 
-   lib.logo = IMAGE
-   lib.logo {
-     file = fileadmin/logo.gif
-     file.width = 200
-     stdWrap.typolink.parameter = 1
-   }
+   .. code-block:: typoscript
 
-- lib.logo holds the logo with a width of 200 pixel and is linked with
-  the page with PID 1.
+		lib.logo = IMAGE
+		lib.logo {
+			file = fileadmin/logo.gif
+			file.width = 200
+			stdWrap.typolink.parameter = 1
+		}
+
+   The result is an image based on file :file:`logo.gif` with width of
+   200 pixels and a link to the page 1.
 
 - :ref:`TEXT <t3tsref:cobj-text>` is for the rendering of standard text
-  or the content of fields. The TEXT object also offers :ref:`stdWrap
-  <t3tsref:stdwrap>` functionality with the property "stdWrap" ::
+  or the content of fields.
 
-   lib.test1 = TEXT
-   lib.test1.stdWrap.field = uid
+   .. code-block:: typoscript
 
-- :ref:`FILE <t3tsref:cobj-file>` imports the content of a file, directly.
+		lib.motto = TEXT
+		lib.motto.value = Inspiring people to share
+		lib.motto.wrap = <div class="highlight">|</div>
+
+- :ref:`FILES <t3tsref:cobj-files>` is used to retrieve information
+  about one or more files and perform some rendering with it.
+
+   .. code-block:: typoscript
+
+		lib.banner = FILES
+		lib.banner {
+			references {
+				table = pages
+				fieldName = media
+				uid = page:uid
+			}
+			renderObj = IMAGE
+			renderObj {
+				file.import.data = file:current:uid
+				file.treatIdAsReference = 1
+				file.width = 500
+				wrap = <div class="banner">|</div>
+			}
+		}
+
+   This code will probably look a pretty abstract to you right now.
+   What it does is to reference the images that were related to a given
+   page in the "media" field. It takes each of these images and
+   resizes them to a maximum width of 500 pixels. Each image is wrapped
+   in a :code:`<div>` tag.
 
 - :ref:`TEMPLATE <t3tsref:cobj-template>` replaces markers in a
-  template with content coming from TYPO3. ::
-
-   page.10 = TEMPLATE
-   page.10 {
-     template = FILE
-     template.file = fileadmin/test.tmpl
-     subparts {
-       HELLO = TEXT
-       HELLO.value = This line here replaces the content in between the markers ###HELLO### and ###HELLO### in the HTML template.
-     }
-     marks {
-       Test = TEXT
-       Test.value = The marker ###TEST### will be replaced with this text.
-     }
-     workOnSubpart = DOCUMENT
-   }
-
-- :ref:`MULTIMEDIA <t3tsref:cobj-multimedia>` renders multimedia
-  objects.
-
-- :ref:`IMGTEXT <t3tsref:cobj-imgtext>` allows us to generate images
-  inline with text. It is used for the content element "text &
-  images".
-
-- :ref:`FORM <t3tsref:cobj-form>` generates an HTML-form.
-
+  HTML template with content coming from the TYPO3 CMS database, as was
+  discussed in the ":ref:`insert-content-in-a-template`" chapter.
