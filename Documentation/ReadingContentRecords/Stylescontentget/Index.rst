@@ -1,7 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
 
@@ -11,9 +7,14 @@
 styles.content.get
 ^^^^^^^^^^^^^^^^^^
 
-::
+"css\_styled\_content" does more than just provide us with
+rendering definitions. It also provides useful :ref:`CONTENT <t3tsref:cobj-content>`
+objects definitions.
 
-    # Our code so far starts like that:
+So far our code looks like this:
+
+.. code-block:: typoscript
+
     page.10 = CONTENT
     page.10.table = tt_content
     page.10.select {
@@ -25,14 +26,17 @@ styles.content.get
         where = colPos = 0
     }
 
-Thanks to css\_styled\_content, it suffices to just write the following
-instead to achieve the same::
+We can reuse predefined objects from "css\_styled\_content" and
+write the following instead:
+
+.. code-block:: typoscript
 
     # This returns content from the "normal" column (colPos = 0).
     page.10 < styles.content.get
 
-For the other columns there are according default definitions, as
-well::
+There are similar definitions for the other columns:
+
+.. code-block:: typoscript
 
     # This returns content from the "left" column (colPos = 1).
     page.10 < styles.content.getLeft
@@ -42,12 +46,3 @@ well::
 
     # This returns content from the "border" column (colPos = 3).
     page.10 < styles.content.getBorder
-
-In css\_styled\_content the border is internally defined as follows::
-
-    # The normal column is copied.
-    styles.content.getBorder < styles.content.get
-
-    # After that, colPos is altered.
-    styles.content.getBorder.select.where = colPos=3
-

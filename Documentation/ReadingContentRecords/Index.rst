@@ -13,27 +13,31 @@ Reading content records
 
 .. note::
 
-   *The following chapter serves as an example and for a better
-   understanding of the background and relationships. The following
-   scripts are from css\_styled\_content, and it's **not** necessary to
-   write them by hand. If a content element has to be rendered totally
-   differently, or you programmed an extension with new content elements,
-   it will be necessary to understand the relationships.*
+   The following chapter aims at explaining the relationship between
+   database content and frontend output via TypoScript. Example code is
+   taken from system extension "css\_styled\_content", you don't have
+   to write it all again yourself.
 
-We do not want to enter all content written in TypoScript - that would
-be tiresome, and we can't expect an editor to do that.
+   If you wish a content element to be rendered differently
+   or if you program an extension with new content elements,
+   it will be necessary to understand this relationship to be able
+   to design your own TypoScript properly.
 
-So, we create a TypoScript, which will gather the content
-automatically. The next example will create a page, on which for each
-content element on that page we will get displayed the headline of the
-content element and the text of the content element.
+Obviously entering all content for the web site would be terribly tiresome,
+although possible from a theoretical point of view.
 
-First, we create the :ref:`PAGE <t3tsref:page>` object
-so there will be some rendering at all. In this PAGE object we will
-create the object :ref:`CONTENT <t3tsref:cobj-content>`,
-which can be controlled with various TypoScript parameters. Inside it,
-we do the rendering of each content element using objects of the type
-":ref:`TEXT <t3tsref:cobj-text>`"::
+What we want is to have a TypoScript which gathers the content
+automatically. The example below creates a page on which, for each
+content element on that page, the headline and the text
+is displayed.
+
+After creating the :ref:`PAGE <t3tsref:page>` object,
+we use the :ref:`CONTENT <t3tsref:cobj-content>` object
+to retrieve content from the database. For each content element
+we use the :ref:`TEXT <t3tsref:cobj-text>`" object to perform
+the actual rendering.
+
+.. code-block:: typoscript
 
     page = PAGE
     page.typeNum = 0
@@ -75,22 +79,23 @@ we do the rendering of each content element using objects of the type
       20.stdWrap.wrap = <p>|</p>
     }
 
-The object CONTENT executes an SQL query on the database. The query is
-controlled by the property "select". Here "select" defines that we want
-all records from the column 0 (which is the column "NORMAL" in the
-backend), and that the result will be sorted according to the field
-"sorting". If the property pidInList is not set (like here) or has been
-removed, the query will be limited to the current page only. For
-example, if the page with ID 100 is referenced, the CONTENT object will
-only return records from the page with pid=100.
+The :ref:`CONTENT <t3tsref:cobj-content>` object executes an SQL query on the database. The query is
+controlled by the :code:`select` property, which - in our case - defines that we want
+all records from the column 0 (which is the column called "NORMAL" in the
+backend), and that the result should be sorted according to the field
+called "sorting".
 
-The property renderObj defines how each record gets rendered.
-Therefore, it is defined as COA (Content Object Array), which can hold
-an arbitrary number of TypoScript objects. In this case, two TEXT
-objects are used, which will be rendered one after the other. Remember
+The :code:`select` property has a :code:`pidInList` which can be used
+to retrieve elements from a specific page. If it is not defined
+- as in our example - elements are taken from the current page.
+
+The :code:`renderObj` property defines how each record gets rendered.
+It is defined as :ref:`COA (Content Object Array) <t3tsref:cobj-coa>`, which can hold
+an arbitrary number of TypoScript objects. In this case, two :ref:`TEXT <t3tsref:cobj-text>`
+objects are used, which are rendered one after the other (remember
 that the order of the rendering is not controlled by the order in
-TypoScript, but by the numbers with which they are defined. The TEXT
-object "10" will be created first and the TEXT object "20" will be
+TypoScript, but by the numbers with which they are defined). The :ref:`TEXT <t3tsref:cobj-text>`
+object "10" will be created first and the :ref:`TEXT <t3tsref:cobj-text>` object "20" will be
 rendered after it.
 
 The challenge is to render all content elements like the web designer
@@ -104,7 +109,7 @@ position, link to top, index, etc.).
    :titlesonly:
    :glob:
 
-   TheContentElements/Index
+   ContentElements/Index
    CssStyledContent/Index
    Stylescontentget/Index
 
