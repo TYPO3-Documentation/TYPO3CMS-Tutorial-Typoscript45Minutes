@@ -1,7 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
 
@@ -12,84 +8,46 @@
 imgResource
 ^^^^^^^^^^^
 
-The functions of the data type "imgResource" relate to modifications of
-pictures. The object IMAGE has the property "file", which is inherited
-from the data type "imgResource".
+The :ref:`imgResource <t3tsref:imgresource>` function relates to modifications of
+pictures. Its main usage is the property :code:`file` of the
+:ref:`IMAGE <t3tsref:cobj-image>` object.
 
-This, for example, allows an image to be resized::
+This, for example, allows an image to be resized:
 
-   temp.myImage = IMAGE
-   temp.myImage {
+.. code-block:: typoscript
 
-           file = toplogo.gif
-           file.width = 200
-           file.height = 300
+	temp.myImage = IMAGE
+	temp.myImage {
+		file = toplogo.gif
+		file.width = 200
+		file.height = 300
+	}
 
-   }
+It is also possible to set minimum or maximum dimensions:
 
-Enter maximum size (or minimum size)::
+.. code-block:: typoscript
 
-   temp.myImage = IMAGE
-   temp.myImage {
+	temp.myImage = IMAGE
+	temp.myImage {
+		file = toplogo.gif
 
-           file = toplogo.gif
+		# maximum size
+		file.maxW = 200
+		file.maxH = 300
 
-           # maximum size
-           file.maxW = 200
-           file.maxH = 300
+		# minimum size
+		file.minW = 100
+		file.minH = 120
+	}
 
-           # minimum size
-           file.minW = 100
-           file.minH = 120
+:code:`imgResource` also provides direct access to
+ImageMagick/GraphicsMagick features:
 
-   }
+.. code-block:: typoscript
 
-imgResource also provides direct access to a GraphicsMagick function::
-
-   temp.myImage = IMAGE
-   temp.myImage {
-
-           file = toplogo.gif
-           file.params = -rotate 90
-
-   }
-
-One of the most common and best examples for the use of imgResource is
-the implementation of pictures dynamically from the Media field in the
-page properties. This has the advantage that editors can change the
-pictures without using TypoScript. This allows us to have changing
-header images for different areas of a website with a few lines of
-TypoScript. ::
-
-   temp.dynamicHeader = IMAGE
-   temp.dynamicHeader {
-           file {
-
-                   # Define path to the images.
-                   import = uploads/media/
-
-                   import {
-
-                           # If there are no images on this page, search recursively
-                           # down the page tree.
-                           data = level:-1, slide
-
-                           # Enter the field, in which the image is defined.
-                           field = media
-
-                           # Define which of the images will be displayed,
-                           # in this case the first it encounters.
-                           listNum = 0
-
-                   }
-           }
-   }
-
-The path "uploads/media/" is the location of the files, which are
-inserted in the "files" section. You find it inside the page properties
-on the tab "Resources". The TypoScript in the brackets of "import"
-completely consists of stdWrap functions, which are used to define from
-where and which image will be imported. Finally, stdWrap returns the
-file name of the image, which will then be imported from the import
-path (uploads/media).
+	temp.myImage = IMAGE
+	temp.myImage {
+		file = toplogo.gif
+		file.params = -rotate 90
+	}
 

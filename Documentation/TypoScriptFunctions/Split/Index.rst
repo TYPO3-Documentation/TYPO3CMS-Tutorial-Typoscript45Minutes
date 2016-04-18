@@ -1,7 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
 
@@ -12,14 +8,16 @@
 split
 ^^^^^
 
-The split function can be used to split given data at a predefined
-character, and process the single pieces afterwards. At every
-iteration, the current index key "SPLIT-COUNT" is stored (starting
+The :ref:`split <t3tsref:split>` function can be used to split given data at a predefined
+character and process the single pieces afterwards. At every
+iteration, the current index key :code:`SPLIT-COUNT` is stored (starting
 with 0).
 
-By using "split", we could, for example, read a table field and wrap
+By using :code:`split`, we could, for example, read a table field and wrap
 every single line with a certain code (e.g. generate an HTML table,
-which can be used to show the same content on more than one page)::
+which can be used to show the same content on more than one page).
+
+.. code-block:: typoscript
 
      20 = TEXT
 
@@ -43,13 +41,13 @@ which can be used to show the same content on more than one page)::
        1.current = 1
 
        # The element is wrapped.
-       1.wrap = <TR class="odd"><TD> | </TD></TR>
+       1.wrap = <tr class="odd"><td> | </td></tr>
 
        # The 2nd element is determined and wrapped.
        2.current = 1
-       2.wrap = <TR class="even"><TD> | </TD></TR>
+       2.wrap = <tr class="even"><td> | </td></tr>
      }
 
      # A general wrap to create a valid table markup.
-     20.stdWrap.wrap = <TABLE width="368"> | </TABLE>
+     20.stdWrap.wrap = <table> | </table>
 

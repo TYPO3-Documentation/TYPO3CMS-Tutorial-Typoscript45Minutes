@@ -1,7 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
 
@@ -12,15 +8,17 @@
 if
 ^^
 
-Perhaps the most difficult TYPO3 function is the "if" function. 
-Every programmer who is familiar with if functions from other areas,
-instinctively misuses this function. Therefore, we have some examples to
-show how it works correctly.
+The :ref:`if <t3tsref:if>` function iserhaps the most difficult
+of all TypoScript functions. It does not work like the "if" construct
+known from most programming language and is thus very open to misuse.
+Hopefully the examples below will help you get it right.
 
-Generally, the if function returns "true", if **all** conditions are
-fulfilled. This resembles a boolean AND combination. If "false" should
-be returned in that case, we can use the "negate" option to negate the
-result (like a !(true)). ::
+Generally the :code:`if` function returns :code:`true`,
+if **all** conditions are fulfilled. This resembles a boolean AND combination.
+If what we would like returned is a :code:`false` value,
+we can use the :code`negate` option to negate the result.
+
+.. code-block:: typoscript
 
    10 = TEXT
    10 {
@@ -33,8 +31,10 @@ result (like a !(true)). ::
        stdWrap.if.isTrue.data = GP:L
    }
 
-With the use of "if" it is also possible to compare values. For this
-purpose we use the parameter "if.value". ::
+With the use of :code:`if` it is also possible to compare values. For this
+purpose we use :code:`value` property.
+
+.. code-block:: typoscript
 
    10 = TEXT
    10 {
@@ -50,8 +50,10 @@ purpose we use the parameter "if.value". ::
        stdWrap.if.isGreaterThan = 3
    }
 
-Because the properties of the "if" function implement stdWrap
-functions, all kinds of variables can be compared. ::
+Because the properties of the :code:`if` function implement
+:ref:`stdWrap functions <using-stdwrap>`, all kinds of variables can be compared.
+
+.. code-block:: typoscript
 
    10 = TEXT
    10 {
