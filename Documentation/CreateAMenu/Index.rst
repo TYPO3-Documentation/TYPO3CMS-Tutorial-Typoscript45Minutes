@@ -1,7 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../Includes.txt
 
@@ -15,11 +11,13 @@ Create a menu
 Until now, we learned how the page *content* is rendered; however, the
 page *navigation* is missing.
 
-TYPO3 offers a special menu object called :ref:`HMENU
-<t3tsref:cobj-hmenu>` ("H" stands for hierarchical) to easily build
+TYPO3 CMS offers a special menu object called
+:ref:`HMENU <t3tsref:cobj-hmenu>` ("H" stands for hierarchical) to easily build
 different kinds of menus.
 
-The menu should be built like a nested list::
+We want our menu to be built like a nested list:
+
+.. code-block:: html
 
    <ul class="level1">
       <li>first level</li>
@@ -31,66 +29,63 @@ The menu should be built like a nested list::
       <li>first level</li>
    </ul>
 
-In order to keep oversight, we create a new folder and a new extension
-template. In here, we define a new object which we can add to the main
-template, later. In this way, we can define a diversity of objects
-separately from each other and use them for future projects easily. The
-extension template can be added in the main template with "include
-basis template".
+It is customary to declare new objects as sup-properties of the
+:code:`lib` top-level object. We can give it any name that hasn't
+been assigned yet.
 
-Normally, these objects are defined as sub-objects of "lib". We could
-use any term that hasn't been assigned, yet. ::
+.. code-block:: typoscript
 
-    lib.textmenu = HMENU
-    lib.textmenu {
+	lib.textmenu = HMENU
+	lib.textmenu {
 
-      # We define the first level as text menu.
-      1 = TMENU
+		# We define the first level as text menu.
+		1 = TMENU
 
-      # We define the normal state ("NO").
-      1.NO = 1
-      1.NO.allWrap = <li>|</li>
+		# We define the normal state ("NO").
+		1.NO = 1
+		1.NO.allWrap = <li>|</li>
 
-      # We define the active state ("ACT").
-      1.ACT = 1
-      1.ACT.wrapItemAndSub = <li>|</li>
+		# We define the active state ("ACT").
+		1.ACT = 1
+		1.ACT.wrapItemAndSub = <li>|</li>
 
-      # Wrap the whole first level.
-      1.wrap = <ul class="level1">|</ul>
+		# Wrap the whole first level.
+		1.wrap = <ul class="level1">|</ul>
 
-      # The second and third level should be configured exactly
-      # the same way.
-      # In between the curly brackets, objects can be copied.
-      # With the dot "." we define that the object can be found
-      # in the brackets.
-      # With 2.wrap and 3.wrap we overwrite the wrap, which was
-      # copied from 1.wrap.
-      2 < .1
-      2.wrap = <ul class="level2">|</ul>
-      3 < .1
-      3.wrap = <ul class="level3">|</ul>
-    }
+		# The second and third level should be configured exactly
+		# the same way.
+		# In between the curly brackets, objects can be copied.
+		# With the dot "." we define that the object can be found
+		# in the brackets.
+		# With 2.wrap and 3.wrap we overwrite the wrap, which was
+		# copied from 1.wrap.
+		2 < .1
+		2.wrap = <ul class="level2">|</ul>
+		3 < .1
+		3.wrap = <ul class="level3">|</ul>
+	}
 
-The object HMENU allows us to create a diversity of menus. The first
-menu level will be defined with the number "1", the second with the
-"2", etc. Naturally, it is not allowed to have missing numbers. (For
-example, if the third menu level is not defined, the fourth will not be
-rendered.)
+The :ref:`HMENU <t3tsref:cobj-hmenu>` object allows us to create a diversity of menus.
+The main properties are numbers and correspond to the menu level.
 
-For every menu level, an arbitrary menu object can be created, which
-does the rendering. Thus, it is for example possible to create a GMENU
-on the first level, and to use a TMENU for the 2nd and 3rd level.
+The :ref:`TMENU <t3tsref:tmenu>` object renders a menu level as
+text. There also exists a :ref:`GMENU <t3tsref:gmenu>` object which
+renders a menu level using images generated on the fly. A different
+rendering can be chosen for each menu level.
 
 On every menu level, we can configure various states for the single
-menu items – see :ref:`menu items
-<t3tsref:tmenu-gmenu-imgmenu-common-properties>`, e.g. NO for "normal",
-ACT for "pages in the root line" (means current page, the parent,
-grandparent, etc.) or CUR for "the current page". In doing so, pay
-special attention to the fact that aside the normal state ("NO"),
-*every state has to be activated first* (i.e. "ACT = 1").
+menu items – see :ref:`menu items <t3tsref:tmenu-gmenu-imgmenu-common-properties>`,
+e.g. :code:`NO` for "normal", :code:`ACT` for "pages in the root line"
+(i.e. the current page, its parent, grandparent, and so forth) or
+:code:`CUR` for "the current page".
 
-Henceforth, we can use the menu and implement it in our page. ::
+.. important::
 
-   page.5 < lib.textmenu
+   Except for the normal state (:code:`NO`), other states have to be activated
+   before they get displayed (i.e. :code:`ACT = 1`).
 
+Now that our menu is defined, we can use with:
 
+.. code-block:: typoscript
+
+	page.5 < lib.textmenu
