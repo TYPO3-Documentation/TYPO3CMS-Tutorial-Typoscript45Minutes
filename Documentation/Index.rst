@@ -77,7 +77,7 @@ future reference.
    TypoScriptOverview/Index
    ReadingContentRecords/Index
    CreateAMenu/Index
-   InsertContentInATemplate/Index
+   HtmlTemplate/Index
    UsingCssStyledContent/Index
    TypoScriptObjects/Index
    TypoScriptFunctions/Index
