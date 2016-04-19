@@ -1,7 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
 
@@ -11,12 +7,14 @@
 cObject
 ^^^^^^^
 
-The stdWrap parameter ":ref:`cObject <t3tsref:stdwrap-cobject>`" can be
-used to replace content with a TypoScript object. This can be a
+The :code:`stdWrap` property ":ref:`cObject <t3tsref:stdwrap-cobject>`" can be
+used to replace thencontent with a TypoScript object. This can be a
 :ref:`COA <t3tsref:cobj-coa>`, a plugin or a text like in this
-example::
+example:
+
+.. code-block:: typoscript
 
     10.typolink.title.cObject = TEXT
-    10.typolink.title.cObject.value = Imprint
-    10.typolink.title.cObject.stdWrap.lang.de = Impressum
+    10.typolink.title.cObject.value = Copyright
+    10.typolink.title.cObject.case = upper
 

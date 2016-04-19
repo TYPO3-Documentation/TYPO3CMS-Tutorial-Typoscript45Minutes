@@ -1,7 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
 
@@ -11,54 +7,32 @@
 Modify the order
 ^^^^^^^^^^^^^^^^
 
-There are basically two ways to obtain another execution order of
-the stdWrap functions: First you can use stdWrap recursively. Second
-you can use the stdWrap property "orderedStdWrap" to conveniently
-provide a custom order.
+There is a way around this ordering restriction. :code:`stdWrap`
+has a property called :code:`orderedStdWrap` in which several
+:code:`stdWrap` properties can be called in numerical order.
+Thus:
 
-Because **the stdWrap function can be called recursively**, it is
-possible to change the execution order.
+.. code-block:: typoscript
 
-The function "prioriCalc" permits easy mathematical expressions. If
-set to 1, the content is calculated; however, the calculations are
-done from left to right (no mathematical precedence like "\*" before
-"+", etc.). The following example looks, as if the content of field
-"width" gets 20 added to it. ::
+	10 = TEXT
+	10 {
+		value = typo3
+		orderedStdWrap {
+			10.noTrimWrap = |<strong>Tool: |</strong>|
+			20.case = upper
+		}
+	}
 
-    10 = TEXT
-    10.stdWrap.field = width   # Assumption: "width" is 100
-    10.stdWrap.wrap = |+20
-    10.stdWrap.prioriCalc = 1
+results in:
 
-But this is not the case! The result which will be rendered is:
-"100+20". The function "prioriCalc" is executed *before* the function
-wrap, and thus only calculates the result of "field" - the expression
-"100". In order to get the result we anticipated, we have to make sure
-that "field" *and "wrap"* are executed before "prioriCalc". This can be
-achieved by using the following expression::
+.. code-block:: html
 
-    10 = TEXT
-    10.stdWrap.field = width   # Assumption: "width" is 100
-    10.stdWrap.stdWrap.wrap = |+20
-    10.stdWrap.prioriCalc = 1
+    <strong>TOOL: TYPO3</strong>
 
-We do not use "wrap" directly, but use it nested inside another
-stdWrap. The stdWrap function is executed after "field", but before
-"prioriCalc", thus "100+20" is wrapped, and *after that* the function
-"prioriCalc" is executed, resulting in the value "120".
+because we explicitely specified that :code:`noTrimWrap` should
+happen before :code:`case`.
 
-With **orderedStdWrap** you can do the same, but more conveniently. ::
-
-    10 = TEXT
-    10.orderedStdWrap {
-           10.field = width   # Assumption: "width" is 100
-           20.wrap = |+20
-           30.prioriCalc = 1
-    }
-
-Using :ref:`orderedStdWrap <t3tsref:stdwrap-orderedstdwrap>` we can
-execute multiple stdWrap functions in a freely selectable order without
-having to nest them inside other stdWrap calls. The execution order
-inside orderedStdWrap is just defined by the numbers you provide. The
-result will again be "120".
-
+It should be noted that :code:`stdWrap` itself has a :code:`stdWrap`
+property, meaning that it can be called recursively. In most case
+:code:`orderedStdWrap` will do the job and is much easier to understand
+making for code easier to maintain.

@@ -1,7 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
 
@@ -12,14 +8,11 @@
 The data type
 ^^^^^^^^^^^^^
 
-While TypoScripting, it is crucial to know what kind of data type we
-are handling. Especially with stdWrap, we have noticed that people
-sometimes try to combine functions arbitrarily, until the anticipated
-result is finally achieved by accident.
+While writing TypoScript, it is crucial to know what kind of data type
+you are handling. It is common to see beginners try to combine functions
+arbitrarily, until the anticipated result is finally achieved by accident.
 
-Only if the stdWrap functionality is mentioned explicitly, the stdWrap
-functions like field, data, or typolink can actually be used.
-
-Check the :ref:`TypoScript reference <t3tsref:start>`, if you are
-unsure!
+The :ref:`TypoScript reference <t3tsref:stdWrap>` is very clear about
+which properties exist and what their data type is, so please refer
+to that essential resource while developing your templates.
 

@@ -1,7 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
 
@@ -11,33 +7,27 @@
 Heed the order
 ^^^^^^^^^^^^^^
 
-An important limitation should be highlighted:
+The single most important thing to know about :code:`stdWrap`
+is that all properties are parsed/executed exactly in the order
+in which they appear in the :ref:`TypoScript Reference <t3tsref:stdwrap>`,
+no matter in which order you have set them in your TypoScript
+template.
 
-**Note:** The single functions are executed in the order specified by
-the :ref:`TypoScript reference <t3tsref:start>`!
+Let's consider this example:
 
-If we did not pay attention to this fact, the results might easily
-look different from what we expected. ::
+.. code-block:: typoscript
 
-    10 = TEXT
-    10.stdWrap.field = header # assuming the header contains "typo3" (small case characters)
-    10.stdWrap.wrap = <strong>|</strong>
-    10.stdWrap.case = upper
+	10 = TEXT
+	10.value = typo3
+	10.noTrimWrap = |<strong>Tool: |</strong>|
+	10.case = upper
 
-This results in the following::
+It results in the following:
 
-    <strong>TYPO3</strong>
+.. code-block:: html
 
-The following happens in this example: First, the value of the TEXT
-object is imported from the field "header". We know that the TypoScript
-configuration is `stored in an array <typoscript-array>`. The sorting
-in this array is not necessarily the same as the sorting in our
-TypoScript. Instead, the sorting in the array is constrained by
-definitions of the ordering of stdWrap. This order is mirrored by the
-TypoScript reference.
+    <strong>Tool: TYPO3</strong>
 
-After a short :ref:`look into the TSref <t3tsref:stdwrap>` it should be
-clear that, first, "field" is processed, thereafter "case", and in the
-end, "wrap". This order is the reason, why the words of the tag "strong"
-themselves are *not* uppercased.
-
+The :code:`case` property is executed before the :code:`wrap`
+property. Hence only "typo3" was changed to uppercase and
+not the "Tool:" with which it is wrapped.
