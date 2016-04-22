@@ -83,5 +83,5 @@ future reference.
    TypoScriptFunctions/Index
    UsingStdWrap/Index
    UsingGetText/Index
-   Outlook/Index
+   NextSteps/Index
    Targets
