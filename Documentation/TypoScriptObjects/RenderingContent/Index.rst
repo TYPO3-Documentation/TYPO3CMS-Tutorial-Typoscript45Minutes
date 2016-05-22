@@ -40,7 +40,7 @@ Objects rendering content
 			references {
 				table = pages
 				fieldName = media
-				uid = page:uid
+				uid.data = page:uid
 			}
 			renderObj = IMAGE
 			renderObj {
