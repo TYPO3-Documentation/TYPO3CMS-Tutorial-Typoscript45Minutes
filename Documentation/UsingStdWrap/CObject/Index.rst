@@ -8,7 +8,7 @@ cObject
 ^^^^^^^
 
 The :code:`stdWrap` property ":ref:`cObject <t3tsref:stdwrap-cobject>`" can be
-used to replace thencontent with a TypoScript object. This can be a
+used to replace the content with a TypoScript object. This can be a
 :ref:`COA <t3tsref:cobj-coa>`, a plugin or a text like in this
 example:
 
