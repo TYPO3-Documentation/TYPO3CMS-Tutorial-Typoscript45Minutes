@@ -8,7 +8,7 @@
 if
 ^^
 
-The :ref:`if <t3tsref:if>` function iserhaps the most difficult
+The :ref:`if <t3tsref:if>` function is perhaps the most difficult
 of all TypoScript functions. It does not work like the "if" construct
 known from most programming language and is thus very open to misuse.
 Hopefully the examples below will help you get it right.
