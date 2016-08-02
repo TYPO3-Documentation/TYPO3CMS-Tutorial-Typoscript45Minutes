@@ -29,7 +29,7 @@ is displayed.
 After creating the :ref:`PAGE <t3tsref:page>` object,
 we use the :ref:`CONTENT <t3tsref:cobj-content>` object
 to retrieve content from the database. For each content element
-we use the :ref:`TEXT <t3tsref:cobj-text>`" object to perform
+we use the :ref:`TEXT <t3tsref:cobj-text>` object to perform
 the actual rendering.
 
 .. code-block:: typoscript
