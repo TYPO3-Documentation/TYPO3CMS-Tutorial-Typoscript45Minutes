@@ -41,9 +41,7 @@ elaborate on stdWrap later). There the property 'wrap' is known, and
 the text "Hello world" will be inserted at the pipe (\|) position and
 returned.
 
-This relationship is important to understand the behavior of
-TypoScript in many cases. If, for example, the TypoScript is extended
-with the following line::
+.. code-block:: typoscript
 
    page.10.myFunction = Magic!
 
