@@ -13,7 +13,7 @@ for content elements containing text. But the content elements
 are varied and we also need to render images, forms, etc.
 
 The type of a content element is stored in the column
-:code:`CType` column of table "tt\_content". We can use this information
+:code:`CType` of table "tt\_content". We can use this information
 with a :ref:`CASE <t3tsref:cobj-case>` object, which makes it possible to
 differentiate how the individual content element types are rendered.
 
