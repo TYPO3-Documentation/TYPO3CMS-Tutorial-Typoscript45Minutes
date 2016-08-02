@@ -76,7 +76,7 @@ When a page is requested with just :code:`index.php?id=1`, :code:`typeNum = 0`
 will be assumed and the output will be HTML. To get the print output, the request
 will have to pass a "type" attribute, i.e. :code:`index.php?id=1&type=98`.
 
-It is thus possible to generate mayn different outputs depending on one's
+It is thus possible to generate many different outputs depending on one's
 needs (XML, JSON, PDF, etc.). TypoScript configuration can be copied between
 those various views, changing only what's specific for each of them.
 
