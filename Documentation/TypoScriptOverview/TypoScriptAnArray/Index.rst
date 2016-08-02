@@ -37,7 +37,7 @@ parameters from `stdWrap` will be passed to the ":ref:`stdWrap <t3tsref:stdwrap>
 There the property 'wrap' is known, and the text "Hello world" will be inserted
 at the pipe (:code:`|`) position and returned.
 
-It is important to be aware this relationship in order
+It is important to be aware of this relationship in order
 understand the behaviour of TypoScript.
 For example, if the above TypoScript is extended
 with the following line:
