@@ -12,7 +12,7 @@ definitions for each type of content element.
 
 Although it may seem daunting, it is very instructive to review
 all this code, as there is much to learn by example. To view
-the raw code, place yourself on the root page of you web site
+the raw code, place yourself on the root page of your web site
 and move to the **WEB > Template** module. Then choose the
 *Template Analyzer* function.
 
@@ -28,7 +28,7 @@ With a click on "EXT:css\_styled\_content/static/", you can view
 the content of that template (below the hierarchical view),
 first the constants, then the setup (scroll down).
 
-You will that "css\_styled\_content" adds HTML elements with many
+You will see that "css\_styled\_content" adds HTML elements with many
 classes to the rendering of a page. They are used by TYPO3 CMS to display
 things in a structured way, e.g. images at their selected position like
 next to text, the link to top, etc. This also has the advantage that it
