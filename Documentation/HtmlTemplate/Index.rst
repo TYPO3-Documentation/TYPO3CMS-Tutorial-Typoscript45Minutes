@@ -63,7 +63,7 @@ TYPO3 CMS upon rendering.
 
 There are two types of markers. One is called a **mark**. It represents
 a simple insertion point. The other type is the **subpart**. It is comprised
-of an openign and a closing marker. Everything between the two markers
+of an opening and a closing marker. Everything between the two markers
 in the HTML template is replaced by TYPO3 CMS.
 
 Using HTML templates in such a way is covered in details in the
