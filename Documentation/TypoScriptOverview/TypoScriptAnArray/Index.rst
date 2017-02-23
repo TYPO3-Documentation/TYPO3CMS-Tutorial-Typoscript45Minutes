@@ -53,7 +53,7 @@ the following entry will be added to the PHP array:
    $data['page.']['10.']['myFunction'] = 'Magic!';
 
 However, the ":ref:`TEXT <t3tsref:cobj-text>`" object does not know
-any property caled "myFunction". Consequently, the entry will have no effect.
+any property called "myFunction". Consequently, the entry will have no effect.
 
 .. important::
 
