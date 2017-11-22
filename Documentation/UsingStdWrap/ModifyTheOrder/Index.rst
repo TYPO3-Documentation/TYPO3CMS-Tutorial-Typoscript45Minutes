@@ -28,10 +28,10 @@ results in:
 
     <strong>TOOL: TYPO3</strong>
 
-because we explicitely specified that :code:`noTrimWrap` should
+because we explicitly specified that :code:`noTrimWrap` should
 happen before :code:`case`.
 
 It should be noted that :code:`stdWrap` itself has a :code:`stdWrap`
 property, meaning that it can be called recursively. In most case
 :code:`orderedStdWrap` will do the job and is much easier to understand
-making for code easier to maintain.
+making code easier to maintain.

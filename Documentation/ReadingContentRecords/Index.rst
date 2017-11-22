@@ -9,9 +9,10 @@ Reading content records
 .. note::
 
    The following chapter aims at explaining the relationship between
-   database content and frontend output via TypoScript. Example code is
-   taken from system extension "css\_styled\_content", you don't have
-   to write it all again yourself.
+   database content and frontend output via TypoScript. The TYPO3 Core
+   and system extension `fluid\_styled\_content` already contain
+   definitions for the TYPO3 Core content element rendering. You
+   do not have to add anything yourself.
 
    If you wish a content element to be rendered differently
    or if you program an extension with new content elements,
@@ -48,8 +49,9 @@ the actual rendering.
          orderBy = sorting
 
          # Only select content from column "0" (the column called
-         # "normal").
-         where = colPos = 0
+         # "normal") and quote the database identifier (column name)
+         # "colPos" (indicated by wrapping with {#})
+         where = {#colPos}=0
     }
 
     # For every result line from the database query (that means for every content
@@ -105,6 +107,4 @@ position, link to top, index, etc.).
    :glob:
 
    ContentElements/Index
-   CssStyledContent/Index
-   Stylescontentget/Index
 

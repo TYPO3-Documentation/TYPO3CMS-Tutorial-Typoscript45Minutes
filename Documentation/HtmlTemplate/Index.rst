@@ -15,62 +15,39 @@ prepared by a designer for the web site, it would be a shame not to
 reuse it as is as much as possible. It would also make further
 corrections to the HTML template much harder to apply.
 
-TYPO3 CMS provides the :ref:`TEMPLATE <t3tsref:cobj-template>` object,
-with which we can parse a HTML template file and insert the menu, content,
-and so on, at the right place into it.
+TYPO3 CMS provides the :ref:`FLUIDTEMPLATE <t3tsref:cobj-fluidtemplate>` object,
+with which we can use Fluid template and render our web site with it.
 
 .. code-block:: typoscript
 
-    page.10 = TEMPLATE
-    page.10 {
-	template = FILE
+	10 = FLUIDTEMPLATE
+	10 {
+		templateName = TEXT
+		templateName.value = Default
 
-		# We load the HTML template file.
-		template.file = fileadmin/test.tmpl
-
-		# Text areas in the template file:
-		# <!-- ###MENU### begin -->
-		# Here is an example of content as placeholder, everything which is
-		# in between the markers will be replaced by the content of the
-		# sub-parts, in this case by the menu.
-		# <!-- ###MENU### end -->
-
-		# Subparts are a pair of two markers (like "###MENU###" above).
-		subparts {
-			MENU < lib.textmenu
-			CONTENT < styles.content.get
-			COLUMNRIGHT < styles.content.getRight
+		templateRootPaths {
+			0 = EXT:sitepackage/Resources/Private/Templates/Page/
 		}
-
-		# Marks are single markers. That is, there is no start and end marker;
-		# instead, the marker is replaced directly. ###LOGO### will
-		# be replaced by the logo.
-		marks {
-			LOGO = IMAGE
-
-			# Use the graphic logo.gif.
-			LOGO.file = fileadmin/templates/logo.gif
-
-			# The logo links to the page with ID 1.
-			LOGO.stdWrap.typolink.parameter = 1
+		partialRootPaths {
+			0 = EXT:sitepackage/Resources/Private/Partials/Page/
 		}
-		workOnSubpart = DOCUMENT
+		layoutRootPaths {
+			0 = EXT:sitepackage/Resources/Private/Layouts/Page/
+		}
 	}
 
-The :ref:`TEMPLATE <t3tsref:cobj-template>` object works with markers,
-which are inserted in the HTML template and dynamically replaced by
-TYPO3 CMS upon rendering.
 
-There are two types of markers. One is called a **mark**. It represents
-a simple insertion point. The other type is the **subpart**. It is comprised
-of an opening and a closing marker. Everything between the two markers
-in the HTML template is replaced by TYPO3 CMS.
+In your template file you can now replace the parts that should be filled by TYPO3 with references to the TypoScript
+configuration objects you defined earlier.
 
-Using HTML templates in such a way is covered in details in the
-:ref:`Templating Tutorial: Basics <t3templating:start>`.
+For example to render a template with the menu we defined and :
 
-Alternatives exists, such as extension
-`automaketemplate <https://typo3.org/extensions/repository/view/automaketemplate>`_
-which relies :code:`id` attributes instead of markers. It is also possible
-to go for a rendering based on Fluid.
+.. code-block:: html
 
+	<nav>
+		<f:cObject typoscriptObjectPath="lib.textMenu" />
+	</nav>
+
+	<div class="container">
+		<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0'}" />
+	</div>

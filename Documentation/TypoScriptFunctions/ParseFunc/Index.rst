@@ -11,9 +11,9 @@ This function parses the main part of the content, i.e., the content
 which has been entered in the Rich Text Editor. The function is
 responsible for the fact that the content is not rendered exactly as
 it was entered in the RTE. Some default parsing rules are implemented
-in "css\_styled\_content", like wrapping lines in :code:`<p>` tags.
+in the core, like parsing link tags via :code:`typolink` function.
 
-You can also use :code:`parseFunc` for you own processing.
+You can also use :code:`parseFunc` for your own processing.
 In the following example, every occurrence of "COMP" is replaced by
 "My company name".
 
