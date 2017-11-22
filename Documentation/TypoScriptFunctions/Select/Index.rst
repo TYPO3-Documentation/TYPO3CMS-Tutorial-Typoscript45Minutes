@@ -15,9 +15,7 @@ end date". If `pidInList` is used (meaning a list of pages is rendered),
 the function also checks if the current user is allowed to see all records.
 
 With the help of the select function, it is possible to show the content of a
-page on all pages. For example:
-
-.. code-block:: typoscript
+page on all pages. For example::
 
     temp.leftContent = CONTENT
     temp.leftContent {

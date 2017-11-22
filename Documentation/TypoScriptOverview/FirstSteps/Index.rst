@@ -13,9 +13,7 @@ properties. Some of these properties can accept other objects, others
 stand for functions or simple values.
 
 The :ref:`PAGE <t3tsref:page>` object is responsible for the
-rendering of a web site page in the frontend.
-
-.. code-block:: typoscript
+rendering of a web site page in the frontend::
 
     # The object mypage is defined as PAGE object.
     mypage = PAGE
@@ -35,9 +33,7 @@ numbered objects (a so-called content array). The names of these
 objects only consist of numbers and the objects are sorted
 accordingly when they are rendered, from the smallest number to the
 largest. The order of the lines in the TypoScript template is
-irrelevant.
-
-.. code-block:: typoscript
+irrelevant::
 
     # Create a PAGE object.
     mypage = PAGE
@@ -103,9 +99,7 @@ Empty spaces at the start and end of values are removed by TYPO3 CMS
 automatically (using the PHP `trim()` function).
 
 The `=` sign corresponds to a simple assignment. Here is an
-overview of the various operators:
-
-.. code-block:: typoscript
+overview of the various operators::
 
     # The object test is an object of type TEXT.
     # "=" means "set value".
@@ -136,9 +130,7 @@ starts with a capital letter, no space between words). There are some
 exceptions to this.
 
 With the `.` as a separator parameter, functions and child objects are
-referenced and can be assigned values accordingly.
-
-.. code-block:: typoscript
+referenced and can be assigned values accordingly::
 
    mypage.10.stdWrap.wrap = <h1>|</h1>
 
@@ -146,9 +138,7 @@ The :ref:`TypoScript Reference (TSref) <t3tsref:start>` is the ultimate
 resource to find out which objects, functions and properties exist.
 
 Things can get more complicated when objects are nested inside
-each other and many properties are used.
-
-.. code-block:: typoscript
+each other and many properties are used::
 
     mypage = PAGE
     mypage.typeNum = 0
@@ -168,9 +158,7 @@ each other and many properties are used.
 
 
 To make things clearer, TypoScript code can be structured using curly braces
-(`{}`) at each nesting level.
-
-.. code-block:: typoscript
+(`{}`) at each nesting level::
 
     mypage = PAGE
     mypage {

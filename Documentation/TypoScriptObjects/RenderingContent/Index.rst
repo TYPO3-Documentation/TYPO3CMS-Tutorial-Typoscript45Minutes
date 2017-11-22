@@ -7,9 +7,7 @@
 Objects rendering content
 =========================
 
-- :ref:`IMAGE <t3tsref:cobj-image>` for the rendering of an image.
-
-  .. code-block:: typoscript
+- :ref:`IMAGE <t3tsref:cobj-image>` for the rendering of an image::
 
      lib.logo = IMAGE
      lib.logo {
@@ -22,18 +20,14 @@ Objects rendering content
    pixels and a link to the page 1.
 
 - :ref:`TEXT <t3tsref:cobj-text>` is for the rendering of standard text or the
-  content of fields.
-
-  .. code-block:: typoscript
+  content of fields::
 
      lib.motto = TEXT
      lib.motto.value = Inspiring people to share
      lib.motto.wrap = <div class="highlight">|</div>
 
 - :ref:`FILES <t3tsref:cobj-files>` is used to retrieve information about one
-  or more files and perform some rendering with it.
-
-  .. code-block:: typoscript
+  or more files and perform some rendering with it::
 
      lib.banner = FILES
      lib.banner {

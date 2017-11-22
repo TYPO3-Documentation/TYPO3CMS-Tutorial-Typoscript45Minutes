@@ -9,9 +9,7 @@ Modify the order
 
 There is a way around this ordering restriction. `stdWrap` has a property
 called `orderedStdWrap` in which several `stdWrap` properties can
-be called in numerical order. Thus:
-
-.. code-block:: typoscript
+be called in numerical order. Thus::
 
    10 = TEXT
    10 {

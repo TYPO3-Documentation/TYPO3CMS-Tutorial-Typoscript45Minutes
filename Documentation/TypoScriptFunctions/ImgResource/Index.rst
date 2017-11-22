@@ -11,9 +11,7 @@ The :ref:`imgResource <t3tsref:imgresource>` function relates to modifications o
 pictures. Its main usage is the property `file` of the
 :ref:`IMAGE <t3tsref:cobj-image>` object.
 
-This, for example, allows an image to be resized:
-
-.. code-block:: typoscript
+This, for example, allows an image to be resized::
 
    temp.myImage = IMAGE
    temp.myImage {
@@ -22,9 +20,7 @@ This, for example, allows an image to be resized:
       file.height = 300
    }
 
-It is also possible to set minimum or maximum dimensions:
-
-.. code-block:: typoscript
+It is also possible to set minimum or maximum dimensions::
 
    temp.myImage = IMAGE
    temp.myImage {
@@ -40,9 +36,7 @@ It is also possible to set minimum or maximum dimensions:
    }
 
 `imgResource` also provides direct access to
-ImageMagick/GraphicsMagick features:
-
-.. code-block:: typoscript
+ImageMagick/GraphicsMagick features::
 
    temp.myImage = IMAGE
    temp.myImage {

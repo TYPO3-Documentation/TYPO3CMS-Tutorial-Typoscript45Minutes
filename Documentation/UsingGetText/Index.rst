@@ -21,25 +21,19 @@ of sources, including:
 - localized strings
 - page rootline
 
-Here are some examples:
-
-.. code-block:: typoscript
+Here are some examples::
 
    10 = TEXT
    10.data = field:abstract
 
 Creates a text object that contains the value of the "abstract" field from the
-current page.
-
-.. code-block:: typoscript
+current page::
 
    10 = TEXT
    10.data = leveltitle:0
 
 Creates a text object that contains the title of the page on level 0 of the
-current branch, i.e. the web site root for that branch.
-
-.. code-block:: typoscript
+current branch, i.e. the web site root for that branch::
 
    10 = TEXT
    10.data = LLL:EXT:myext/Resources/Private/Language/locallang.xlf:siteTitle

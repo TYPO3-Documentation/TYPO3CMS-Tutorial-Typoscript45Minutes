@@ -30,9 +30,7 @@ We want our menu to be built like a nested list:
 
 It is customary to declare new objects as sup-properties of the
 `lib` top-level object. We can give it any name that hasn't
-been assigned yet.
-
-.. code-block:: typoscript
+been assigned yet::
 
    lib.textmenu = HMENU
    lib.textmenu {
@@ -83,8 +81,6 @@ e.g. `NO` for "normal", `ACT` for "pages in the root line"
    Except for the normal state (`NO`), other states have to be activated
    before they get displayed (i.e. `ACT = 1`).
 
-Now that our menu is defined, we can use with:
-
-.. code-block:: typoscript
+Now that our menu is defined, we can use with::
 
    page.5 < lib.textmenu

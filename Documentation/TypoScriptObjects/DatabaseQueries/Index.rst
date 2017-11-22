@@ -20,9 +20,7 @@ Objects executing database queries
   records".
 
   In the following example, the email address from an address record is
-  rendered and linked as email at the same time.
-
-   .. code-block:: typoscript
+  rendered and linked as email at the same time::
 
       page.80 = RECORDS
       page.80 {

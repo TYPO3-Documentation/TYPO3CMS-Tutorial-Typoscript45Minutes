@@ -19,9 +19,7 @@ Please resist the urge to a straight `<a href="...">...</a>` construct
 in your templates.
 
 Basically `typolink` links the specified text according to
-the defined parameters. One example:
-
-.. code-block:: typoscript
+the defined parameters. One example::
 
     temp.link = TEXT
     temp.link {
@@ -57,9 +55,7 @@ URL will be shown.
 
 The above example can actually be shortened, because the
 `parameter` property can take a series of values separated
-by a white space:
-
-.. code-block:: typoscript
+by a white space::
 
     temp.link2 = TEXT
     temp.link2 {
@@ -75,9 +71,7 @@ by a white space:
 The exact syntax for `parameter` property is fully described,
 as usual, in the :ref:`TypoScript Reference <t3tsref:typolink>`.
 
-It is even possible to define links that open in JavaScript popups.
-
-.. code-block:: typoscript
+It is even possible to define links that open in JavaScript popups::
 
    temp.link = TEXT
    temp.link {

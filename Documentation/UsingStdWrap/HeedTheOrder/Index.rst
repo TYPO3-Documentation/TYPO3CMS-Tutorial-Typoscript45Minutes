@@ -13,9 +13,7 @@ properties are parsed/executed exactly in the order in which they appear in the
 :ref:`TypoScript Reference <t3tsref:stdwrap>`, no matter in which order you
 have set them in your TypoScript template.
 
-Let's consider this example:
-
-.. code-block:: typoscript
+Let's consider this example::
 
    10 = TEXT
    10.value = typo3

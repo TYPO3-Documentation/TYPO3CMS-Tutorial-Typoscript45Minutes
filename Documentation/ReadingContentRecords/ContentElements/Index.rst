@@ -23,9 +23,7 @@ The following code is the default TypoScript rendering definition as taken from
 the TYPO3 Core. The default `renderObj` of a table is a TypoScript
 definition named after that table. In case of content in TYPO3 the table is
 called `tt_content` therefor the default `renderObj` is also called
-`tt_content`.
-
-.. code-block:: typoscript
+`tt_content`::
 
    # Content element rendering taken from typo3/sysext/frontend/ext_localconf.php
    tt_content = CASE
@@ -52,9 +50,7 @@ templates using the `fluid` templating engine. For every content element,
 the basic template, layout and partial parts are defined. As you can see by
 looking at the lines starting with `10 = ` there is the possibility to
 add your own templates by setting the corresponding `constant` (in the
-`Constants` section of a TypoScript template).
-
-.. code-block:: typoscript
+`Constants` section of a TypoScript template)::
 
    # Taken from typo3/sysext/fluid_styled_content/Configuration/TypoScript/Helper/ContentElement.txt
    lib.contentElement = FLUIDTEMPLATE
@@ -77,10 +73,7 @@ add your own templates by setting the corresponding `constant` (in the
 
 
 Each content element inherits that configuration. As an example take a look at
-the content element definition of the content element of type `header`:
-
-.. code-block:: typoscript
-
+the content element definition of the content element of type `header`::
 
    # Header Only:
    # Adds a header only.

@@ -17,9 +17,7 @@ possible. It would also make further corrections to the HTML template much
 harder to apply.
 
 TYPO3 CMS provides the :ref:`FLUIDTEMPLATE <t3tsref:cobj-fluidtemplate>`
-object, with which we can use Fluid template and render our web site with it.
-
-.. code-block:: typoscript
+object, with which we can use Fluid template and render our web site with it::
 
    10 = FLUIDTEMPLATE
    10 {

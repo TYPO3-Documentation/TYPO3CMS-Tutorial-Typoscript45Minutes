@@ -24,9 +24,7 @@ and properties are defined. On the right side are the assigned values.
 Both objects and properties can contain other objects. Object properties
 are defined by using the dot "." notation.
 
-The following is a typical example of TypoScript syntax:
-
-.. code-block:: typoscript
+The following is a typical example of TypoScript syntax::
 
    page = PAGE
    page.10 = TEXT

@@ -15,9 +15,7 @@ Hopefully the examples below will help you get it right.
 Generally the `if` function returns `true`,
 if **all** conditions are fulfilled. This resembles a boolean AND combination.
 If what we would like returned is a `false` value,
-we can use the :code`negate` option to negate the result.
-
-.. code-block:: typoscript
+we can use the :code`negate` option to negate the result::
 
    10 = TEXT
    10 {
@@ -31,9 +29,7 @@ we can use the :code`negate` option to negate the result.
    }
 
 With the use of `if` it is also possible to compare values. For this
-purpose we use `value` property.
-
-.. code-block:: typoscript
+purpose we use `value` property::
 
    10 = TEXT
    10 {
@@ -50,9 +46,7 @@ purpose we use `value` property.
    }
 
 Because the properties of the `if` function implement
-:ref:`stdWrap functions <using-stdwrap>`, all kinds of variables can be compared.
-
-.. code-block:: typoscript
+:ref:`stdWrap functions <using-stdwrap>`, all kinds of variables can be compared::
 
    10 = TEXT
    10 {

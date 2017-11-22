@@ -14,9 +14,7 @@ with 0).
 
 By using `split`, we could, for example, read a table field and wrap
 every single line with a certain code (e.g. generate an HTML table,
-which can be used to show the same content on more than one page).
-
-.. code-block:: typoscript
+which can be used to show the same content on more than one page)::
 
      20 = TEXT
 

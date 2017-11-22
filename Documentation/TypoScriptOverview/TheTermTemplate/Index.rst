@@ -34,9 +34,7 @@ with the root level flag enabled, is found in the page tree.
 flag of a template in the page tree is enabled (i.e. this template
 is used), but no :ref:`PAGE <t3tsref:page>` Object can be found.
 
-The following code is enough to remove this warning:
-
-.. code-block:: typoscript
+The following code is enough to remove this warning::
 
    page = PAGE
    page.10 = TEXT
