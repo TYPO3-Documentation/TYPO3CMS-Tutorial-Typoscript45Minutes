@@ -15,38 +15,38 @@ This, for example, allows an image to be resized:
 
 .. code-block:: typoscript
 
-	temp.myImage = IMAGE
-	temp.myImage {
-		file = toplogo.gif
-		file.width = 200
-		file.height = 300
-	}
+   temp.myImage = IMAGE
+   temp.myImage {
+      file = toplogo.gif
+      file.width = 200
+      file.height = 300
+   }
 
 It is also possible to set minimum or maximum dimensions:
 
 .. code-block:: typoscript
 
-	temp.myImage = IMAGE
-	temp.myImage {
-		file = toplogo.gif
+   temp.myImage = IMAGE
+   temp.myImage {
+      file = toplogo.gif
 
-		# maximum size
-		file.maxW = 200
-		file.maxH = 300
+      # maximum size
+      file.maxW = 200
+      file.maxH = 300
 
-		# minimum size
-		file.minW = 100
-		file.minH = 120
-	}
+      # minimum size
+      file.minW = 100
+      file.minH = 120
+   }
 
 :code:`imgResource` also provides direct access to
 ImageMagick/GraphicsMagick features:
 
 .. code-block:: typoscript
 
-	temp.myImage = IMAGE
-	temp.myImage {
-		file = toplogo.gif
-		file.params = -rotate 90
-	}
+   temp.myImage = IMAGE
+   temp.myImage {
+      file = toplogo.gif
+      file.params = -rotate 90
+   }
 

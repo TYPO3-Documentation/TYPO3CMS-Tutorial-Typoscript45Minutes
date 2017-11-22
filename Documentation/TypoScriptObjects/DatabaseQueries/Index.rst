@@ -24,17 +24,17 @@ Objects executing database queries
 
    .. code-block:: typoscript
 
-   page.80 = RECORDS
-   page.80 {
-      source = 1
-      tables = tt_address
-      conf.tt_address = COA
-      conf.tt_address {
-         20 = TEXT
-         20.stdWrap.field = email
-         20.stdWrap.typolink.parameter.field = email
+      page.80 = RECORDS
+      page.80 {
+         source = 1
+         tables = tt_address
+         conf.tt_address = COA
+         conf.tt_address {
+            20 = TEXT
+            20.stdWrap.field = email
+            20.stdWrap.typolink.parameter.field = email
+         }
       }
-   }
 
 - :ref:`HMENU <t3tsref:cobj-hmenu>` imports the page tree and offers
   comfortable ways to generate a menu of pages or a sitemap. Special menus

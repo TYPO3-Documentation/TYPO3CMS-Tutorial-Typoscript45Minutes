@@ -38,8 +38,8 @@ The following code is enough to remove this warning:
 
 .. code-block:: typoscript
 
-	page = PAGE
-	page.10 = TEXT
-	page.10.value = Hello World
+   page = PAGE
+   page.10 = TEXT
+   page.10.value = Hello World
 
 Do not worry about this code for now, it will be explained later.

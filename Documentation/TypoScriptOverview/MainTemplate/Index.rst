@@ -28,7 +28,7 @@ The following is a typical example of TypoScript syntax:
 
 .. code-block:: typoscript
 
-	page = PAGE
-	page.10 = TEXT
-	page.10.value = Hello World
+   page = PAGE
+   page.10 = TEXT
+   page.10.value = Hello World
 
