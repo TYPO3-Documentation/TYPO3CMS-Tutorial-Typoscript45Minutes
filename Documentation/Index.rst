@@ -11,7 +11,7 @@ TypoScript in 45 Minutes
       doc_tut_ts45
 
 :Version:
-      7 LTS
+      8 LTS
 
 :Language:
       en
@@ -23,7 +23,7 @@ TypoScript in 45 Minutes
       forAdmins, forBeginners, forIntermediates
 
 :Copyright:
-      2008-2016
+      2008-2018
 
 :Author:
       Documentation Team
@@ -77,7 +77,7 @@ future reference.
    ReadingContentRecords/Index
    CreateAMenu/Index
    HtmlTemplate/Index
-   UsingCssStyledContent/Index
+   UsingFluidStyledContent/Index
    TypoScriptObjects/Index
    TypoScriptFunctions/Index
    UsingStdWrap/Index

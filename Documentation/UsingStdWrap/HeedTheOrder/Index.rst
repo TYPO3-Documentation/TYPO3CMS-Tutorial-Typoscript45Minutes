@@ -27,6 +27,6 @@ It results in the following:
 
     <strong>Tool: TYPO3</strong>
 
-The :code:`case` property is executed before the :code:`wrap`
+The :code:`case` property is executed before the :code:`noTrimWrap`
 property. Hence only "typo3" was changed to uppercase and
 not the "Tool:" with which it is wrapped.

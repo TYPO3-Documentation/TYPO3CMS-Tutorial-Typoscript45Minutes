@@ -50,12 +50,15 @@ Objects rendering content
 			}
 		}
 
-   This code will probably look a pretty abstract to you right now.
+   This code will probably look pretty abstract to you right now.
    What it does is to reference the images that were related to a given
    page in the "media" field. It takes each of these images and
    resizes them to a maximum width of 500 pixels. Each image is wrapped
    in a :code:`<div>` tag.
 
-- :ref:`TEMPLATE <t3tsref:cobj-template>` replaces markers in a
-  HTML template with content coming from the TYPO3 CMS database, as was
+- :ref:`FLUIDTEMPLATE <t3tsref:cobj-fluidtemplate>` renders a template with
+  the template engine Fluid with variables and data that you define - as previously
   discussed in the ":ref:`insert-content-in-a-template`" chapter.
+
+- :ref:`TEMPLATE <t3tsref:cobj-template>` replaces markers in a
+  HTML template.

@@ -7,8 +7,8 @@ Further objects
 ^^^^^^^^^^^^^^^
 
 - :ref:`CASE <t3tsref:cobj-case>` allows case differentiation. In
-  "css\_styled\_content", this object is used for rendering different
-  objects according to their type.
+  the core this object is used for rendering different
+  content elements according to their type.
 
 - :ref:`COA <t3tsref:cobj-coa>` (content object array) allows us to
   combine an arbitrary number of objects.

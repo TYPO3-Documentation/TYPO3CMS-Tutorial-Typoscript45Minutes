@@ -11,7 +11,7 @@ and most widely used of all TypoScript. Most properties actually support
 :code:`stdWrap` turning each of them into some kind of Swiss army knife.
 
 :code:`stdWrap` is very rich, having itself a large number of
-properties. This chapter is intended to give you a feel you
+properties. This chapter is intended to give you a feel for
 :code:`stdWrap` so that you may get familiar with it and be
 ready to explore it in greater depth using the
 :ref:`TypoScript Reference <t3tsref:stdwrap>`.

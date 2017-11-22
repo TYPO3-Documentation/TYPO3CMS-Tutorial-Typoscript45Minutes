@@ -32,7 +32,7 @@ content of a page on all pages. For example:
             orderBy = sorting
 
             # Only select the content of the left column.
-            where = colPos=1
+            where = {#colPos}=1
 
             # Define the field with the language ID in tt_content.
             languageField = sys_language_uid

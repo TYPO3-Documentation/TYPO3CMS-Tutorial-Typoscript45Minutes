@@ -49,7 +49,7 @@ the given localization, appropriately translated for the current language.
 As you can see, the base syntax is a keyword, then a colon (`:`) and then
 some values that makes with regards to the chosen keyword.
 Although such a tool may appear to be a function, it is not considered
-one as it is entirely define on the left side of the assignment and is thus
+one as it is entirely defined on the right side of the assignment and is thus
 not a property of any given TypoScript object.
 
 This is just a very quick overview. As usual, the :ref:`TypoScript Reference <t3tsref:data-type-gettext>`
