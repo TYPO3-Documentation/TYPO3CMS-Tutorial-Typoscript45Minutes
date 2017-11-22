@@ -5,27 +5,26 @@
 .. _functions:
 .. _TS-functions:
 
+====================
 TypoScript functions
---------------------
+====================
 
-TypoScript functions can be considered as a set of common properties.
-Whenever an object has a property corresponding to a given function,
-you are assured to have that set of properties available.
+TypoScript functions can be considered as a set of common properties. Whenever
+an object has a property corresponding to a given function, you are assured to
+have that set of properties available.
 
-This chapter gives you a brief overview of the most common functions
-available in TypoScript. As always the :ref:`TypoScript Reference <t3tsref:start>`
-is the ultimate source of knowledge on the matter. For each object
-property, it indicates whether it is a simple data type or a function.
+This chapter gives you a brief overview of the most common functions available
+in TypoScript. As always the :ref:`TypoScript Reference <t3tsref:start>` is the
+ultimate source of knowledge on the matter. For each object property, it
+indicates whether it is a simple data type or a function.
 
-The most used function is the "standard wrap", usually known as
-"stdWrap". Due to its importance, it is entitled to
+The most used function is the "standard wrap", usually known as "stdWrap". Due
+to its importance, it is entitled to
 :ref:`its very own chapter <using-stdwrap>`.
 
+**The functions:**
 
 .. toctree::
-   :maxdepth: 5
-   :titlesonly:
-   :glob:
 
    ImgResource/Index
    Select/Index

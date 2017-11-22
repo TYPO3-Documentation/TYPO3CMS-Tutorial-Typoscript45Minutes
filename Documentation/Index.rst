@@ -40,8 +40,7 @@ TypoScript in 45 Minutes
 
 The content of this document is related to TYPO3,
 
-a GNU/GPL CMS/Framework available from `www.typo3.org
-<https://typo3.org/>`_
+a GNU/GPL CMS/Framework available from https://typo3.org/
 
 
 **Official documentation**
@@ -65,12 +64,8 @@ pitfalls and highlight key concepts that should be remembered for
 future reference.
 
 
-**Table of Contents**
-
 .. toctree::
-   :maxdepth: 5
-   :titlesonly:
-   :glob:
+   :hidden:
 
    Introduction/Index
    TypoScriptOverview/Index

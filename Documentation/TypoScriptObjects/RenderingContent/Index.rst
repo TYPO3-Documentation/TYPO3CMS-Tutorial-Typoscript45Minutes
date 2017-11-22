@@ -3,62 +3,61 @@
 
 .. _cobjects-rendering-content:
 
+=========================
 Objects rendering content
-^^^^^^^^^^^^^^^^^^^^^^^^^
+=========================
 
 - :ref:`IMAGE <t3tsref:cobj-image>` for the rendering of an image.
 
-   .. code-block:: typoscript
+  .. code-block:: typoscript
 
-		lib.logo = IMAGE
-		lib.logo {
-			file = fileadmin/logo.gif
-			file.width = 200
-			stdWrap.typolink.parameter = 1
-		}
+     lib.logo = IMAGE
+     lib.logo {
+        file = fileadmin/logo.gif
+        file.width = 200
+        stdWrap.typolink.parameter = 1
+     }
 
-   The result is an image based on file :file:`logo.gif` with width of
-   200 pixels and a link to the page 1.
+   The result is an image based on file :file:`logo.gif` with width of 200
+   pixels and a link to the page 1.
 
-- :ref:`TEXT <t3tsref:cobj-text>` is for the rendering of standard text
-  or the content of fields.
+- :ref:`TEXT <t3tsref:cobj-text>` is for the rendering of standard text or the
+  content of fields.
 
-   .. code-block:: typoscript
+  .. code-block:: typoscript
 
-		lib.motto = TEXT
-		lib.motto.value = Inspiring people to share
-		lib.motto.wrap = <div class="highlight">|</div>
+     lib.motto = TEXT
+     lib.motto.value = Inspiring people to share
+     lib.motto.wrap = <div class="highlight">|</div>
 
-- :ref:`FILES <t3tsref:cobj-files>` is used to retrieve information
-  about one or more files and perform some rendering with it.
+- :ref:`FILES <t3tsref:cobj-files>` is used to retrieve information about one
+  or more files and perform some rendering with it.
 
-   .. code-block:: typoscript
+  .. code-block:: typoscript
 
-		lib.banner = FILES
-		lib.banner {
-			references {
-				table = pages
-				fieldName = media
-				uid.data = page:uid
-			}
-			renderObj = IMAGE
-			renderObj {
-				file.import.data = file:current:uid
-				file.treatIdAsReference = 1
-				file.width = 500
-				wrap = <div class="banner">|</div>
-			}
-		}
+     lib.banner = FILES
+     lib.banner {
+        references {
+           table = pages
+           fieldName = media
+           uid.data = page:uid
+        }
+        renderObj = IMAGE
+        renderObj {
+           file.import.data = file:current:uid
+           file.treatIdAsReference = 1
+           file.width = 500
+           wrap = <div class="banner">|</div>
+        }
+     }
 
-   This code will probably look pretty abstract to you right now.
-   What it does is to reference the images that were related to a given
-   page in the "media" field. It takes each of these images and
-   resizes them to a maximum width of 500 pixels. Each image is wrapped
-   in a :code:`<div>` tag.
+   This code will probably look pretty abstract to you right now. What it does
+   is to reference the images that were related to a given page in the "media"
+   field. It takes each of these images and resizes them to a maximum width of
+   500 pixels. Each image is wrapped in a :code:`<div>` tag.
 
-- :ref:`FLUIDTEMPLATE <t3tsref:cobj-fluidtemplate>` renders a template with
-  the template engine Fluid with variables and data that you define - as previously
+- :ref:`FLUIDTEMPLATE <t3tsref:cobj-fluidtemplate>` renders a template with the
+  template engine Fluid with variables and data that you define - as previously
   discussed in the ":ref:`insert-content-in-a-template`" chapter.
 
-- :ref:`TEMPLATE <t3tsref:cobj-template>` replaces markers in a
-  HTML template.
+- :ref:`TEMPLATE <t3tsref:cobj-template>` replaces markers in a HTML template.

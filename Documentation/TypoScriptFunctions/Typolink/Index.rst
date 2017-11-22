@@ -4,8 +4,9 @@
 .. _function-typolink:
 .. _typolink:
 
+========
 typolink
-^^^^^^^^
+========
 
 :ref:`typolink <t3tsref:typolink>` is the TYPO3 CMS function
 that allows us to generate all kinds of links.
