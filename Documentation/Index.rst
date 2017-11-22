@@ -67,6 +67,7 @@ future reference.
 .. toctree::
    :hidden:
 
+   Sitemap/Index
    Introduction/Index
    TypoScriptOverview/Index
    ReadingContentRecords/Index
