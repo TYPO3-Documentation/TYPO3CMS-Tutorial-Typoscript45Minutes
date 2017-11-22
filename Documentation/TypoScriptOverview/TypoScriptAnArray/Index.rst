@@ -35,7 +35,7 @@ The ":ref:`TEXT <t3tsref:cobj-text>`" object knows the parameters `value` and
 `stdWrap`. It will set the content of `value` accordingly. The
 parameters from `stdWrap` will be passed to the ":ref:`stdWrap <t3tsref:stdwrap>`" function.
 There the property 'wrap' is known, and the text "Hello world" will be inserted
-at the pipe (:code:`|`) position and returned.
+at the pipe (`|`) position and returned.
 
 It is important to be aware of this relationship in order to
 understand the behaviour of TypoScript.

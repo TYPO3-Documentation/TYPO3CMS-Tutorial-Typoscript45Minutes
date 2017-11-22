@@ -8,7 +8,7 @@
 Heed the order
 ==============
 
-The single most important thing to know about :code:`stdWrap` is that all
+The single most important thing to know about `stdWrap` is that all
 properties are parsed/executed exactly in the order in which they appear in the
 :ref:`TypoScript Reference <t3tsref:stdwrap>`, no matter in which order you
 have set them in your TypoScript template.
@@ -28,6 +28,6 @@ It results in the following:
 
    <strong>Tool: TYPO3</strong>
 
-The :code:`case` property is executed before the :code:`noTrimWrap` property.
+The `case` property is executed before the `noTrimWrap` property.
 Hence only "typo3" was changed to uppercase and not the "Tool:" with which it
 is wrapped.

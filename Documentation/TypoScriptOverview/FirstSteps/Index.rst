@@ -64,17 +64,17 @@ irrelevant.
 
 Every entry is stored in a multidimensional PHP array. Every object
 and every property, therefore, is unique. We could define an arbitrary
-number of PAGE objects; however, the :code:`typeNum` has to be unique. For
-every :code:`typeNum`, there can be only one :ref:`PAGE <t3tsref:page>` object.
+number of PAGE objects; however, the `typeNum` has to be unique. For
+every `typeNum`, there can be only one :ref:`PAGE <t3tsref:page>` object.
 
-In the example, for the parameter :code:`typeNum = 98`, a different output
-mode is created. By using :code:`typeNum`, various output types can be
-defined. If :code:`typeNum` is not set explicitly, it defaults to "0".
-Typically, :code:`typeNum = 0` is used for the HTML output.
+In the example, for the parameter `typeNum = 98`, a different output
+mode is created. By using `typeNum`, various output types can be
+defined. If `typeNum` is not set explicitly, it defaults to "0".
+Typically, `typeNum = 0` is used for the HTML output.
 
-When a page is requested with just :code:`index.php?id=1`, :code:`typeNum = 0`
+When a page is requested with just `index.php?id=1`, `typeNum = 0`
 will be assumed and the output will be HTML. To get the print output, the request
-will have to pass a "type" attribute, i.e. :code:`index.php?id=1&type=98`.
+will have to pass a "type" attribute, i.e. `index.php?id=1&type=98`.
 
 It is thus possible to generate many different outputs depending on one's
 needs (XML, JSON, PDF, etc.). TypoScript configuration can be copied between
@@ -100,9 +100,9 @@ The previous example would look like this as a PHP array:
 
 
 Empty spaces at the start and end of values are removed by TYPO3 CMS
-automatically (using the PHP :code:`trim()` function).
+automatically (using the PHP `trim()` function).
 
-The :code:`=` sign corresponds to a simple assignment. Here is an
+The `=` sign corresponds to a simple assignment. Here is an
 overview of the various operators:
 
 .. code-block:: typoscript
@@ -135,7 +135,7 @@ functions typically in camel case (first word lower case, next word
 starts with a capital letter, no space between words). There are some
 exceptions to this.
 
-With the :code:`.` as a separator parameter, functions and child objects are
+With the `.` as a separator parameter, functions and child objects are
 referenced and can be assigned values accordingly.
 
 .. code-block:: typoscript
@@ -168,7 +168,7 @@ each other and many properties are used.
 
 
 To make things clearer, TypoScript code can be structured using curly braces
-(:code:`{}`) at each nesting level.
+(`{}`) at each nesting level.
 
 .. code-block:: typoscript
 
@@ -211,7 +211,7 @@ To make things clearer, TypoScript code can be structured using curly braces
 
    The opening curly brace must always be on the same line as the property.
 
-Parenthesis (:code:`()`) are used for writing text values on more
+Parenthesis (`()`) are used for writing text values on more
 than one line.
 
 Using this style of notation reduces the danger of typographic errors

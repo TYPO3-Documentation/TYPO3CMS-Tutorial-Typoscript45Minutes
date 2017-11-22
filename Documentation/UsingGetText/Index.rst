@@ -11,7 +11,7 @@ There's one particular data type which might leave you wondering, because it
 may seem to behave rather like a function. This is
 :ref:`getText <t3tsref:data-type-gettext>`.
 
-The :code:`data` property of :ref:`stdWrap <t3tsref:stdwrap>` has this
+The `data` property of :ref:`stdWrap <t3tsref:stdwrap>` has this
 particular data type. It makes it possible retrieve values from a large number
 of sources, including:
 

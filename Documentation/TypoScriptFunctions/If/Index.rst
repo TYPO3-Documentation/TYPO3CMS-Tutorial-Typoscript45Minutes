@@ -12,9 +12,9 @@ of all TypoScript functions. It does not work like the "if" construct
 known from most programming language and is thus very open to misuse.
 Hopefully the examples below will help you get it right.
 
-Generally the :code:`if` function returns :code:`true`,
+Generally the `if` function returns `true`,
 if **all** conditions are fulfilled. This resembles a boolean AND combination.
-If what we would like returned is a :code:`false` value,
+If what we would like returned is a `false` value,
 we can use the :code`negate` option to negate the result.
 
 .. code-block:: typoscript
@@ -30,8 +30,8 @@ we can use the :code`negate` option to negate the result.
        stdWrap.if.isTrue.data = GP:L
    }
 
-With the use of :code:`if` it is also possible to compare values. For this
-purpose we use :code:`value` property.
+With the use of `if` it is also possible to compare values. For this
+purpose we use `value` property.
 
 .. code-block:: typoscript
 
@@ -49,7 +49,7 @@ purpose we use :code:`value` property.
        stdWrap.if.isGreaterThan = 3
    }
 
-Because the properties of the :code:`if` function implement
+Because the properties of the `if` function implement
 :ref:`stdWrap functions <using-stdwrap>`, all kinds of variables can be compared.
 
 .. code-block:: typoscript

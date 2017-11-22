@@ -29,7 +29,7 @@ We want our menu to be built like a nested list:
    </ul>
 
 It is customary to declare new objects as sup-properties of the
-:code:`lib` top-level object. We can give it any name that hasn't
+`lib` top-level object. We can give it any name that hasn't
 been assigned yet.
 
 .. code-block:: typoscript
@@ -74,14 +74,14 @@ rendering can be chosen for each menu level.
 
 On every menu level, we can configure various states for the single
 menu items – see :ref:`menu items <t3tsref:tmenu-gmenu-imgmenu-common-properties>`,
-e.g. :code:`NO` for "normal", :code:`ACT` for "pages in the root line"
+e.g. `NO` for "normal", `ACT` for "pages in the root line"
 (i.e. the current page, its parent, grandparent, and so forth) or
-:code:`CUR` for "the current page".
+`CUR` for "the current page".
 
 .. important::
 
-   Except for the normal state (:code:`NO`), other states have to be activated
-   before they get displayed (i.e. :code:`ACT = 1`).
+   Except for the normal state (`NO`), other states have to be activated
+   before they get displayed (i.e. `ACT = 1`).
 
 Now that our menu is defined, we can use with:
 

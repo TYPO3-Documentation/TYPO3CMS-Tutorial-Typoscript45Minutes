@@ -54,7 +54,7 @@ Objects rendering content
    This code will probably look pretty abstract to you right now. What it does
    is to reference the images that were related to a given page in the "media"
    field. It takes each of these images and resizes them to a maximum width of
-   500 pixels. Each image is wrapped in a :code:`<div>` tag.
+   500 pixels. Each image is wrapped in a `<div>` tag.
 
 - :ref:`FLUIDTEMPLATE <t3tsref:cobj-fluidtemplate>` renders a template with the
   template engine Fluid with variables and data that you define - as previously

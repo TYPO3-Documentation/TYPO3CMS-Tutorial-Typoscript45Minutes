@@ -9,10 +9,10 @@ split
 
 The :ref:`split <t3tsref:split>` function can be used to split given data at a predefined
 character and process the single pieces afterwards. At every
-iteration, the current index key :code:`SPLIT-COUNT` is stored (starting
+iteration, the current index key `SPLIT-COUNT` is stored (starting
 with 0).
 
-By using :code:`split`, we could, for example, read a table field and wrap
+By using `split`, we could, for example, read a table field and wrap
 every single line with a certain code (e.g. generate an HTML table,
 which can be used to show the same content on more than one page).
 

@@ -74,16 +74,16 @@ the actual rendering.
     }
 
 The :ref:`CONTENT <t3tsref:cobj-content>` object executes an SQL query on the
-database. The query is controlled by the :code:`select` property, which - in
+database. The query is controlled by the `select` property, which - in
 our case - defines that we want all records from the column 0 (which is the
 column called "NORMAL" in the backend), and that the result should be sorted
 according to the field called "sorting".
 
-The :code:`select` property has a :code:`pidInList` which can be used to
+The `select` property has a `pidInList` which can be used to
 retrieve elements from a specific page. If it is not defined
 - as in our example - elements are taken from the current page.
 
-The :code:`renderObj` property defines how each record gets rendered. It is
+The `renderObj` property defines how each record gets rendered. It is
 defined as :ref:`COA (Content Object Array) <t3tsref:cobj-coa>`, which can hold
 an arbitrary number of TypoScript objects. In this case, two :ref:`TEXT
 <t3tsref:cobj-text>` objects are used, which are rendered one after the other

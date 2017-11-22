@@ -15,15 +15,15 @@ to render images, forms, etc. and we do not want to define everything in
 TypoScript - using HTML templates would be more convenient.
 
 The type of a content element is stored in the column
-:code:`CType` of table "tt\_content". We can use this information
+`CType` of table "tt\_content". We can use this information
 with a :ref:`CASE <t3tsref:cobj-case>` object, which makes it possible to
 differentiate how the individual content element types are rendered.
 
 The following code is the default TypoScript rendering definition as taken from
-the TYPO3 Core. The default :code:`renderObj` of a table is a TypoScript
+the TYPO3 Core. The default `renderObj` of a table is a TypoScript
 definition named after that table. In case of content in TYPO3 the table is
-called :code:`tt_content` therefor the default :code:`renderObj` is also called
-:code:`tt_content`.
+called `tt_content` therefor the default `renderObj` is also called
+`tt_content`.
 
 .. code-block:: typoscript
 
@@ -45,14 +45,14 @@ called :code:`tt_content` therefor the default :code:`renderObj` is also called
    }
 
 The basic extension for rendering content in TYPO3 since TYPO3 v8 is
-:code:`fluid_styled_content`. The example shows how
-:code:`fluid_styled_content` is setup: It defines a basic content element based
-on the content object :code:`FLUIDTEMPLATE` which is able to render html
-templates using the :code:`fluid` templating engine. For every content element,
+`fluid_styled_content`. The example shows how
+`fluid_styled_content` is setup: It defines a basic content element based
+on the content object `FLUIDTEMPLATE` which is able to render html
+templates using the `fluid` templating engine. For every content element,
 the basic template, layout and partial parts are defined. As you can see by
-looking at the lines starting with :code:`10 = ` there is the possibility to
-add your own templates by setting the corresponding :code:`constant` (in the
-:code:`Constants` section of a TypoScript template).
+looking at the lines starting with `10 = ` there is the possibility to
+add your own templates by setting the corresponding `constant` (in the
+`Constants` section of a TypoScript template).
 
 .. code-block:: typoscript
 
@@ -77,7 +77,7 @@ add your own templates by setting the corresponding :code:`constant` (in the
 
 
 Each content element inherits that configuration. As an example take a look at
-the content element definition of the content element of type :code:`header`:
+the content element definition of the content element of type `header`:
 
 .. code-block:: typoscript
 
@@ -92,12 +92,12 @@ the content element definition of the content element of type :code:`header`:
       templateName = Header
    }
 
-First, all configuration options defined in :code:`lib.contentElement` are
-referenced. Then the :code:`templateName` for rendering a content element of
-type :code:`header` is set - in this case :code:`Header`. This tells fluid to
+First, all configuration options defined in `lib.contentElement` are
+referenced. Then the `templateName` for rendering a content element of
+type `header` is set - in this case `Header`. This tells fluid to
 look for a
-:code:`Header.html` in the defined template path(s) (see above, by default in
-:code:`EXT:fluid_styled_content/Resources/Private/Templates/`).
+`Header.html` in the defined template path(s) (see above, by default in
+`EXT:fluid_styled_content/Resources/Private/Templates/`).
 
 To adjust how the default elements are rendered you can overwrite the templates
 in your own site package extension and set the TypoScript constants defining
@@ -114,8 +114,8 @@ take a look at how the text element is rendered:
    </f:section>
    </html>
 
-The database field :code:`bodytext` from the :code:`tt_content` table (which is
-the main text input field for content elements of type :code:`text`) is
-available as :code:`{data.bodytext}` in the fluid template. For more
-information about :code:`fluid_styled_content` see its :ref:`manual
+The database field `bodytext` from the `tt_content` table (which is
+the main text input field for content elements of type `text`) is
+available as `{data.bodytext}` in the fluid template. For more
+information about `fluid_styled_content` see its :ref:`manual
 <t3fluidstyledcontent:start>`.
