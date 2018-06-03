@@ -58,8 +58,8 @@ kept up-to-date to the best of the Documentation Team's abilities.
 This document is a tutorial. Tutorials are designed to be step-by-step
 instructions specifically created to walk a beginner through a
 particular task from beginning to end. To facilitate effective
-learning, Tutorials provide examples to illustrate the subjects they
-cover. In addition, Tutorials provide guidance on how to avoid common
+learning, tutorials provide examples to illustrate the subjects they
+cover. In addition, tutorials provide guidance on how to avoid common
 pitfalls and highlight key concepts that should be remembered for
 future reference.
 
