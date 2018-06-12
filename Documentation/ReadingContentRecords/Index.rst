@@ -46,7 +46,7 @@ the actual rendering::
          # Only select content from column "0" (the column called
          # "normal") and quote the database identifier (column name)
          # "colPos" (indicated by wrapping with {#})
-         where = {#colPos}=0
+         where = colPos=0
     }
 
     # For every result line from the database query (that means for every content
