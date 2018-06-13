@@ -9,7 +9,7 @@ Next steps
 Armed with this basic knowledge of TypoScript, you may want
 to continue your exploration of TYPO3 CMS by following the
 :ref:`Templating Tutorial <t3templating:start>`, which will
-guide you through the creation of a whole web site template
+guide you through the creation of a whole website template
 using TypoScript.
 
 To learn more about the structure and syntax of TypoScript,

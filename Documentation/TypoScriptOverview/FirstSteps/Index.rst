@@ -13,7 +13,7 @@ properties. Some of these properties can accept other objects, others
 stand for functions or simple values.
 
 The :ref:`PAGE <t3tsref:page>` object is responsible for the
-rendering of a web site page in the frontend::
+rendering of a website page in the frontend::
 
 .. code-block:: typoscript
 

@@ -12,12 +12,12 @@ have a real website yet.
 
 Again everything could be done using TypoScript. That would be pretty complex
 and error prone. Furthermore if a HTML template file is prepared by a designer
-for the web site, it would be a shame not to reuse it as is as much as
+for the website, it would be a shame not to reuse it as is as much as
 possible. It would also make further corrections to the HTML template much
 harder to apply.
 
 TYPO3 CMS provides the :ref:`FLUIDTEMPLATE <t3tsref:cobj-fluidtemplate>`
-object, with which we can use Fluid template and render our web site with it::
+object, with which we can use Fluid template and render our website with it::
 
    10 = FLUIDTEMPLATE
    10 {
