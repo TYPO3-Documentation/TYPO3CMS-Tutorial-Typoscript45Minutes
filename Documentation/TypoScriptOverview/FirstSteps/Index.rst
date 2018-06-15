@@ -207,4 +207,4 @@ and makes the script easier to read. In addition it reduces the repetition
 of variable names making it easier to rename an object.
 
 The full reference for the syntax is found in the
-:ref:`TypoScript Syntax and In-depth Study <t3syntax:start>`.
+:ref:`TypoScript Syntax and In-depth Study<t3coreapi:typoscript-syntax-start>`.
