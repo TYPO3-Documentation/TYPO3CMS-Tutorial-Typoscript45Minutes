@@ -18,15 +18,15 @@ familiar with the concepts of pages and content elements.
 
 A few more elements that you need to know before starting:
 
-- all content elements are stored in a database table called :sql:`tt_content`
+- all content elements are stored in a database table called `tt_content`
 
-- each content element has a database field called :sql:`CType` in which
+- each content element has a database field called `CType` in which
   the type of the content element is stored
 
-- the :sql:`tt_content` table also has a field called :sql:`pid` which refers
+- the `tt_content` table also has a field called `pid` which refers
   to the page the content element is on
 
-- in general, each TYPO3 CMS table has a field called :sql:`uid` which
+- in general, each TYPO3 CMS table has a field called `uid` which
   contains the primary key (unique id for each record)
 
 - you will probably find useful to have a database access to check
