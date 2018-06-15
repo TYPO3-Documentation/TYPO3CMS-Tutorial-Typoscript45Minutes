@@ -14,7 +14,7 @@ but to make sure that you end up knowing why and how
 it works.
 
 At the end of this tutorial, you will not have a complete
-TYPO3 CMS-powered web site, but you should feel confident about
+TYPO3 CMS-powered website, but you should feel confident about
 how to get there.
 
 A common workflow used by beginners is to try arbitrary

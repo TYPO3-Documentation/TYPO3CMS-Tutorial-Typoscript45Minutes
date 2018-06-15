@@ -18,7 +18,7 @@ Reading content records
    an extension with new content elements, it will be necessary to understand
    this relationship to be able to design your own TypoScript properly.
 
-Obviously entering all content for the web site would be terribly tiresome,
+Obviously entering all content for the website would be terribly tiresome,
 although possible from a theoretical point of view.
 
 What we want is to have a TypoScript which gathers the content automatically.
@@ -30,31 +30,31 @@ After creating the :ref:`PAGE <t3tsref:page>` object, we use the :ref:`CONTENT
 content element we use the :ref:`TEXT <t3tsref:cobj-text>` object to perform
 the actual rendering::
 
-    page = PAGE
-    page.typeNum = 0
+   page = PAGE
+   page.typeNum = 0
 
-    # The CONTENT object executes a database query and loads the content.
-    page.10 = CONTENT
-    page.10.table = tt_content
-    page.10.select {
+   # The CONTENT object executes a database query and loads the content.
+   page.10 = CONTENT
+   page.10.table = tt_content
+   page.10.select {
 
-         # "sorting" is a column from the tt_content table and
-         # keeps track of the sorting order, which was specified in
-         # the backend.
-         orderBy = sorting
+      # "sorting" is a column from the tt_content table and
+      # keeps track of the sorting order, which was specified in
+      # the backend.
+      orderBy = sorting
 
-         # Only select content from column "0" (the column called
-         # "normal") and quote the database identifier (column name)
-         # "colPos" (indicated by wrapping with {#})
-         where = {#colPos}=0
-    }
+      # Only select content from column "0" (the column called
+      # "normal") and quote the database identifier (column name)
+      # "colPos" (indicated by wrapping with {#})
+      where = {#colPos}=0
+   }
 
-    # For every result line from the database query (that means for every content
-    # element) the renderObj is executed and the internal data array is filled
-    # with the content. This ensures that we can call the .field property and we
-    # get the according value.
-    page.10.renderObj = COA
-    page.10.renderObj {
+   # For every result line from the database query (that means for every content
+   # element) the renderObj is executed and the internal data array is filled
+   # with the content. This ensures that we can call the .field property and we
+   # get the according value.
+   page.10.renderObj = COA
+   page.10.renderObj {
 
       10 = TEXT
 
@@ -69,7 +69,7 @@ the actual rendering::
       20.stdWrap.field = bodytext
 
       20.stdWrap.wrap = <p>|</p>
-    }
+   }
 
 The :ref:`CONTENT <t3tsref:cobj-content>` object executes an SQL query on the
 database. The query is controlled by the `select` property, which - in

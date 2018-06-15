@@ -23,5 +23,5 @@ example, every occurrence of "COMP" is replaced by "My company name"::
 
 The various possibilities of changing the default behavior can be found by
 using the TypoScript object browser. All possibilities of how parseFunc can
-alter the rendering are be found in the
+alter the rendering can be found in the
 :ref:`TypoScript Reference <t3tsref:parsefunc>`.

@@ -7,9 +7,9 @@ Why TypoScript?
 ^^^^^^^^^^^^^^^
 
 Strictly speaking, TypoScript is a configuration language. We cannot
-program with it, but can configure a TYPO3 CMS web site in a
+program with it, but can configure a TYPO3 CMS website in a
 very comprehensive way. With TypoScript, we define the rendering of the
-web site, including navigation, generic content, and how individual
+website, including navigation, generic content, and how individual
 content elements are rendered on a page.
 
 TYPO3 CMS is a content management system that clearly separates content
@@ -27,4 +27,4 @@ how it will be rendered.
 
 With TypoScript, we define how the individual content elements are
 rendered in the frontend. For example, we use TypoScript to add a
-`<div>` tag to an element, or the `<h1>` tag to a headline.
+:html:`<div>` tag to an element, or the :html:`<h1>` tag to a headline.

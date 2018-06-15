@@ -24,14 +24,14 @@ will be converted to the following PHP array:
    $data['page.']['10.']['stdWrap.']['wrap'] = '<h2>|</h2>';
 
 Upon evaluation, a ":ref:`PAGE <t3tsref:page>`" object will be created
-first, and the parameter `$data['page.']` will be assigned to it.
+first, and the parameter :php:`$data['page.']` will be assigned to it.
 The ":ref:`PAGE <t3tsref:page>`" object will then search for all properties, which
 it knows about. In this case, it will find a numeric entry ("10"), which
 has to be evaluated. A new object of type ":ref:`TEXT <t3tsref:cobj-text>`"
-with the parameter `$data['page.']['10.']` will be created.
-The ":ref:`TEXT <t3tsref:cobj-text>`" object knows the parameters `value` and
-`stdWrap`. It will set the content of `value` accordingly. The
-parameters from `stdWrap` will be passed to the ":ref:`stdWrap <t3tsref:stdwrap>`" function.
+with the parameter :php:`$data['page.']['10.']` will be created.
+The ":ref:`TEXT <t3tsref:cobj-text>`" object knows the parameters :ts:`value` and
+:ts:`stdWrap`. It will set the content of :ts:`value` accordingly. The
+parameters from :ts:`stdWrap` will be passed to the ":ref:`stdWrap <t3tsref:stdwrap>`" function.
 There the property 'wrap' is known, and the text "Hello world" will be inserted
 at the pipe (`|`) position and returned.
 

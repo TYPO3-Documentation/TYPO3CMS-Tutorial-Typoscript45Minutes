@@ -48,7 +48,7 @@ The basic extension for rendering content in TYPO3 since TYPO3 v8 is
 on the content object `FLUIDTEMPLATE` which is able to render html
 templates using the `fluid` templating engine. For every content element,
 the basic template, layout and partial parts are defined. As you can see by
-looking at the lines starting with `10 = ` there is the possibility to
+looking at the lines starting with `10 =` there is the possibility to
 add your own templates by setting the corresponding `constant` (in the
 `Constants` section of a TypoScript template)::
 

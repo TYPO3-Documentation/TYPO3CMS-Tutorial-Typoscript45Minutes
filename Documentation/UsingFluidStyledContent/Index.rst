@@ -13,7 +13,7 @@ content element.
 
 Although it may seem daunting, it is very instructive to review all this code,
 as there is much to learn by example. To view the raw code, place yourself on
-the root page of your web site and move to the **WEB > Template** module. Then
+the root page of your website and move to the **WEB > Template** module. Then
 choose the *Template Analyzer* function.
 
 You should see a list of all used TypoScript templates and how they possibly
