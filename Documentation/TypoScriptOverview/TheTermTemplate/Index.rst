@@ -36,8 +36,6 @@ is used), but no :ref:`PAGE <t3tsref:page>` Object can be found.
 
 The following code is enough to remove this warning::
 
-.. code-block:: typoscript
-
    page = PAGE
    page.10 = TEXT
    page.10.value = Hello World

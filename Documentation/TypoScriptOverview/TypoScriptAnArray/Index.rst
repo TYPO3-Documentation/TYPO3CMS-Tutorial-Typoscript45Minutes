@@ -9,8 +9,6 @@ TypoScript is just an array
 Internally, TypoScript is parsed and stored as a PHP array.
 For example::
 
-.. code-block:: typoscript
-
    page = PAGE
    page.10 = TEXT
    page.10.value = Hello World
@@ -41,8 +39,6 @@ It is important to be aware of this relationship in order to
 understand the behaviour of TypoScript.
 For example, if the above TypoScript is extended
 with the following line::
-
-.. code-block:: typoscript
 
    page.10.myFunction = Magic!
 

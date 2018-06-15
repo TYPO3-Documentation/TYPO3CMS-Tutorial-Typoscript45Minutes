@@ -15,8 +15,6 @@ stand for functions or simple values.
 The :ref:`PAGE <t3tsref:page>` object is responsible for the
 rendering of a website page in the frontend::
 
-.. code-block:: typoscript
-
    # The object mypage is defined as PAGE object.
    mypage = PAGE
 
@@ -36,8 +34,6 @@ objects only consist of numbers and the objects are sorted
 accordingly when they are rendered, from the smallest number to the
 largest. The order of the lines in the TypoScript template is
 irrelevant::
-
-.. code-block:: typoscript
 
    # Create a PAGE object.
    mypage = PAGE
@@ -105,9 +101,6 @@ automatically (using the PHP :php:`trim()` function).
 The :ts:`=` sign corresponds to a simple assignment. Here is an
 overview of the various operators::
 
-
-.. code-block:: typoscript
-
    # The object test is an object of type TEXT.
    # "=" means "set value".
    test = TEXT
@@ -147,8 +140,6 @@ resource to find out which objects, functions and properties exist.
 Things can get more complicated when objects are nested inside
 each other and many properties are used::
 
-.. code-block:: typoscript
-
    mypage = PAGE
    mypage.typeNum = 0
    mypage.10 = TEXT
@@ -168,8 +159,6 @@ each other and many properties are used::
 
 To make things clearer, TypoScript code can be structured using curly braces
 (:ts:`{}`) at each nesting level::
-
-.. code-block:: typoscript
 
    mypage = PAGE
    mypage {

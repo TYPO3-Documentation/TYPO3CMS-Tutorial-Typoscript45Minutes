@@ -30,8 +30,6 @@ After creating the :ref:`PAGE <t3tsref:page>` object, we use the :ref:`CONTENT
 content element we use the :ref:`TEXT <t3tsref:cobj-text>` object to perform
 the actual rendering::
 
-.. code-block:: typoscript
-
    page = PAGE
    page.typeNum = 0
 
