@@ -41,7 +41,7 @@ purpose we use `value` property::
        stdWrap.if.value = 2
 
        # Please note: The sorting order is "backwards",
-       # returning the sentence "3 isGreaterThan 2".
+       # returning the sentence "3 is bigger than 2".
        stdWrap.if.isGreaterThan = 3
    }
 
