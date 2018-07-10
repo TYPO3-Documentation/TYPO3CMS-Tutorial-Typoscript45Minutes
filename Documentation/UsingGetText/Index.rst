@@ -27,13 +27,13 @@ Here are some examples::
    10.data = field:abstract
 
 Creates a text object that contains the value of the "abstract" field from the
-current page::
+current page.
 
    10 = TEXT
    10.data = leveltitle:0
 
 Creates a text object that contains the title of the page on level 0 of the
-current branch, i.e. the website root for that branch::
+current branch, i.e. the website root for that branch.
 
    10 = TEXT
    10.data = LLL:EXT:myext/Resources/Private/Language/locallang.xlf:siteTitle
