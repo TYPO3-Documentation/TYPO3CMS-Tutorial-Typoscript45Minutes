@@ -110,7 +110,7 @@ overview of the various operators::
    # mypage.10 returns "Holla"
    mypage.10 < test
 
-   # Change the copied object.
+   # Change the original object.
    # The change has no effect on mypage.10; it still returns "Holla".
    test.value = Hello world
 
