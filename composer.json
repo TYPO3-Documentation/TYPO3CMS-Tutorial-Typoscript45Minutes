@@ -2,5 +2,8 @@
     "name": "typo3/tutorial-typoscript-in-45-minutes",
     "type": "typo3-cms-documentation",
     "description": "Learn the fundamentals of TypoScript in just 45 minutes.",
-    "license": "OPL-1.0"
+    "license": "OPL-1.0",
+    "require": {
+      "typo3/cms-core": "^6.2"
+    }
 }
