@@ -22,7 +22,7 @@ differentiate how the individual content element types are rendered.
 The following code is the default TypoScript rendering definition as taken from
 the TYPO3 Core. The default `renderObj` of a table is a TypoScript
 definition named after that table. In case of content in TYPO3 the table is
-called `tt_content` therefor the default `renderObj` is also called
+called `tt_content` therefore the default `renderObj` is also called
 `tt_content`::
 
    # Content element rendering taken from typo3/sysext/frontend/ext_localconf.php
