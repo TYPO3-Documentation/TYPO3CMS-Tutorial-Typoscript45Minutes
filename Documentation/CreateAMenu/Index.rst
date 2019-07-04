@@ -28,7 +28,7 @@ We want our menu to be built like a nested list:
       <li>first level</li>
    </ul>
 
-It is customary to declare new objects as sup-properties of the
+It is customary to declare new objects as sub-properties of the
 `lib` top-level object. We can give it any name that hasn't
 been assigned yet::
 
@@ -81,6 +81,6 @@ e.g. `NO` for "normal", `ACT` for "pages in the root line"
    Except for the normal state (`NO`), other states have to be activated
    before they get displayed (i.e. `ACT = 1`).
 
-Now that our menu is defined, we can use with::
+Now that our menu is defined, we can use it with::
 
    page.5 < lib.textmenu
