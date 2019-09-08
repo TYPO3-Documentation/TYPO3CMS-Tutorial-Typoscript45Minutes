@@ -7,11 +7,8 @@
 TypoScript in 45 Minutes
 ========================
 
-:Previous Key:
-      doc_tut_ts45
-
 :Version:
-      8 LTS
+      |release|
 
 :Language:
       en
@@ -27,9 +24,6 @@ TypoScript in 45 Minutes
 
 :Author:
       Documentation Team
-
-:Email:
-      documentation@typo3.org
 
 :License:
       Open Publication License available from `www.opencontent.org/openpub/
