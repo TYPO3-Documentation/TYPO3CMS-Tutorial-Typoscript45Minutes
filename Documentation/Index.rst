@@ -7,11 +7,9 @@
 TypoScript in 45 Minutes
 ========================
 
-:Previous Key:
-      doc_tut_ts45
 
 :Version:
-      8 LTS
+      |release|
 
 :Language:
       en
