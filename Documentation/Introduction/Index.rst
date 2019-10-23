@@ -22,7 +22,7 @@ the code, instead of just supplying snippets for copying and pasting.
 What's new
 ==========
 
-This document has been updated for TYPO3 CMS 7 LTS.
+This document has been updated for TYPO3 CMS LTS.
 
 
 .. _credits:
@@ -32,7 +32,7 @@ Credits
 
 This manual was originally created in German by members of the TYPO3 CMS
 community in the wiki on wiki.typo3.org and then translated and corrected by
-more community members. Big thanks go the TYPO3 CMS community members for their
+more community members. Big thanks go to the TYPO3 CMS community members for their
 initial efforts.
 
 Since then it is maintained by the Documentation Team.
