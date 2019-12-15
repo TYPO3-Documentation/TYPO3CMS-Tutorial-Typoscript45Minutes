@@ -3,9 +3,9 @@
 
 .. _start:
 
-========================
-TypoScript in 45 Minutes
-========================
+==================================
+TypoScript Templates in 45 Minutes
+==================================
 
 :Previous Key:
       doc_tut_ts45
