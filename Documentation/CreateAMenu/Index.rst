@@ -66,8 +66,7 @@ The :ref:`HMENU <t3tsref:cobj-hmenu>` object allows us to create a diversity of 
 The main properties are numbers and correspond to the menu level.
 
 The :ref:`TMENU <t3tsref:tmenu>` object renders a menu level as
-text. There also exists a :ref:`GMENU <t3tsref:gmenu>` object which
-renders a menu level using images generated on the fly. A different
+text. A different
 rendering can be chosen for each menu level.
 
 On every menu level, we can configure various states for the single
