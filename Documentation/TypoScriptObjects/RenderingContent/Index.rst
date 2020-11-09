@@ -54,4 +54,3 @@ Objects rendering content
   template engine Fluid with variables and data that you define - as previously
   discussed in the ":ref:`insert-content-in-a-template`" chapter.
 
-- :ref:`TEMPLATE <t3tsref:cobj-template>` replaces markers in a HTML template.
