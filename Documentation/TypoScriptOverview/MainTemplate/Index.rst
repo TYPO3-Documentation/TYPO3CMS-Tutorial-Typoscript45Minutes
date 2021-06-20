@@ -10,7 +10,7 @@ The TypoScript code used to define how pages are rendered is
 located in the "main" template. In this template a so-called
 "rootlevel flag" is set.
 
-.. figure:: ../../Images/RootlevelFlag.png
+.. figure:: /Images/ManualScreenshots/RootlevelFlag.png
    :alt: The rootlevel flag in a template record.
 
 
