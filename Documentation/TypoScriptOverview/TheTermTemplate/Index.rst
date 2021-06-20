@@ -19,14 +19,14 @@ together. This manual is purely about TypoScript templates.
 
 Common mistakes made with TypoScript templates can cause a message like this:
 
-.. figure:: ../../Images/NoTypoScriptTemplateFound.png
+.. figure:: /Images/ManualScreenshots/NoTypoScriptTemplateFound.png
    :alt: Error message "No TypoScript template found!"
 
 
 "No TypoScript template found": This warning appears if no template,
 with the root level flag enabled, is found in the page tree.
 
-.. figure:: ../../Images/ThePageIsNotConfigured.png
+.. figure:: /Images/ManualScreenshots/ThePageIsNotConfigured.png
    :alt: Error message "The page is not configured!"
 
 

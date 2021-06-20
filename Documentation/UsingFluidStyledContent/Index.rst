@@ -20,7 +20,7 @@ You should see a list of all used TypoScript templates and how they possibly
 include one another. All templates are evaluated by TYPO3 CMS from top to
 bottom.
 
-.. figure:: ../Images/TemplateAnalyzerStructure.png
+.. figure:: /Images/ManualScreenshots/TemplateAnalyzerStructure.png
    :alt: The template structure as seen with the Template Analyzer
 
    The template structure as seen with the Template Analyzer
