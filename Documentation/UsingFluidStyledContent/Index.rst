@@ -20,11 +20,7 @@ You should see a list of all used TypoScript templates and how they possibly
 include one another. All templates are evaluated by TYPO3 CMS from top to
 bottom.
 
-.. figure:: /Images/ManualScreenshots/TemplateAnalyzerStructure.png
-   :alt: The template structure as seen with the Template Analyzer
-
-   The template structure as seen with the Template Analyzer
-
+.. include:: /Images/AutomaticScreenshots/TemplateAnalyzerStructure.rst.txt
 
 With a click on "EXT:fluid\_styled\_content/static/", you can view the content
 of that template (below the hierarchical view), first the constants, then the

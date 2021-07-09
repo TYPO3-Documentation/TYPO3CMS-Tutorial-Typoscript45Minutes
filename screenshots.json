@@ -1,0 +1,55 @@
+{
+    "suites": {
+        "Introduction": {
+            "screenshots": {
+                "_default": [
+                    {"action": "resizeWindow", "width": 1024,"height": 768},
+                    {"action": "setScreenshotsDocumentationPath", "path": "Documentation"},
+                    {"action": "setScreenshotsImagePath","path": "Images/AutomaticScreenshots"},
+                    {"action": "setScreenshotsRstPath","path": "Images/AutomaticScreenshots"},
+                    {"action": "setCodeSnippetsSourcePath","path": "typo3conf/ext/styleguide"},
+                    {"action": "setCodeSnippetsTargetPath", "path": "CodeSnippets"}
+                ],
+                "templatesModule": [
+                    {"include": "_default"},
+                    {"action": "see", "text": "Template"},
+                    {"action": "click", "link": "Template"},
+                    {"action": "drawBox", "selector": "#web_ts"},
+                    {"action": "openPageTreePath", "path": ["Congratulations"]},
+                    {"action": "switchToContentFrame"},
+                    {"action": "wait", "timeout": "1"},
+                    {"action": "selectOption", "select": "select.t3-js-jumpMenuBox", "option": "Template Analyzer"},
+                    {"action": "see", "text": "Template hierarchy"},
+                    {"action": "drawBox", "selector": "select.t3-js-jumpMenuBox"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "altText": "The template structure as seen with the Template Analyzer",
+                        "captionText": "The template structure as seen with the Template Analyzer",
+                        "fileName": "TemplateAnalyzerStructure"
+                    }
+                ],
+                "templatesRecords": [
+                    {"include": "_default"},
+                    {"action": "resizeWindow", "width": 640,"height": 768},
+                    {
+                        "action": "goToRecord",
+                        "table": "sys_template",
+                        "uid": 2
+                    },
+                    {"action": "click", "link": "Options"},
+                    {
+                        "action": "drawBox",
+                        "selector": "//fieldset[contains(., \"Rootlevel\")]"
+                    },
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "RootlevelFlag",
+                        "selector": ".t3js-module-body",
+                        "captionText": "The rootlevel flag in a template record.",
+                        "altText": "The rootlevel flag in a template record."
+                    }
+                ]
+            }
+        }
+    }
+}
