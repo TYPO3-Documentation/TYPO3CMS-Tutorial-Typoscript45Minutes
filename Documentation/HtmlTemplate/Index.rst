@@ -45,7 +45,7 @@ For example to render a template with the menu we defined add:
 .. code-block:: html
 
    <nav>
-      <f:cObject typoscriptObjectPath="lib.textMenu" />
+      <f:cObject typoscriptObjectPath="lib.textmenu" />
    </nav>
 
    <div class="container">
