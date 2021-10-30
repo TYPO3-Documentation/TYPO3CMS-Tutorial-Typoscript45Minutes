@@ -10,9 +10,7 @@ The TypoScript code used to define how pages are rendered is
 located in the "main" template. In this template a so-called
 "rootlevel flag" is set.
 
-.. figure:: /Images/ManualScreenshots/RootlevelFlag.png
-   :alt: The rootlevel flag in a template record.
-
+.. include:: /Images/AutomaticScreenshots/RootlevelFlag.rst.txt
 
 When the frontend renders a page, TYPO3 CMS searches along the page tree up
 to the root page to find a "main" template. Normally, there are
