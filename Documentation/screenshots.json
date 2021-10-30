@@ -1,0 +1,68 @@
+{
+  "suites": {
+    "SitePackage": {
+      "screenshots": {
+        "_default": [
+          {"action": "resizeWindow", "width": 1024,"height": 768},
+          {"action": "setScreenshotsDocumentationPath", "path": ""},
+          {"action": "setScreenshotsImagePath","path": "Images/AutomaticScreenshots"},
+          {"action": "setScreenshotsRstPath","path": "Images/AutomaticScreenshots"},
+          {"action": "setCodeSnippetsSourcePath","path": "typo3conf/ext/styleguide"},
+          {"action": "setCodeSnippetsTargetPath", "path": "CodeSnippets"}
+        ],
+        "templatesModul": [
+          {"include": "_default"},
+          {"action": "amOnPage", "page": "/typo3/record/edit?edit[pages][0]=new&id=0&table=&pointer=1&defVals[pages][title]=example.com&defVals[pages][is_siteroot]=1&defVals[pages][hidden]=0&token=x"},
+          { "action": "click", "link": "Save"},
+          {"action": "waitForText", "text": "Edit Page"},
+          {"action": "resizeWindow", "width": 1024,"height": 860},
+          {"action":  "reloadBackend"},
+          {"action": "switchToMainFrame"},
+          {"action": "see", "text": "Template"},
+          {"action": "click", "link": "Template"},
+          {"action": "drawBox", "selector": "#web_ts"},
+          {"action": "openPageTreePath", "path": ["example.com"]},
+          {"action": "switchToContentFrame"},
+          {"action": "waitForText", "text": "Create new website"},
+          {"action": "click", "link": "Create template for a new site"},
+          {"action": "see", "text": "Template tools"},
+          {"action": "selectOption", "select": "select.t3-js-jumpMenuBox", "option": "Info/Modify"},
+          {"action": "click", "link": "//a[contains(text(), 'Edit the whole template record')]"},
+          {"action": "waitForText", "text": "Edit Template"},
+          {"action": "click", "link": "Includes"},
+          {"action": "waitForText", "text": "Include static"},
+          {
+            "action": "selectOption",
+            "select": "select[data-relatedfieldname*=\"include_static_file\"]",
+            "option": "EXT:fluid_styled_content/Configuration/TypoScript/"
+          },
+          {
+            "action": "selectOption",
+            "select": "select[data-relatedfieldname*=\"include_static_file\"]",
+            "option": "EXT:fluid_styled_content/Configuration/TypoScript/Styling/"
+          },
+          {"action": "click", "link": "Options"},
+          {
+            "action": "makeScreenshotOfElement",
+            "fileName": "RootlevelFlag",
+            "selector": ".module-body",
+            "altText": "The Rootlevel flag in the tab Options a template record",
+            "captionText": "The :guilabel:`Rootlevel` flag in the tab :guilabel:`Options` a template record"
+          },
+          {"action": "click", "link": "Save"},
+          {"action": "wait", "timeout": "1"},
+          {"action": "click", "link": "Close"},
+          {"action": "selectOption", "select": "select.t3-js-jumpMenuBox", "option": "Template Analyzer"},
+          {"action": "click", "link": "EXT:fluid_styled_content/Configuration/TypoScript/"},
+          {"action": "drawBox", "selector": "select.t3-js-jumpMenuBox"},
+          {
+            "action": "makeScreenshotOfWindow",
+            "fileName": "TemplateAnalyzerStructure",
+            "altText": "The template structure as seen with the Template Analyzer",
+            "captionText": "The template structure as seen with the Template Analyzer"
+          }
+        ]
+      }
+    }
+  }
+}
