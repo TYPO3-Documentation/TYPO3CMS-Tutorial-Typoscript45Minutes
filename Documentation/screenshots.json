@@ -1,0 +1,46 @@
+{
+  "suites": {
+    "Introduction": {
+      "screenshots": {
+        "_default": [
+          {"action": "resizeWindow", "width": 1024,"height": 768},
+          {"action": "setScreenshotsDocumentationPath", "path": "Documentation"},
+          {"action": "setScreenshotsImagePath","path": "Images/AutomaticScreenshots"},
+          {"action": "setScreenshotsRstPath","path": "Images/AutomaticScreenshots"},
+          {"action": "setCodeSnippetsSourcePath","path": "typo3conf/ext/styleguide"},
+          {"action": "setCodeSnippetsTargetPath", "path": "CodeSnippets"}
+        ],
+        "templatesModul": [
+          {"include": "_default"},
+          {"action": "resizeWindow", "width": 640,"height": 500},
+          {"action": "setScreenshotsImagePath","path": "Images/AutomaticScreenshots/TemplatesModul"},
+          {"action": "setScreenshotsRstPath","path": "Images/AutomaticScreenshots/TemplatesModul"},
+          {"action": "resizeWindow", "width": 640,"height": 640},
+          {"action":  "amOnPage", "page": "/typo3/module/web/ts?token=x&id=1&template=sys_2&SET[function]=TYPO3\\CMS\\Tstemplate\\Controller\\TemplateAnalyzerModuleFunctionController"},
+          {
+            "action": "makeScreenshotOfElement",
+            "fileName": "TemplatesAnalyzerDetails",
+            "selector": "#TypoScriptTemplateModuleController",
+            "altText": "Viewing the content of a given template in the Template Analyzer",
+            "captionText": "Viewing the content of a given template in the Template Analyzer"
+          },
+          {"action": "clearDrawings"},
+
+          {"action": "resizeWindow", "width": 1024,"height": 840},
+          {"action":  "reloadBackend"},
+          {"action": "switchToMainFrame"},
+          {"action": "click", "link": "#web_ts"},
+          {"action": "openPageTreePath", "path": ["Congratulations"]},
+          {"action": "switchToContentFrame"},
+          {"action": "wait", "timeout": "0.1"},
+          {
+            "action": "makeScreenshotOfWindow",
+            "fileName": "TemplateAnalyzerStructure",
+            "altText": "The template structure as seen with the Template Analyzer",
+            "captionText": "The template structure as seen with the Template Analyzer"
+          }
+        ]
+      }
+    }
+  }
+}
