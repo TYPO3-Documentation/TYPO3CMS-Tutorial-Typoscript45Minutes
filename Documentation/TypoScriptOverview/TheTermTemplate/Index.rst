@@ -4,8 +4,9 @@
 .. _template:
 .. _the-term-template:
 
+=================
 The term template
-^^^^^^^^^^^^^^^^^
+=================
 
 The term template has a double meaning in TYPO3 CMS. On the one hand,
 there is the *HTML template file*, which serves as the skeletal
@@ -17,11 +18,22 @@ Backend and can exist on any page.
 The :ref:`Templating Tutorial <t3templating:start>` shows how the two are related
 together. This manual is purely about TypoScript templates.
 
+
+.. _troubleshooting:
+
+Troubleshooting
+===============
+
 Common mistakes made with TypoScript templates can cause a message like this:
+
+.. figure:: /Images/ManualScreenshots/NoTypoScriptTemplateFoundDebuggingOff.png
+   :alt: Error message "No TypoScript template found! Without debug mode"
+
+If you turn the :ref:`debug mode <t3start:debug-mode>` on you will get more
+detailed information:
 
 .. figure:: /Images/ManualScreenshots/NoTypoScriptTemplateFound.png
    :alt: Error message "No TypoScript template found!"
-
 
 "No TypoScript template found": This warning appears if no template,
 with the root level flag enabled, is found in the page tree.
@@ -30,11 +42,12 @@ with the root level flag enabled, is found in the page tree.
    :alt: Error message "The page is not configured!"
 
 
-"The page is not configured": This warning appears if the rootlevel
-flag of a template in the page tree is enabled (i.e. this template
+"The page is not configured! [type=0][]. This means that there is no TypoScript
+object of type PAGE with typeNum=0 configured.": This warning appears if there
+rootlevel flag of a template in the page tree is enabled (i.e. this template
 is used), but no :ref:`PAGE <t3tsref:page>` Object can be found.
 
-The following code is enough to remove this warning::
+The following TypoScript setup code is enough to remove this warning::
 
    page = PAGE
    page.10 = TEXT
