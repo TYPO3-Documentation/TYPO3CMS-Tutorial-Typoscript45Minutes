@@ -43,7 +43,7 @@ with the root level flag enabled, is found in the page tree.
 
 
 "The page is not configured! [type=0][]. This means that there is no TypoScript
-object of type PAGE with typeNum=0 configured.": This warning appears if there
+object of type PAGE with typeNum=0 configured.": This warning appears if the
 rootlevel flag of a template in the page tree is enabled (i.e. this template
 is used), but no :ref:`PAGE <t3tsref:page>` Object can be found.
 
