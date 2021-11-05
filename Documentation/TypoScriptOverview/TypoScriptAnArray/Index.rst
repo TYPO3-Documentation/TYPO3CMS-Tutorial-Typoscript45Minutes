@@ -18,10 +18,18 @@ will be converted to the following PHP array:
 
 .. code-block:: php
 
-   $data['page'] = 'PAGE';
-   $data['page.']['10'] = 'TEXT';
-   $data['page.']['10.']['value'] = 'Hello World';
-   $data['page.']['10.']['stdWrap.']['wrap'] = '<h2>|</h2>';
+   $data = [
+       'page' => 'PAGE',
+       'page.' => [
+           '10' => 'TEXT',
+           '10.' => [
+               'value' => 'Hello World',
+               'stdWrap.' => [
+                   'wrap' => '<h2>|</h2>',
+               ],
+           ],
+       ],
+   ],
 
 Upon evaluation, a ":ref:`PAGE <t3tsref:page>`" object will be created
 first, and the parameter :php:`$data['page.']` will be assigned to it.
