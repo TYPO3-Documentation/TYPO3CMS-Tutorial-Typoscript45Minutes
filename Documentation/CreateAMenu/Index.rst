@@ -70,7 +70,7 @@ text. A different
 rendering can be chosen for each menu level.
 
 On every menu level, we can configure various states for the single
-menu items – see :ref:`menu items <t3tsref:tmenu-gmenu-imgmenu-common-properties>`,
+menu items – see :ref:`menu items <t3tsref:menu-common-properties>`,
 e.g. `NO` for "normal", `ACT` for "pages in the root line"
 (i.e. the current page, its parent, grandparent, and so forth) or
 `CUR` for "the current page".
