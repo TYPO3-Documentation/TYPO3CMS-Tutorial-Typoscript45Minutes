@@ -16,15 +16,6 @@ This document is meant to give a short introduction to how TypoScript works and
 what TypoScript really is. It shall help to give a profound understanding of
 the code, instead of just supplying snippets for copying and pasting.
 
-
-.. _what-s-new:
-
-What's new
-==========
-
-This document has been updated for TYPO3 CMS 7 LTS.
-
-
 .. _credits:
 
 Credits
@@ -54,6 +45,5 @@ using the bug tracker:
 https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Typoscript45Minutes/issues.
 
 Maintaining high quality documentation requires time and effort and the TYPO3
-Documentation Team always appreciates support. If you want to support us,
-please join the documentation mailing list/forum
-(http://forum.typo3.org/index.php/f/44/).
+Documentation Team would appreciate any support you can offer. If you would like
+to help out, contact us in the official TYPO3 Slack channel to find out more.
