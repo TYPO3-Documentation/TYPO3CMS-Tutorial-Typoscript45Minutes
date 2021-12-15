@@ -46,4 +46,5 @@ https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Typoscript45Minutes/iss
 
 Maintaining high quality documentation requires time and effort and the TYPO3
 Documentation Team would appreciate any support you can offer. If you would like
-to help out, contact us in the official TYPO3 Slack channel to find out more.
+to help out, contact us in the `TYPO3 Documentation Slack channel <https://typo3.org/community/teams/documentation>`__ to find out more.
+
