@@ -31,7 +31,7 @@ Credits
 =======
 
 This manual was originally created in German by members of the TYPO3 CMS
-community in the TYPO3 wiki and then translated and corrected by
+community in the retired TYPO3 Wiki and then translated and corrected by
 more community members. Big thanks go the TYPO3 CMS community members for their
 initial efforts.
 
