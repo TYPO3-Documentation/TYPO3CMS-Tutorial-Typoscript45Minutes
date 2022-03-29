@@ -13,7 +13,7 @@ has a number of properties. These can be simple data types or functions, which
 have their own set of properties. Using properties that don't exist will have
 no effect.
 
-The :ref:`TypoScript Reference <t3tsref:start>` lists all data types, functions
+The :doc:`TypoScript Reference <t3tsref:Index>` lists all data types, functions
 and objects with their properties. This chapter offers a short overview of the
 most common objects to give you an idea of what is available.
 

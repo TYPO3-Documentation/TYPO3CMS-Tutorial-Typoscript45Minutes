@@ -15,7 +15,7 @@ will be rendered. On the other hand, there is the *TypoScript template*,
 which is created in the template module in the TYPO3 CMS
 Backend and can exist on any page.
 
-The :ref:`Templating Tutorial <t3templating:start>` shows how the two are related
+The :doc:`Templating Tutorial <t3templating:Index>` shows how the two are related
 together. This manual is purely about TypoScript templates.
 
 
