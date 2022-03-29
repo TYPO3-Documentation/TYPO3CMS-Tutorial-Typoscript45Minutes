@@ -34,7 +34,7 @@ You will see that "fluid\_styled\_content" adds rendering definitions for all
 content elements. When rendering special content like file relations or menus
 the concept of data processors is used. You can find out more about data
 processors in the :ref:`manual of fluid_styled_content
-<t3fluidstyledcontent:start>`.
+<ext_fsc:start>`.
 
 HTML purists may find that "fluid\_styled\_content" generates too much markup.
 It is perfectly possible to trim down this setup or write one's own entirely.
