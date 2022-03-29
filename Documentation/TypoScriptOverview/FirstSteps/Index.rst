@@ -142,7 +142,7 @@ referenced and can be assigned values accordingly.
 
    mypage.10.stdWrap.wrap = <h1>|</h1>
 
-The :ref:`TypoScript Reference (TSref) <t3tsref:start>` is the ultimate
+The :doc:`TypoScript Reference (TSref) <t3tsref:Index>` is the ultimate
 resource to find out which objects, functions and properties exist.
 
 Things can get more complicated when objects are nested inside

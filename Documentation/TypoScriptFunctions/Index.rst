@@ -13,7 +13,7 @@ Whenever an object has a property corresponding to a given function,
 you are assured to have that set of properties available.
 
 This chapter gives you a brief overview of the most common functions
-available in TypoScript. As always the :ref:`TypoScript Reference <t3tsref:start>`
+available in TypoScript. As always the :doc:`TypoScript Reference <t3tsref:Index>`
 is the ultimate source of knowledge on the matter. For each object
 property, it indicates whether it is a simple data type or a function.
 
