@@ -111,4 +111,4 @@ The database field `bodytext` from the `tt_content` table (which is
 the main text input field for content elements of type `text`) is
 available as `{data.bodytext}` in the fluid template. For more
 information about `fluid_styled_content` see its :doc:`manual
-<t3fluidstyledcontent:Index>`.
+<ext_fsc:Index>`.
