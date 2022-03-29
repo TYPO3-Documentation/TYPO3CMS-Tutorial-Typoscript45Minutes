@@ -21,4 +21,4 @@
 .TemporaryItems
 .webprj
 nbproject
-*GENERATED*
+/Documentation-GENERATED-temp/
