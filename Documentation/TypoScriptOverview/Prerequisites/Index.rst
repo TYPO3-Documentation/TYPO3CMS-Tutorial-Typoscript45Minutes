@@ -7,13 +7,13 @@ Prerequisites
 ^^^^^^^^^^^^^
 
 It is assumed that you have a running TYPO3 CMS system
-(if not, please refer to the :ref:`Installation Guide <t3install:start>`)
+(if not, please refer to the :doc:`Installation Guide <t3install:Index>`)
 and that you have been through the
-:ref:`Getting Started Tutorial <t3start:start>` in order
+:doc:`Getting Started Tutorial <t3start:Index>` in order
 to have a general idea of how the TYPO3 CMS backend operates.
 
 You may also want to have been through the
-:ref:`Editors Tutorial <t3editors:start>` in order to be
+:doc:`Editors Tutorial <t3editors:Index>` in order to be
 familiar with the concepts of pages and content elements.
 
 A few more elements that you need to know before starting:
