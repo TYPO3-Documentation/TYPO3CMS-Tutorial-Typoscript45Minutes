@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _overview:
@@ -24,7 +24,7 @@ allows you to proceed more efficiently and waste less time
 in painful trial and error.
 
 Going through this tutorial is a requirement
-for other tutorials, like :ref:`Templating Tutorial: Basics <t3templating:start>`.
+for other tutorials, like :doc:`Templating Tutorial: Basics <t3templating:Index>`.
 
 
 .. toctree::

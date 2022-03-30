@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _first-steps:
@@ -142,7 +142,7 @@ referenced and can be assigned values accordingly.
 
    mypage.10.stdWrap.wrap = <h1>|</h1>
 
-The :ref:`TypoScript Reference (TSref) <t3tsref:start>` is the ultimate
+The :doc:`TypoScript Reference (TSref) <t3tsref:Index>` is the ultimate
 resource to find out which objects, functions and properties exist.
 
 Things can get more complicated when objects are nested inside
@@ -219,4 +219,4 @@ and makes the script easier to read. In addition it reduces the repetition
 of variable names making it easier to rename an object.
 
 The full reference for the syntax is found in the
-:ref:`TypoScript Syntax and In-depth Study <t3syntax:start>`.
+:ref:`TypoScript Syntax and In-depth Study <t3coreapi:typoscript-syntax-start>`.

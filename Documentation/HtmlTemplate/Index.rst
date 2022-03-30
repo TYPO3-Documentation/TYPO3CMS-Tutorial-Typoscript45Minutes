@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _insert-content-in-a-template:
@@ -67,7 +67,7 @@ of an opening and a closing marker. Everything between the two markers
 in the HTML template is replaced by TYPO3 CMS.
 
 Using HTML templates in such a way is covered in details in the
-:ref:`Templating Tutorial: Basics <t3templating:start>`.
+:doc:`Templating Tutorial: Basics <t3templating:Index>`.
 
 Alternatives exists, such as extension
 `automaketemplate <https://typo3.org/extensions/repository/view/automaketemplate>`_
