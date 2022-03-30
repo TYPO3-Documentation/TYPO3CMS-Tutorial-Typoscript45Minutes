@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _content-objects:
@@ -110,5 +110,5 @@ take a look at how the text element is rendered:
 The database field `bodytext` from the `tt_content` table (which is
 the main text input field for content elements of type `text`) is
 available as `{data.bodytext}` in the fluid template. For more
-information about `fluid_styled_content` see its :ref:`manual
-<t3fluidstyledcontent:start>`.
+information about `fluid_styled_content` see its :doc:`manual
+<ext_fsc:Index>`.

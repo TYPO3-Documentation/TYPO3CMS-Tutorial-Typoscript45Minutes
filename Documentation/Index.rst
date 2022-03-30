@@ -1,67 +1,44 @@
-.. include:: Includes.txt
-
-
-.. _start:
+.. include:: /Includes.rst.txt
 
 ========================
 TypoScript in 45 Minutes
 ========================
 
 :Version:
-      |release|
+   |release|
 
 :Language:
-      en
-
-:Description:
-      Learn the fundamentals of TypoScript in just 45 minutes.
-
-:Keywords:
-      forAdmins, forBeginners, forIntermediates
-
-:Copyright:
-      2008-2018
+   en
 
 :Author:
-      Documentation Team
+   TYPO3 contributors
 
 :License:
-      Open Publication License available from `www.opencontent.org/openpub/
-      <http://www.opencontent.org/openpub/>`_
+   This document is published under the
+   `Open Publication License <https://www.opencontent.org/openpub/>`__.
 
 :Rendered:
-      |today|
+   |today|
 
-The content of this document is related to TYPO3,
+----
 
-a GNU/GPL CMS/Framework available from https://typo3.org/
+Learn the fundamentals of TypoScript in just 45 minutes.
 
+Furthermore, you can find a full reference of all object types and properties of
+TypoScript in the :doc:`TypoScript Reference <t3tsref:Index>`, insights into TYPO3
+backend configuration with TypoScript in the :doc:`TSconfig <t3tsconfig:Index>`
+documentation and explanations of TypoScript syntax in the
+":ref:`TypoScript Syntax <t3coreapi:typoscript-syntax-start>`" chapter of TYPO3
+Explained.
 
-**Official documentation**
+----
 
-This document is included as part of the official TYPO3 documentation.
-It has been approved by the TYPO3 Documentation Team following a peer-
-review process. The reader should expect the information in this
-document to be accurate - please report discrepancies to the
-Documentation Team (documentation@typo3.org). Official documents are
-kept up-to-date to the best of the Documentation Team's abilities.
-
-
-**Tutorial**
-
-This document is a tutorial. Tutorials are designed to be step-by-step
-instructions specifically created to walk a beginner through a
-particular task from beginning to end. To facilitate effective
-learning, tutorials provide examples to illustrate the subjects they
-cover. In addition, tutorials provide guidance on how to avoid common
-pitfalls and highlight key concepts that should be remembered for
-future reference.
-
+**Table of Contents:**
 
 .. toctree::
-   :hidden:
+   :maxdepth: 1
+   :titlesonly:
 
-   Sitemap/Index
    Introduction/Index
    TypoScriptOverview/Index
    ReadingContentRecords/Index
@@ -73,4 +50,11 @@ future reference.
    UsingStdWrap/Index
    UsingGetText/Index
    NextSteps/Index
-   Targets
+
+.. Meta Menu
+
+.. toctree::
+   :hidden:
+
+   Sitemap
+   genindex

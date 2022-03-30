@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _function-parsefunc:
@@ -14,7 +14,7 @@ that the content is not rendered exactly as it was entered in the RTE. Some
 default parsing rules are implemented in the core, like parsing link tags via
 :ref:`typolink` function.
 
-You can also use :ts:`parseFunc` for your own processing. In the following
+You can also use :typoscript:`parseFunc` for your own processing. In the following
 example, every occurrence of "COMP" is replaced by "My company name"::
 
    page.stdWrap.parseFunc.short {
