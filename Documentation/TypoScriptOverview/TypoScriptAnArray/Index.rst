@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _typoscript-array:
@@ -29,9 +29,9 @@ The ":ref:`PAGE <t3tsref:page>`" object will then search for all properties, whi
 it knows about. In this case, it will find a numeric entry ("10"), which
 has to be evaluated. A new object of type ":ref:`TEXT <t3tsref:cobj-text>`"
 with the parameter :php:`$data['page.']['10.']` will be created.
-The ":ref:`TEXT <t3tsref:cobj-text>`" object knows the parameters :ts:`value` and
-:ts:`stdWrap`. It will set the content of :ts:`value` accordingly. The
-parameters from :ts:`stdWrap` will be passed to the ":ref:`stdWrap <t3tsref:stdwrap>`" function.
+The ":ref:`TEXT <t3tsref:cobj-text>`" object knows the parameters :typoscript:`value` and
+:typoscript:`stdWrap`. It will set the content of :typoscript:`value` accordingly. The
+parameters from :typoscript:`stdWrap` will be passed to the ":ref:`stdWrap <t3tsref:stdwrap>`" function.
 There the property 'wrap' is known, and the text "Hello world" will be inserted
 at the pipe (`|`) position and returned.
 
