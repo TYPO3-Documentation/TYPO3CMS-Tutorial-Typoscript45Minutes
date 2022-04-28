@@ -23,8 +23,8 @@ However understanding how TypoScript really works
 allows you to proceed more efficiently and waste less time
 in painful trial and error.
 
-Going through this tutorial is a requirement
-for other tutorials, like :doc:`Templating Tutorial: Basics <t3templating:Index>`.
+Going through this tutorial is helpful for understanding
+other tutorials, like the :doc:`Sitepackage <t3sitepackage:Index>`.
 
 
 .. toctree::
