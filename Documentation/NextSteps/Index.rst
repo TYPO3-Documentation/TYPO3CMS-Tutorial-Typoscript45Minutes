@@ -8,7 +8,7 @@ Next steps
 
 Armed with this basic knowledge of TypoScript, you may want
 to continue your exploration of TYPO3 CMS by following the
-:doc:`Templating Tutorial <t3templating:Index>`, which will
+:doc:`Sitepackage Tutorial <t3sitepackage:Index>`, which will
 guide you through the creation of a whole website template
 using TypoScript.
 
