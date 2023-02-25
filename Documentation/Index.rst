@@ -1,4 +1,5 @@
 .. include:: /Includes.rst.txt
+..  _start:
 
 ========================
 TypoScript in 45 Minutes
