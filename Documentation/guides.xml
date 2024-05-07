@@ -12,7 +12,7 @@
                edit-on-github-branch="main"
                edit-on-github="TYPO3-Documentation/TYPO3CMS-Tutorial-Typoscript45Minutes"
                typo3-core-preferred="main"
-               interlink-shortcode="typo3/tutorial-typoscript-in-45-minutes"
+               interlink-shortcode="t3ts45"
     />
     <project title="TypoScript in 45 Minutes"
              release="main (development)"
