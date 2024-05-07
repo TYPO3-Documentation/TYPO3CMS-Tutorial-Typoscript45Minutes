@@ -58,4 +58,3 @@ Explained.
    :hidden:
 
    Sitemap
-   genindex
