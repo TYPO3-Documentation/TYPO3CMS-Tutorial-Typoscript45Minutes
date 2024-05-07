@@ -11,7 +11,7 @@
                project-issues="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Typoscript45Minutes/issues"
                edit-on-github-branch="main"
                edit-on-github="TYPO3-Documentation/TYPO3CMS-Tutorial-Typoscript45Minutes"
-               typo3-core-preferred="stable"
+               typo3-core-preferred="main"
                interlink-shortcode="typo3/tutorial-typoscript-in-45-minutes"
     />
     <project title="TypoScript in 45 Minutes"
