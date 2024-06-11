@@ -15,7 +15,8 @@ default parsing rules are implemented in the core, like parsing link tags via
 :ref:`typolink` function.
 
 You can also use :typoscript:`parseFunc` for your own processing. In the following
-example, every occurrence of "COMP" is replaced by "My company name"::
+example, every occurrence of "###COMP###" (the short name wrapped in "###") is
+replaced by "My company name"::
 
    page.stdWrap.parseFunc.short {
       COMP = My company name
