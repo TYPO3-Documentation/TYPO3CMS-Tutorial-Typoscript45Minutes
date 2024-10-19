@@ -5,18 +5,18 @@
         links-are-relative="true"
 >
     <extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
-               project-home="https://docs.typo3.org/m/typo3/tutorial-typoscript-in-45-minutes/main/en-us/"
+               project-home="https://docs.typo3.org/m/typo3/tutorial-typoscript-in-45-minutes/13,4/en-us/"
                project-contact="https://typo3.slack.com/archives/C028JEPJL"
                project-repository="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Typoscript45Minutes"
                project-issues="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Typoscript45Minutes/issues"
-               edit-on-github-branch="main"
+               edit-on-github-branch="13.4"
                edit-on-github="TYPO3-Documentation/TYPO3CMS-Tutorial-Typoscript45Minutes"
-               typo3-core-preferred="main"
+               typo3-core-preferred="13"
                interlink-shortcode="t3ts45"
     />
     <project title="TypoScript in 45 Minutes"
-             release="main (development)"
-             version="main (development)"
+             release="13.4"
+             version="13.4"
              copyright="since 2012 by the TYPO3 contributors"
     />
     <inventory id="ext_fsc"
