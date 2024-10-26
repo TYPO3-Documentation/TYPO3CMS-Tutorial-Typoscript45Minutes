@@ -12,7 +12,7 @@ The term template has a double meaning in TYPO3 CMS. On the one hand,
 there is the *HTML template file*, which serves as the skeletal
 structure in which the content, provided by the CMS,
 will be rendered. On the other hand, there is the *TypoScript template*,
-which is created in the Template/TypoScript module in the TYPO3 CMS
+which is created in the :guilabel:`Site Management > TypoScript` module in the TYPO3 CMS
 Backend and can exist on any page.
 
 ..  versionchanged:: 12.3
