@@ -37,8 +37,8 @@ Common mistakes made with TypoScript templates can cause a message like this:
 .. figure:: /Images/ManualScreenshots/NoTypoScriptTemplateFoundDebuggingOff.png
    :alt: Error message "No TypoScript template found! Without debug mode"
 
-If you turn the :ref:`debug mode <t3start:debug-mode>` on you will get more
-detailed information:
+If you turn on the :ref:`debug mode <t3coreapi:troubleshooting-debug-mode>`
+you will get more detailed information:
 
 .. figure:: /Images/ManualScreenshots/NoTypoScriptTemplateFound.png
    :alt: Error message "No TypoScript template found!"
