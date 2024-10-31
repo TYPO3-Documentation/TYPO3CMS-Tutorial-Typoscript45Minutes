@@ -10,7 +10,7 @@ TypoScript - A quick overview
 This introduction is designed to give you a
 comprehensive understanding of how TypoScript works.
 In other words the goal is not to just help you make it work,
-but to make sure that you end up knowing why and how
+but to make sure that you end up knowing **why** and **how**
 it works.
 
 At the end of this tutorial, you will not have a complete

@@ -13,14 +13,19 @@ content element.
 
 Although it may seem daunting, it is very instructive to review all this code,
 as there is much to learn by example. To view the raw code, place yourself on
-the root page of your website and move to the **WEB > Template** module. Then
+the root page of your website and move to the :guilabel:`Site Management > TypoScript` module. Then
 choose the *Template Analyzer* function.
+
+..  versionchanged:: 12.3
+    The Template module moved to another section and changed its name to
+    "TypoScript" in TYPO3 version 12.
 
 You should see a list of all used TypoScript templates and how they possibly
 include one another. All templates are evaluated by TYPO3 CMS from top to
 bottom.
 
 .. include:: /Images/AutomaticScreenshots/TemplateAnalyzerStructure.rst.txt
+
 
 With a click on "EXT:fluid\_styled\_content/static/", you can view the content
 of that template (below the hierarchical view), first the constants, then the
